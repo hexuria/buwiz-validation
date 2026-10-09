@@ -1,0 +1,220 @@
+﻿body { font-family:Arial;  }
+
+/*XBOX*/
+
+     .checkbox, .radio {
+      width: 19px;
+      height: 25px;
+      padding: 0 5px 0 0;
+      background: url(../img/xbox.png) no-repeat;
+      display: block;
+      clear: left;
+      float: left;
+    }
+    .radio {
+      background: url(../img/xbox.png) no-repeat;
+    }
+/*END*/
+
+td.FormHeaderLogo
+{
+    width:82px;
+    padding:0 0 0 0;
+    text-align:center;
+}
+
+.noCellSpace
+{
+    margin:0px 0px 0px 0px;
+    padding:0px 0px 0px 0px;
+    border-spacing:0;
+}
+
+input.NotEditable { width: auto; }
+
+.textCenter
+{
+    text-align:center;
+}
+
+.center, .FormHeader
+{
+    text-align:center; 
+    height:0;
+    margin:0px 0px 0px 0px;
+    padding:0px 0px 0px 0px;
+    border-spacing: 0;
+}
+.left
+{
+    text-align:left; 
+    height:0;
+    margin:0px 0px 0px 0px;
+    padding:0px 0px 0px 0px;
+    border-spacing: 0;
+}
+.right
+{
+    text-align:right;
+    height:0;
+    margin:0px 0px 0px 0px;
+    padding:0px 0px 0px 0px;
+    border-spacing: 0;
+}
+
+table.FormHeader 
+{
+    text-align: center; 
+    width: 100%;
+    border-spacing: 0;
+    background-color: white;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+}
+table.FormHeader tr td 
+{
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    padding: 0;
+}
+
+.FormHeader1{ font-size: 16pt; }
+.FormHeader2 { font-size: 9pt; }
+.FormHeader3 { font-size: 8pt; }
+.FormHeader4 { font-size: 7pt; }
+
+.ContentLeft { text-align: left; padding-left: 3px; }
+.ContentRight{ text-align:right; padding-right:3px; }
+
+td.ContentBold { font-size: small; width: 15px; font-weight: bold; vertical-align: top; }
+.Content1	{font-size:11px; }
+.Content2	{font-size:10px; }
+.ContentTip	{font-size:11px; font-style:italic; padding-left:2px; }
+
+.ContentBold, .ContentHeader	{font-size:14px; font-weight:bold; }
+.ContentBoldSmall { font-size: 11px; font-weight: bold; }
+.ContentHeader	{ width:100%; text-align:center; }
+
+.xxsmall, .xxsmallBold, .xxsmallItalic, .xxsmallBoldItalic{font-size:9px}
+.xxsmallBold { font-weight:bold; }
+.xxsmallItalic { font-style:italic; }
+.xxsmallBoldItalic{font-weight:bold; font-style:italic; }
+
+.xsmall, .xsmallBold, .xsmallItalic, .xsmallBoldItalic{font-size:x-small;}
+.xsmallBold { font-weight:bold; }
+.xsmallItalic { font-style:italic; }
+.xsmallBoldItalic{font-weight:bold; font-style:italic; }
+
+.small, .smallBold, .smallItalic, .smallBoldItalic{font-size:13px;}
+.smallBold { font-weight:bold; }
+.smallItalic { font-style:italic; }
+.smallBoldItalic{font-weight:bold; font-style:italic; }
+
+.smaller, .smallerBold, .smallerItalic, .smallerBoldItalic{font-size:smaller;}
+.smallerBold { font-weight:bold; }
+.smallerItalic { font-style:italic; }
+.smallerBoldItalic{font-weight:bold; font-style:italic; }
+
+.medium, .mediumBold, .mediumItalic, .mediumBoldItalic{font-size:medium;}
+.mediumBold { font-weight:bold; }
+.mediumItalic { font-style:italic; }
+.mediumBoldItalic{font-weight:bold; font-style:italic; }
+
+.large, .largeBold, .largeItalic, .largeBoldItalic{font-size:large;}
+.largeBold { font-weight:bold; }
+.largeItalic { font-style:italic; }
+.largeBoldItalic{font-weight:bold; font-style:italic; }
+
+.larger, .largerBold, .largerItalic, .largerBoldItalic{font-size:larger;}
+.largerBold { font-weight:bold; }
+.largerItalic { font-style:italic; }
+.largerBoldItalic{font-weight:bold; font-style:italic; }
+
+.xlarge, .xlargeBold, .xlargeItalic, .xlargeBoldItalic{font-size:x-large;}
+.xlargeBold { font-weight:bold; }
+.xlargeItalic { font-style:italic; }
+.xlargeBoldItalic{font-weight:bold; font-style:italic; }
+
+div.PageDiv,table.PageTable
+{
+    width:820px;
+}
+
+div.SubPageDiv, .PageDiv
+{
+   margin: 0 auto;
+   position: relative;
+}
+
+table.RowSubTable
+{
+    width:100%;
+    border-spacing: 0;
+}
+
+/* table.RowSubTable tr td
+{
+    padding: 0;
+    margin: 0;
+    background-image: url(../img/frmbg.png);
+	background-repeat: repeat-x;
+	background-position: top;
+	border-top: #AAAAAA 1px solid;
+	border-right: #AAAAAA 1px solid;
+} */
+
+.numbertext { text-align: right; }
+
+/* Non-Page 1 Headers */
+td.FormName { width: 45%; }
+td.FormNumber { width: 10%; }
+span.FormNumber { font-size: 14pt; font-weight: bold; }
+td.FormBarcode { text-align: right; width: 45%; }
+
+td.TINHeader { text-align: left; font-size: 9pt; font-weight: bold; width: 43%; }
+td.RegNameHeader { text-align: left; font-size: 9pt; font-weight: bold; width: 57%; }
+
+td.ColumnHeader { text-align: center; }
+td.Instructions { text-align: left; font-size: 9pt; vertical-align: top; }
+
+/*table with border*/
+table.RowSubTableBorder 
+{
+height:100%; 
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+border:1px solid black;
+width:100%;
+}
+
+/*td with border*/
+td.BorderTD
+{
+height:100%; 
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+border:1px solid black;
+width:100%;
+}
+
+td.TopBottomBorder
+{
+border-bottom: #000000 2px solid; 
+border-top: #000000 2px solid;
+}
+
+/*XBOX*/
+
+     .checkbox, .radio {
+      width: 19px;
+      height: 25px;
+      padding: 0 5px 0 0;
+      background: url(../img/xbox.png) no-repeat;
+      display: block;
+      clear: left;
+      float: left;
+    }
+    .radio {
+      background: url(../img/xbox.png) no-repeat;
+    }
+/*END*/

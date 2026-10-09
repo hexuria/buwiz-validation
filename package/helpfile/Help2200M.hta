@@ -1,0 +1,258 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <meta http-equiv="x-ua-compatible" content="ie=9">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <hta:application id="2200M"
+        applicationname="2200M"
+        version="1.0"
+        caption="yes"
+        showintaskbar="yes"
+        icon="../img/bir_icon.ico"
+        singleinstance="YES"
+        sysmenu="YES"
+        navigable="YES"
+        contextmenu="NO"
+        windowstate="maximize"
+        scrollflat="YES">	
+		<script src='../jq/jquery-1.7.1.min.js'></script>
+		<script src='../jq/jquery-ui-1.8.18.custom.min.js'></script>	
+        <script src='../js/environment.js'></script>		
+		<script src='../js/string-util.js'></script>
+        <title>BIR Form No. 2200M</title>
+        <link href="../css/styles.css" rel="stylesheet" type="text/css" />	
+        <style type="text/css">
+            <!--
+            .style2 {
+                font-size: 10px;
+            }
+
+            .style3 {
+                font-size: 10pt;
+            }
+
+            .style4 {
+                font-size: 12pt;
+            }
+            -->
+        </style>
+</head>
+<body>
+    <ul class="topnav printButtonClass">
+        <li>
+            <a href="#" class='toplevel'>File</a>
+            <ul class="subnav">
+                <li><a href="../BIRForms.hta">Main Screen</a></li>
+                <li><a href="#" onclick="window.close(); self.close();">Exit</a></li>
+            </ul>
+        </li>
+
+    </ul>
+    <!--topnav-->
+    <div class="printButtonClass" style="position: fixed; top: 10px; font-size: 11px; z-index: 1000000000000000; right: 5px; width: auto;">Government Property Not For Sale</div>
+
+    <!--title-->
+    <img class="printButtonClass" id="bg" src="../img/bg_n.png" height="100%" align="top" />
+    <!--watermark-->
+
+    <style>
+        .atcNames {
+            font-weight: bold;
+        }
+
+        tr.atc td {
+            border-bottom: 1px #e1e1e1 solid;
+        }
+
+        tr.atc:hover td {
+            background: #FFC;
+        }
+
+        td.atc {
+            padding: 4px;
+        }
+
+        #header, .menu {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            height: 25px;
+            background: #fefefe;
+            white-space: nowrap;
+            font-weight: bold;
+            border: 1px #ccc solid;
+            visibility: hidden;
+            z-index: 3000;
+        }
+
+        .menu {
+            visibility: visible;
+        }
+
+        #header input {
+            background: none;
+            border: none;
+            pointer: cursor;
+            font-weight: bolder;
+            height: 25px;
+            border-right: 1px #ccc solid;
+            visibility: visible !important;
+            float: left;
+            width: auto;
+            padding-left: 3px;
+            padding-right: 3px;
+        }
+
+            #header input:hover {
+                background: #FFC;
+            }
+
+        #container {
+            margin-top: 40px;
+        }
+    </style>
+
+    <form id="frmMain" name="frmMain">
+        <div id="container">
+            <div id="wrapper" style="margin: 0 auto; position: relative; width: 830px;">
+                <div id="formPaper">
+                    <div id="Content" align="center">
+                        <table border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td>
+                                    <span class="formTitle"><b>BIR Form No. 2200M</b>
+                                        <br />
+                                        Guidelines and Instructions</span>
+                                    <!--<img src="../img/2200Mhelp.jpg" alt="2200Mhelp" height="100%" width="100%" align="center" />-->
+                                    <table id="inserted">
+                                        <tr>
+                                            <div class="subtitle">
+                                                BIR Form No. 2200M <br />
+ Guidelines and Instructions
+                                            </div>
+                                            <br />
+
+                                            <br />
+                                            <td class="firstcol">
+                                                <b>Who shall File</b>
+                                                <ol class="indent">
+                                                    This return shall be filed in triplicate by the following:
+                                                <li>Owner, lessee , concessionaire or operator of the mining claim;</li>
+                                                    <li>First buyer, purchaser or transferee for local sale, barter, transfer or exchange of indigenous petroleum, natural gas or liquefied natural gas; and</li>
+                                                    <li>Owner or person having possession of the minerals and mineral products which were  mined, extracted or quarried without the payment of excise tax</li>
+                                                    <p>For imported minerals and mineral products, the excise tax  shall  be  paid by the importer or owner to the Bureau of Customs be fore removal of such imported articles from the customs custody.</p>
+                                                </ol>
+                                                <br />
+                                                <b>Time  and Manner of Filing and Payment</b>
+                                                <p>For  each place  where  the minerals  are mined,  extracted   or quarried, a separate  return shall  be filed and the excise tax due shall be paid upon removal from the locality where the minerals are mined or  extracted with any Authorized Agent Bank (AAB) located within the  territorial  jurisdiction of  the  Revenue District Office where the taxpayer is required to register. In places  where  there  are no AABs,  the return shall be filed and the tax due shall be paid with the Revenue Collection Officer or Duly Authorized City  or  Municipal Treasurer of the city or municipality falling under the  jurisdiction  of  the aforesaid Revenue District Office. In the case of locally produced or extracted minerals or quarry resources where the mine site or place of  extraction is not the same as the place of processing or production, the return shall be filed with and the excise tax paid  to the Revenue District Office having jurisdiction over the locality where the same are mined, extracted or quarried; provided, however, that for metallic minerals processed abroad, the return shall be filed and the tax due thereon paid to the Revenue District Office having jurisdiction over the locality where the same are mined, extracted or quarried.</p>
+                                                <p>On locally produced or extracted metallic mineral or mineral products, the person  liable  shall file a return and pay the tax within fifteen (15) days after the end of the calendar quarter when such products were removed subject to the filing of a bond in an  amount  which approximates the amount of excise tax due on the removals for the said quarter.</p>
+                                                <p>Identified excise large taxpayers duly informed in writing as such by the Commissioner  of  Internal Revenue, or his duly authorized representative, shall file a consolidated excise tax return and pay the excise tax due with the Authorized Agent Bank located in the BIR National Office, Diliman, Quezon City.</p>
+                                                <br />
+                                                <b>How to Fill-up Schedule I</b>
+                                                <br />
+                                                In cases where the mineral is subject to assay, Schedule I shall be accomplished as follows:
+                                                <ol class="indent">
+                                                    <li> If the final values of all removals of minerals during the return period have been determined during the same return period, fill up Columns A, B(if applicable), G, H(if applicable), J and L.</li>
+                                                    <li> If the final values of all removals of minerals are not yet determinable during the return period, fill up Columns A, B(if applicable), C, D(if applicable), F and L.</li>
+                                                    <li> If only the adjustment to the tax due based on the difference between the provisional and final values on removals from previous return period(s) are to be declared during the return period, fill up Columns K and L.</li>
+                                                    <li> If the total tax due consists of taxes due on provisional, final and adjusted values, fill up all applicable columns. </li>
+                                                    <li> However in cases where the mineral products are not subject to assay, fill up Columns G, H(if applicable), J and L.</li>
+                                                </ol>
+                                            </td>
+                                            <td class="secondcol">
+                                                <b>Penalties</b>
+                                                <br />
+                                                <ol class="indent">
+                                                    <li>A surchange of twenty five percent(25%) for each of the following violations:</li>
+                                                    <ol type ="a" class="indent">
+                                                        <li>Failure to file any return and pay the tax due thereon on the date prescribed;</li>
+                                                        <li>Unless otherwise authorized by the Commissioner, filing a return with a person or office other than those with whom it is required to be filed;</li>
+                                                        <li>Failure to pay the full or part of the amount of tax shown on the return, or the full amount of tax due for which no return is required to be filed on or before the due date;</li>
+                                                        <li>Failure to pay the deficiency tax within the time prescribed for its payment in the Notice of Assessment.</li>
+                                                    </ol>
+                                                    <li>A surchange of fifty percent(50%) of the tax or of the deficiency tax, in case any payment has been made on the basis of such return before the discovery of the falsity or fraud, for each of the following violations:</li>
+                                                    <ol type="a" class="indent">
+                                                        <li>Willfull neglect to file the return within the period prescribed by the code or by rules and regulations; or</li>
+                                                        <li>In case a false or fraudulent return is willfully made.</li>
+                                                    </ol>
+                                                    <li>An interest of twenty percent(20%) per annum on any unpaid amount of tax, from the date prescribed for the payment until it is fully paid.</li>
+                                                    <li> Compromise penalty.</li>
+                                                </ol>
+                                                <br />
+                                                <b>Attachment Required</b>
+                                                                 <p>All returns filed by an authorized representative must attach authorization letter.</p>   
+
+                                                <br />
+                                                <b>Note:</b>
+                                                <ol class="indent">
+                                                    This return shall be used in the following instances:
+                                                    <li> For payment of excise tax due on the actual volume of mineral products to be removed from the place where the same are mined, extracted or quarried, including the quarterly payment of excise tax due thereon;</li>
+                                                    <li>For prepayments, advance deposits or other similar schemes in payment of excise tax on locally mined, extracted or quarried minerals. The balance of advance payment or deposit of excise tax shall, in no case, be utilized in payment of penalties. In the event that the balance is insufficient to cover the excise tax due, penalties shall be computed and imposed on the difference. These shall be computed from the date of removal when the insufficiency shall have been incurred.</li>
+                                                    <div class="indent">
+                                                        All returns filed by an accredited tax agent on behalf of a taxpayer shall bear the following information:
+                                                        <ol class="indent">
+                                                            <li> For CPAs and others( individual practitioners and members of GPPs);</li>
+                                                            <dl class="indent">
+                                                                <dd>1.1 Taxpayer Identification Number(TIN); and</dd>
+                                                                <dd>1.2 Certificate of Accrediation Number, Date of Issuance, and Date of Expiry.</dd>
+                                                            </dl>
+                                                            <li>For members of Philippine Bar(individual practitioners, members of GPPs);</li>
+                                                            <dl class="indent">
+                                                                <dd>2.1  Taxpayer Identification Number(TIN); and</dd>
+                                                                <dd>2.2 Attorney's Roll Number or Accreditation Number, if any.</dd>
+                                                            </dl>
+                                                        </ol>
+                                                    </div>
+                                                </ol>
+                                                <br />
+                                                <br />
+                                                <div class="small" style="text-align:right;">
+                                                    <b>ENCS<br />2200-M</b>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
+
+<script type="text/javascript">
+    //topNav
+    $(document).ready(function () {
+        $("ul.subnav").parent().append("<span></span>"); //Only shows drop down trigger when js is enabled (Adds empty span tag after ul.subnav*)  
+        $("ul.topnav li span").click(function () { //When trigger is clicked...            
+            //Following events are applied to the subnav itself (moving subnav up and down)  
+            $(this).parent().find("ul.subnav").slideDown('fast').show(); //Drop down the subnav on click    
+            $(this).parent().hover(function () {
+            }, function () {
+                $(this).parent().find("ul.subnav").slideUp('slow'); //When the mouse hovers out of the subnav, move it back up  
+            });
+            //Following events are applied to the trigger (Hover events for the trigger)  
+        }).hover(function () {
+            $(this).addClass("subhover"); //On hover over, add class "subhover"  
+        }, function () {  //On Hover Out  
+            $(this).removeClass("subhover"); //On hover out, remove class "subhover"  
+        });
+        $("ul.topnav .toplevel").click(function () { //When trigger is clicked...            
+            //Following events are applied to the subnav itself (moving subnav up and down)  
+            $(this).parent().find("ul.subnav").slideDown('fast').show(); //Drop down the subnav on click    
+            $(this).parent().hover(function () {
+            }, function () {
+                $(this).parent().find("ul.subnav").slideUp('slow'); //When the mouse hovers out of the subnav, move it back up  
+            });
+            //Following events are applied to the trigger (Hover events for the trigger)  
+        }).hover(function () {
+            $(this).addClass("subhover"); //On hover over, add class "subhover"  
+        }, function () {  //On Hover Out  
+            $(this).removeClass("subhover"); //On hover out, remove class "subhover"  
+        });
+    });
+
+</script>

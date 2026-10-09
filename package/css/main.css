@@ -1,0 +1,254 @@
+body , html {
+margin:0; padding:0;
+font-weight:normal;
+font-family:Arial, Helvetica, sans-serif;
+font-size:15px; background:none !important;
+zoom:1;
+}
+a:link { text-decoration:none; }
+a:hover { text-decoration:underline; }
+input {	font-size:14px; }
+input:hover, select:hover, input:focus, #middle input:hover, #middle select:hover {
+	background:#FFC; text-decoration:underline;
+}
+select:focus { background:#FFC; }
+.light {
+/*background:url(../img/light.png) no-repeat center top;
+background:url(img/bir.png) no-repeat center top;*/
+height: 500px; position:absolute; top:0;
+padding:30px;
+}
+.border {
+	height:5px;
+	background:#666;
+	border-bottom:1px solid #444;
+}
+
+/*----------new--------------*/
+#all_content {
+	position:relative; float:none; clear:both; overflow:auto; z-index:6;
+	margin:0 auto; margin-top:29px; overflow:hidden;
+	height:790px; width:800px; padding:40px; padding-left:80px; padding-right:80px;
+	/*border:1px solid #d9d9d9; border-radius:10px;*/
+	background:url(../img/leftbg.png) repeat;
+}
+
+.mainLabel { color:#111; font-weight:bold; font-size:0.85em; line-height:1.5em; margin-bottom:5px; display:block; }
+.break {
+	display:block; width:100%; clear:both; position:relative; float:left; margin:0 auto; margin-bottom:15px;	
+}
+input { padding:3px; padding-left:0; padding-right:0; }
+.inline { float:left; display:block; }
+.inputs { width:auto; *width:90%; padding-left:2%; clear:both; white-space:nowrap; }
+.first { }
+.middle { }
+.last { clear:right; float:right; padding-right:3px; }
+.max { width:784px; *width:777px; }
+.LOB { width:350px; }
+.RDO { margin-left:10%; }
+
+.PNUM { width:55%; *width:445px; float:right; clear:right; }
+.ZCODE { width:40%; *width:47%; float:left; text-indent:3%; *margin-left:5px; }
+.ZCODE span { text-indent:0; }
+.PNUM input { width:100%; }
+
+.inline label {
+	margin-top:-5px;
+	padding:0px;
+}
+
+.table_head .mainLabel { color:#333; font-size:1em; }
+#watermark {
+	position:absolute; margin:0 auto; float:left; clear:none;
+	width:700px; display:block;
+	left:50%; margin-left:-350px; top:140px;
+	z-index:3;
+}
+#bg {
+	position:fixed; float:left; clear:none;
+	width:100%; height:100%;
+	top:0; left:0; z-index:2;
+}
+.formTitle {
+	padding-top:20px; margin-bottom:10px; display:block; font-size:24px;
+	width:auto;
+	display:block; width:100% !important;
+	color:#000; font-size:24px; border-bottom:1px #555 solid;
+	font-weight:bold;
+	margin-bottom:10px;
+}
+.modalHeader {
+	padding:2px; padding-top:20px;
+	display:block; width:100% !important;
+	color:#000; font-size:24px; border-bottom:1px #555 solid;
+	font-weight:bold;
+	margin-bottom:10px;
+}
+/*----------new--------------*/
+
+#l_top {
+	margin-bottom:15px; width:100%;
+}
+
+#middle {
+color:#333;
+font-weight:bold;
+}
+#middle input {
+	background:#fefefe;
+	border: 1px solid #e1e1e1;
+	padding:5px; *padding:0;
+	font-size:85%; font-family:Tahoma, Geneva, sans-serif;
+	border-radius:5px;
+	margin-left:10px;
+	cursor:pointer;
+	width:9%;
+}
+#middle select {
+	cursor:pointer;
+	display:block;
+	padding:5px;
+	border:1px solid #ccc;
+	width:86%;
+}
+#content {
+	color:#333;
+	background:none;
+	width:86%; padding:2%; 
+	margin:0 auto; margin-top:2%; margin-left:5%;
+	border:1px outset #FFF;
+}
+
+#content2 {
+margin-top:10px;
+overflow-x:hidden; overflow-y:scroll;
+height:200px; background:none;
+}
+#content2 table {
+background:none;
+}
+#content table {
+border-top:none;
+background:none;
+border-collapse:collapse;
+width:100%;
+border:1px solid #eee;
+}
+
+#content table th {
+padding:8px;
+background:url(../img/tablebg.png) repeat;
+font-weight:bold;
+font-size:13px;
+}
+
+#content table td {
+padding:8px; font-size:15px;
+color:#555; background:url(../img/tablebg.png) repeat;
+}
+#content table thead tr {
+border:none;
+}
+
+#content table tr td {
+border-bottom:1px dashed #333;
+}
+#content table a {
+font-size:12px;
+}
+#footer {
+text-align: center;
+position:relative;
+padding: 7px;
+color: #333;
+font-weight: bold;
+float:left;
+width:50%;
+}
+
+.action a {
+color:#009;
+}
+
+.table_head {
+margin-top:10px;
+}
+
+._left {
+	text-indent:1%;
+	width:100%; display:block;
+	float:left;
+	color:#333;
+	clear:left;
+	margin-bottom:3%;
+}
+
+._left input {
+	margin:10px 0 0;
+	padding:5px;
+	margin-right:5px;
+	border:1px solid #ccc;
+	width:20%;
+}
+._right {	
+	width:50%; margin-left:1%; clear:right; float:right;
+}
+._right input {
+	width:97%;margin-right:5px;
+}
+/* TOP NAV */
+.topnav {
+	background:#f9f9f9; border-bottom:1px solid #333; font-size:0.85em;
+	height:30px; position:fixed; top:0; width:100%; z-index:1000000;
+}
+ul.topnav {  
+    list-style: none;  
+    padding: 0 20px; 
+    margin: 0;  
+    float: left;
+    background: #f9f9f9;  
+    font-size: 14px; 
+}  
+ul.topnav li {  
+    float: left;  
+    margin: 0;    
+    padding: 0 15px 0 0;  
+    position: relative; /*--Declare X and Y axis base for sub navigation--*/  
+}  
+ul.topnav li a{  
+    padding: 7px;
+    color: #000;
+    display: block;  
+    text-decoration: none;  
+    float: left;  
+}  
+ul.topnav li a:hover { }
+ul.topnav li span { /*--Drop down trigger styles--*/  
+    width: 17px;  
+    height: 35px;  
+    float: left;  
+}  
+ul.topnav li span.subhover {background-position: center bottombottom; cursor: pointer;} /*--Hover effect for trigger--*/  
+ul.topnav li ul.subnav {  
+    list-style: none;  
+    position: absolute; /*--Important - Keeps subnav from affecting main navigation flow--*/  
+    left: 0; top: 30px;
+    background:#f9f9f9;  
+    margin: 0; padding: 0;  
+    display: none;  
+    float: left;  
+    width: 180px;
+    border: 1px solid #111; border-top:0;
+}  
+ul.topnav li ul.subnav li{  
+    margin: 0; padding: 0;  
+    border-top: 1px solid #252525; /*--Create bevel effect--*/  
+    clear: both; width: 100%; overflow:hidden;
+}  
+html ul.topnav li ul.subnav li a {  
+    float: left; display:block;  
+    width: 100%;
+}  
+html ul.topnav li ul.subnav li a:hover { /*--Hover effect for subnav links--*/  
+    background: #FFC url(dropdown_linkbg.gif) no-repeat 10px center;   
+}

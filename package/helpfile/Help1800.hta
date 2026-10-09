@@ -1,0 +1,280 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+    <head>
+        <meta http-equiv="x-ua-compatible" content="ie=9">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <HTA:APPLICATION ID="1800" 
+        APPLICATIONNAME="1800" 
+        VERSION="1.0" 
+        CAPTION="yes"
+        SHOWINTASKBAR="yes"
+        ICON="../img/bir_icon.ico"
+        SINGLEINSTANCE="YES"
+        SYSMENU="YES"
+        NAVIGABLE="YES"
+        CONTEXTMENU="NO"
+        WINDOWSTATE="maximize"
+        SCROLLFLAT="YES">	
+		<script src='../jq/jquery-1.7.1.min.js'></script>
+		<script src='../jq/jquery-ui-1.8.18.custom.min.js'></script>	
+        <script src='../js/environment.js'></script>		
+		<script src='../js/string-util.js'></script>
+        <title>BIR Form No. 1800</title>
+        <link href="../css/styles.css" rel="stylesheet" type="text/css" />	
+        <style type="text/css">
+            <!--
+            .style2 {font-size: 10px}
+            .style3 {font-size: 10pt}
+            .style4 {font-size: 12pt}
+            -->
+        </style>
+    </head>
+    <body>
+    <ul class="topnav printButtonClass">  
+        <li>
+        	<a href="#" class='toplevel' >File</a>
+        	<ul class="subnav">  
+                <li><a href="../BIRForms.hta">Main Screen</a></li>  
+				<li><a href="#" onclick="window.close(); self.close();">Exit</a></li>  
+            </ul> 
+        </li>  
+
+    </ul>
+    <!--topnav-->
+	<div class="printButtonClass" style="position:fixed; top:10px; font-size:11px; z-index:1000000000000000; right:5px; width:auto;">Government Property Not For Sale</div>
+    
+    <!--title-->
+	<img class="printButtonClass" id="bg" src="../img/bg_n.png" height="100%" align="top"/> <!--watermark-->
+
+	<style>
+	.atcNames { font-weight:bold; }
+	tr.atc td { border-bottom: 1px #e1e1e1 solid; }
+	tr.atc:hover td { background:#FFC; }
+	td.atc { padding:4px; }
+	
+	#header,.menu { 
+		position:fixed; width:100%; top:0; left:0; height:25px; background:#fefefe; white-space:nowrap; font-weight:bold;
+		border: 1px #ccc solid; visibility:hidden; z-index:3000;
+	} .menu { visibility:visible; }
+	#header input {
+		background:none; border:none; pointer:cursor; font-weight:bolder; height:25px;
+		border-right: 1px #ccc solid; visibility:visible !important; float:left; width:auto; padding-left:3px; padding-right:3px;
+	}
+	#header input:hover {
+		background:#FFC;
+	}
+	#container {
+		margin-top:40px;
+	}
+	</style>
+
+	<form id="frmMain" name="frmMain">
+        <div id="container">
+            <div id="wrapper" style="margin: 0 auto; position: relative; width: 830px; ">
+                <div id="formPaper">
+                    <div id="Content" >
+                        <table border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td>
+								    <span class="formTitle"><b>BIR Form No. 1800</b> <br/>Guidelines and Instructions</span>
+									<!--<img src="../img/1800help.png" alt="1800help" height="100%" width="100%" align="center" />-->
+                                </td>
+                            </tr>
+                        </table>
+                        <div class="smallSubtitle" align="center">BIR FORM 1800 - DONOR'S TAX RETURN
+</div> 
+                          <div class="smallSubtitle" align="center">Guidelines and Instructions
+</div>
+                         
+                        <br />
+                        <table id="inserted">
+                            <tr>
+                                <td class="firstcol">
+                                    <dt>Who Shall File
+</dt>
+                                    <p>This return shall be filed in triplicate by any person, natural or juridical, resident or
+non-resident, who transfers or causes to transfer property by gift, whether in trust or
+otherwise, whether the gift is direct or indirect and whether the property is real or personal,
+tangible or intangible.
+</p>
+                                    <dt>When and Where to File</dt>
+                                    <p>The return shall be filed within thirty (30) days after the date the gift (donation) is
+made.
+</p>
+                                    <p>The return shall be filed with any Authorized Agent Bank (AAB) of the Revenue
+District Office having jurisdiction over the place of domicile of the donor at the time of the
+transfer, or if there be no legal residence in the Philippines, with the Office of the
+Commissioner, (Revenue District Office No. 39, South Quezon City) or with the Philippine
+Embassy or Consulate in the country where he is domiciled at the time of the transfer. In
+places where there are no Authorized Agent Banks, the return shall be filed with the
+Revenue Collection Officer, or duly Authorized City or Municipal Treasurer of the Revenue
+District Office having jurisdiction over the place of domicile of the donor.
+</p>
+                                    <p>A separate return shall be filed by each donor for each gift (donation) made on
+different dates during the year reflecting therein any previous net gifts made in the same
+calendar year. Only one return shall be filed for several gifts (donations) by a donor to the
+different donees on the same date.</p>
+                                    <p>If the gift (donation) involves conjugal/community property, each spouse shall file
+separate return corresponding to his/her respective share in the conjugal/community
+property. This rule shall likewise apply in the case of co-ownership over the property being
+donated.
+</p>
+                                    <dt>When and Where to Pay</dt>
+                                    <p>Upon filing this return, the total amount payable shall be paid to the Authorized
+Agent Bank (AAB) where the return is filed. In places where there are no AABs, payments
+shall be made directly to the Revenue Collection Officer or duly Authorized City or
+Municipal Treasurer who shall issue a Revenue Official Receipt (ROR) therefor. Returns
+filed with the Philippine Embassy or consulate shall be paid thereat</p>
+                                    <p>Where the returned is filed with an AAB, the lower portion of the return must be duly
+machine-validated and stamped received by the Authorized Agent Bank to serve as receipt
+of payment. The machine validation shall reflect the amount paid, the date of payment and
+the transaction code and the stamp mark shall also show the name of the bank, branch code,
+teller’s code and teller’s initial. The AAB shall also issue an official receipt or bank debit
+advice or credit document, whichever is applicable, as additional proof of payment.</p>
+                                    <dt>Tax Rate and Basis of Tax</dt>
+                                    <p>In general, the tax due for gifts made to relatives shall be computed using the
+schedular rates. If there is only one (1) gift given during the calendar year, the tax due shall
+be based on the value of the gift donated less allowable deductions. However, if there are
+several gifts made, the tax due shall be computed based on the total net gifts made during
+the calendar year.</p>
+                                    <p>When the donee or beneficiary is a stranger, the tax payable by the donor shall be
+thirty percent (30%) of the net gifts. For the purpose of this tax, a “stranger” is a person
+who is not a: (1) brother, sister (whether by whole or half blood), spouse, ancestor and lineal
+descendants; or (2) relative by consanguinity in the collateral line within the fourth degree
+of relationship.
+</p>
+                                    <dt>Valuation of gifts made in property</dt>
+                                    <p>If the gift is made in property, the fair market value thereof at the time of the
+donation shall be considered the amount of the gift. In case of real property, the fair market
+value as determined by the Commissioner or the fair market value as shown in the schedule</p>
+                                </td>
+                                <td class="secondcol">
+                                    of values fixed by the Provincial/City Assessors, whichever is higher, shall be considered
+the amount of the gift.
+                                    <dt>Penalties</dt>
+                                    <p>There shall be imposed and collected as part of the tax:</p>
+                                    <ol>
+                                        <li>A surcharge of twenty five percent (25%) for each of the following violations:</li>
+                                         <br />
+                                        <ol class="indent" type="a">
+                                            <li>Failure to file any return and pay the amount of tax or installment due on or
+before the due date;
+</li>
+                                            <li>Unless otherwise authorized by the Commissioner, filing a return with a
+person or office other than those with whom it is required to be filed;</li>
+                                            <li>Failure to pay the full or part of the amount of tax shown on the return, or the
+full amount of tax due for which no return is required to be filed on or before
+the due date;
+</li>
+                                            <li>Failure to pay the deficiency tax within the time prescribed for its payment in
+the notice of assessment.</li>
+                                        </ol>
+                                         <br />
+                                        <li>A surcharge of fifty percent (50%) of the tax or of the deficiency tax, in case any
+payment has been made on the basis of such return before the discovery of the
+falsity or fraud, for each of the following violations:
+</li>
+                                         <br />
+                                        <ol class="indent" type="a">
+                                            <li>Willful neglect to file the return within the period prescribed by the Code or by
+rules and regulations; or</li>
+                                             <li>In case a false or fraudulent return is willfully made.</li>
+                                        </ol>
+                                         <br />
+                                        <li>Interest at the rate of twenty percent (20%) per annum, or such higher rate as may be
+prescribed by rules and regulations, on any unpaid amount of tax, from the date
+prescribed for the payment until the amount is fully paid.</li>
+                                        <li>Compromise penalty.</li>
+                                    </ol>
+                                    <dt>Attachments
+</dt>
+                                    <ol>
+                                        <li>Sworn statement of the relationship of the donor to the donee;</li>
+                                         <li>Proof of claimed tax credit, if applicable;</li>
+                                         <li>Owner’s Copy for presentation purposes only
+											together with the photocopy thereof for
+											authentication or Certified True Copy of
+											Transfer Certificate of Title (TCT),
+											Condominium Certificate of Title (CCT),
+										   Original Certificate of Title (OCT), if
+											applicable;</li>
+                                         <li>Certified true copy/ies of the latest Tax Declaration (front and back pages) of lot
+and/or improvement, if applicable;</li>
+                                         <li>“Certificate of No Improvement” issued by the Assessor’s Office where the donated
+real property/ies have no declared improvements, if applicable;</li>
+                                         <li>Proof of valuation of shares of stock at the time of donation, if applicable;</li>
+                                         <br />
+                                        <ol class="indent" type="a">
+                                            <li>For listed stocks – newspaper clippings/certification issued by the Stock
+Exchange as to the value per share</li>
+                                             <li>For unlisted stocks – latest audited Financial Statements of the issuing
+corporation with computation of the book value per share
+</li>
+                                        </ol>
+                                         <br />
+                                         <li>Proof of valuation of other types of personal properties, if applicable;
+</li>
+                                        <li>Proof of claimed deductions, if applicable.
+</li>
+                                        <li>Copy of the Tax Debit Memo used as payment, if applicable.</li>
+                                        
+                                    </ol>
+                                    <p>These requirements must be submitted upon field or office audit of the tax case before
+the Tax Clearance Certificate/Certificate Authorizing Registration can be released to the
+taxpayer.</p>
+                                    <p>Additional requirements may be requested for presentation during the audit of the
+tax case depending upon existing audit procedures.</p>
+                                    <dt>Note: All background information must be properly filled up.
+</dt>
+                                     <br />
+                                    <ul>
+                                        <li>The last 3 digits of the 12-digit TIN refers to the branch code.</li>
+                                    <li>TIN = Taxpayer Identification Number.</li>
+                                    <li>If the donee is a non-individual, its relationship to the donor is that of a stranger.</li>
+                                    </ul>
+                                     <br />
+                                    <div align="right"><strong>ENCS</strong></div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
+
+<script type="text/javascript">	
+	//topNav
+	$(document).ready(function(){    
+		$("ul.subnav").parent().append("<span></span>"); //Only shows drop down trigger when js is enabled (Adds empty span tag after ul.subnav*)  
+		$("ul.topnav li span").click(function() { //When trigger is clicked...            
+			//Following events are applied to the subnav itself (moving subnav up and down)  
+			$(this).parent().find("ul.subnav").slideDown('fast').show(); //Drop down the subnav on click    
+			$(this).parent().hover(function() {  
+			}, function(){    
+				$(this).parent().find("ul.subnav").slideUp('slow'); //When the mouse hovers out of the subnav, move it back up  
+			});  
+			//Following events are applied to the trigger (Hover events for the trigger)  
+			}).hover(function() {   
+				$(this).addClass("subhover"); //On hover over, add class "subhover"  
+			}, function(){  //On Hover Out  
+				$(this).removeClass("subhover"); //On hover out, remove class "subhover"  
+		});
+		$("ul.topnav .toplevel").click(function() { //When trigger is clicked...            
+			//Following events are applied to the subnav itself (moving subnav up and down)  
+			$(this).parent().find("ul.subnav").slideDown('fast').show(); //Drop down the subnav on click    
+			$(this).parent().hover(function() {  
+			}, function(){    
+				$(this).parent().find("ul.subnav").slideUp('slow'); //When the mouse hovers out of the subnav, move it back up  
+			});  
+			//Following events are applied to the trigger (Hover events for the trigger)  
+			}).hover(function() {   
+				$(this).addClass("subhover"); //On hover over, add class "subhover"  
+			}, function(){  //On Hover Out  
+				$(this).removeClass("subhover"); //On hover out, remove class "subhover"  
+		}); 
+	});	
+	
+</script>

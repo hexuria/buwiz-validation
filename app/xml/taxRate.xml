@@ -1,0 +1,269 @@
+<!-- Script snippet for Tax Rate Helper: <script src='../js/tax-rate-helper.js'></script>
+===========================================================================================================================
+        CHANGE LOG (Date of Creation: 10/23/2025)
+        Date            Author          Description
+        10/23/2025      GIMENAMK        Initial creation and setup of tax rates for various forms:
+										BIR-Form1602Qv2018, BIR-Form1702EXv2018, BIR-Form1702RTv2018, BIR-Form1702Qv2018C, 
+										BIR-Form1707v2021, BIR-Form1707Av2021, BIR-Form1800v2018, BIR-Form1801v2018, 
+										BIR-Form2200Av2020, BIR-Form2550DS
+		11/05/2025		GIMENAMK		Added: BIR-Form1603Qv2018, BIR-Form1621, BIR-Form2200Cv2018
+===========================================================================================================================
+
+    Forms Included in this File:
+	* BIR-Form1602Qv2018	* BIR-Form2200Av2020	* BIR-Form1603Qv2018		
+	* BIR-Form1702EXv2018	* BIR-Form1707Av2021	* BIR-Form1621
+	* BIR-Form1702RTv2018	* BIR-Form1800v2018		* BIR-Form2200Cv2018						
+	* BIR-Form1702Qv2018C	* BIR-Form1801v2018		* 
+	* BIR-Form1707v2021		* BIR-Form2550DS		* 
+	
+========================================================================================================================-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+	<data>
+		<!-- BIR-Form1602Qv2018 -->
+			<cell id="frm1602Q:fntSched1TaxRate1"> <!-- Page2 Part4 Schedule1 Savings Deposit Item1 WI161 -->
+				<value>20</value><!-- value is being divided to 100 -->
+				<text>20%</text>
+			</cell>
+			<cell id="frm1602Q:fntSched1TaxRate2"> <!-- Page2 Part4 Schedule1 Savings Deposit Item2 WC161 -->
+				<value>20</value><!-- value is being divided to 100 -->
+				<text>20%</text>
+			</cell>
+			<cell id="frm1602Q:fntSched1TaxRate3"> <!-- Page2 Part4 Schedule1 Time Deposit Item3 WI161 -->
+				<value>20</value><!-- value is being divided to 100 -->
+				<text>20%</text>
+			</cell>
+			<cell id="frm1602Q:fntSched1TaxRate4"> <!-- Page2 Part4 Schedule1 Time Deposit Item4 WC161 -->
+				<value>20</value><!-- value is being divided to 100 -->
+				<text>20%</text>
+			</cell>
+			<cell id="frm1602Q:fntSched1TaxRate5"> <!-- Page2 Part4 Schedule1 Government Securities Item5 WI162 -->
+				<value>20</value><!-- value is being divided to 100 -->
+				<text>20%</text>
+			</cell>
+			<cell id="frm1602Q:fntSched1TaxRate6"> <!-- Page2 Part4 Schedule1 Government Securities Item6 WC162 -->
+				<value>20</value><!-- value is being divided to 100 -->
+				<text>20%</text>
+			</cell>
+			<cell id="frm1602Q:fntSched1TaxRate7"> <!-- Page2 Part4 Schedule1 Deposit Substitutes / Others Item7 WI163 -->
+				<value>20</value><!-- value is being divided to 100 -->
+				<text>20%</text>
+			</cell>
+			<cell id="frm1602Q:fntSched1TaxRate8"> <!-- Page2 Part4 Schedule1 Deposit Substitutes / Others Item8 WC163 -->
+				<value>20</value><!-- value is being divided to 100 -->
+				<text>20%</text>
+			</cell>
+			<cell id="frm1602Q:fntSched1TaxRate9"> <!-- Page2 Part4 Schedule1 Pre-terminated Long-Term Deposits / Investments Item8 WI440 -->
+				<value>20</value><!-- value is being divided to 100 -->
+				<text>20%</text>
+			</cell>
+			<cell id="frm1602Q:fntSched1TaxRate10"> <!-- Page2 Part4 Schedule1 Pre-terminated Long-Term Deposits / Investments Item8 WI441 -->
+				<value>12</value><!-- value is being divided to 100 -->
+				<text>12%</text>
+			</cell>
+			<cell id="frm1602Q:fntSched1TaxRate11"> <!-- Page2 Part4 Schedule1 Pre-terminated Long-Term Deposits / Investments Item8 WI442 -->
+				<value>5</value><!-- value is being divided to 100 -->
+				<text>5%</text>
+			</cell>
+			<cell id="frm1602Q:fntSched1TaxRate12"> <!-- Page2 Part4 Schedule1 Pre-terminated Long-Term Deposits / Investments Item8 WC440 -->
+				<value>20</value><!-- value is being divided to 100 -->
+				<text>20%</text>
+			</cell>
+			<cell id="frm1602Q:txtSched1TaxRate13"> <!-- Page2 Part4 Schedule1 Foreign Currency Deposit Item13 WI170 -->
+				<value>0.00</value><!-- value is being divided to 100 -->
+				<text>0%</text>
+			</cell>
+			<cell id="frm1602Q:txtSched1TaxRate14"> <!-- Page2 Part4 Schedule1 Foreign Currency Deposit Item14 WC170 -->
+				<value>0.00</value><!-- value is being divided to 100 -->
+				<text>0%</text>
+			</cell>
+			<cell id="frm1602Q:txtSched1TaxRate15"> <!-- Page2 Part4 Schedule1 On Amounts Withdrawn from Decent's Deposit Account Item15 WI165 -->
+				<value>6</value><!-- value is being divided to 100 -->
+				<text>6%</text>
+			</cell>
+
+		<!-- BIR-Form1603Qv2018 -->
+			<cell id="frm1603Q:Sched1:txtDivisor1"> <!-- Page2 Part4 Schedule1 Continuation WF360 Percentage Divisor (D) Item1 -->
+				<value>65%</value>
+				<text>65%</text>
+			</cell>
+			<cell id="frm1603Q:Sched1:txtTaxRate1"> <!-- Page2 Part4 Schedule1 Continuation WF360 Tax Rate (F) Item1 -->
+				<value>35%</value>
+				<text>35%</text>
+			</cell>
+			<cell id="frm1603Q:Sched1:txtDivisor2"> <!-- Page2 Part4 Schedule1 Continuation WF330 Percentage Divisor (D) Item2 -->
+				<value>75%</value>
+				<text>75%</text>
+			</cell>
+			<cell id="frm1603Q:Sched1:txtTaxRate2"> <!-- Page2 Part4 Schedule1 Continuation WF330 Tax Rate (F) Item2 -->
+				<value>25%</value>
+				<text>25%</text>
+			</cell>
+
+		<!-- BIR-Form1621 -->
+			<cell id="frm1621:txtTaxRate"> <!-- Page1 Part2 Item12 Applicable Tax Rate -->
+				<value>6.0%</value><!-- using 0.00 -->
+				<text>6.0%</text>
+			</cell>
+
+		<!-- BIR-Form1702EXv2018 -->
+			<cell id="frm1702EX:txtPg2Pt4I40TaxRate"><!-- Page2 Part4 Item40 Tax Rate -->
+				<value>0</value> <!-- using 0 -->
+				<text>0</text>
+				<!-- NOTE: Only type in whole numbers. There is already a % symbol in the main code-->
+			</cell>
+
+		<!-- BIR-Form1702RTv2018 -->
+			<cell id="frm1702RT:Pg2Pt4I40IncomeTaxRate"> <!-- Page2 Part4 Item40 Applicable Income Tax Rate -->
+				<value>30%</value> <!-- using 00% -->
+				<text>0</text>
+			</cell>
+
+		<!-- BIR-Form1702Qv2018C -->
+			<cell id="frm1702q:Sched1:txtTax10A"> <!-- Page2 Part4 Schedule1 Item10A Applicable Income Tax Rate -->
+				<value>10.00</value> <!-- using 0.00 -->
+				<text>0.00</text>
+			</cell>
+
+		<!-- BIR-Form1707v2021
+			<cell id="frm1707:txtPg2P4Sch1I6ApplcRate"> Page2 Part4 Item6 Applicable Tax Rate
+				<value>1.00</value>
+				<text>2.00</text>
+			</cell>
+			<cell id="frm1707:txtPg1P2I13AppTaxRate">Page1 Part2 Item13 Applicable Tax Rate
+				<value>3.00</value>
+				<text>4.00</text>
+			</cell> -->
+
+		<!-- BIR-Form1707Av2021 -->
+			<cell id="frm1707Av2021:txtI16ApplicableTaxRate"> <!-- Page1 Part2 Item16 Applicable Tax Rate -->
+				<value>15</value><!-- using 0, but change both-->
+				<text>15</text>
+			</cell>
+			<cell id="taxClassIndiv"><!-- Text Display only: Page2, Taxpayer Classification -->
+				<value></value>
+				<text>15%</text><!-- using 00% -->
+			</cell>
+			<cell id="taxClassCorpDomestic">
+				<value></value>
+				<text>15%</text><!-- using 00% -->
+			</cell>
+			<cell id="taxClassCorpForeign">
+				<value></value>
+				<text>15%</text><!-- using 00% -->
+			</cell>
+
+		<!-- BIR-Form1800v2018 -->
+			<cell id="appDonorsTaxRate"><!-- Page1 Part4 Item15 Applicable Donors Tax Rate -->
+				<value>0.06</value>
+				<text>                          6%</text><!-- using 0% -->
+				<!-- QUESTION: display only? -->
+			</cell>
+			<cell id="lessExemptGift"><!-- Page2 Part4 Item37 -->
+				<value>250000</value>
+				<text>                   250,000.00</text><!-- using 0% -->
+				<!-- QUESTION: display only? -->
+			</cell>
+
+		<!-- BIR-Form1801v2018 -->
+			<cell id="frm1801v2018:txtTaxRate"><!-- Page1 Part2 Item17 Applicable Tax Rate frm1801v2018:txtEstTaxDue-->
+				<value>0.06</value><!-- using; formatted with %, use decimal format for percentage -->
+				<text></text>
+			</cell>
+
+		<!-- BIR-Form2200Av2020 -->
+		<!-- Page2 Part5 Schedule 1 -->
+		<!-- ========== XA035 ========== -->
+			<!-- XA035 2020 --><cell id="frm2200Av2020:txtSched1_1A_2020_ATR"><value>0.20</value><text>20%</text></cell>
+			<!-- XA035 2020B --><cell id="frm2200Av2020:txtSched1_1A_2020B_ATR"><value>0.21</value><text>21%</text></cell>
+			<!-- XA035 2021 --><cell id="frm2200Av2020:txtSched1_1A_2021_ATR"><value>0.22</value><text>22%</text></cell>	
+			<!-- XA035 2022 --><cell id="frm2200Av2020:txtSched1_1A_2021_ATR"><value>0.22</value><text>22%</text></cell>	
+			<!-- XA035 2023 --><cell id="frm2200Av2020:txtSched1_1A_2021_ATR"><value>0.22</value><text>22%</text></cell>
+			<!-- XA035 2024 --><cell id="frm2200Av2020:txtSched1_1A_2021_ATR"><value>0.22</value><text>22%</text></cell>
+		<!-- ========== XA036 ========== -->
+			<!-- XA036 2020 --><cell id="frm2200Av2020:txtSched1_1B_2020_ATR"><value>24.34</value><text>24.34</text></cell>
+			<!-- XA036 2020B --><cell id="frm2200Av2020:txtSched1_1B_2020B_ATR"><value>42.00</value><text>42.00</text></cell>
+			<!-- XA036 2021 --><cell id="frm2200Av2020:txtSched1_1B_2021_ATR"><value>47.00</value><text>47.00</text></cell>
+			<!-- XA036 2022 --><cell id="frm2200Av2020:txtSched1_1B_2022_ATR"><value>52.00</value><text>52.00</text></cell>
+			<!-- XA036 2023 --><cell id="frm2200Av2020:txtSched1_1B_2023_ATR"><value>59.00</value><text>59.00</text></cell>
+			<!-- XA036 2024 --><cell id="frm2200Av2020:txtSched1_1B_2024_ATR"><value>66.00</value><text>66.00</text></cell>	
+		<!-- ========== XA061 ========== -->
+			<!-- XA061 2020 --><cell id="frm2200Av2020:txtSched1_2A_2020_ATR"><value>328.98</value><text>328.98</text></cell>
+			<!-- XA061 2020B --><cell id="frm2200Av2020:txtSched1_2A_2020B_ATR"><value>50.00</value><text>50.00</text></cell>
+			<!-- XA061 2021 --><cell id="frm2200Av2020:txtSched1_2A_2021_ATR"><value>53.00</value><text>53.00</text></cell>
+			<!-- XA061 2022 --><cell id="frm2200Av2020:txtSched1_2A_2022_ATR"><value>56.18</value><text>56.18</text></cell>
+			<!-- XA061 2023 --><cell id="frm2200Av2020:txtSched1_2A_2023_ATR"><value>59.55</value><text>59.55</text></cell>
+			<!-- XA061 2024 --><cell id="frm2200Av2020:txtSched1_2A_2024_ATR"><value>63.12</value><text>63.12</text></cell>
+		<!-- ========== XA062 ========== -->
+			<!-- XA062 2020A --><cell id="frm2200Av2020:txtSched1_2A_2020A_ATR"><value>921.15</value><text>921.15</text></cell>
+			<!-- XA062 2020B2 --><cell id="frm2200Av2020:txtSched1_2A_2020B2_ATR"><value>50.00</value><text>50.00</text></cell>
+			<!-- XA062 2021B --><cell id="frm2200Av2020:txtSched1_2A_2021B_ATR"><value>53.00</value><text>53.00</text></cell>
+			<!-- XA062 2022B --><cell id="frm2200Av2020:txtSched1_2A_2022B_ATR"><value>56.18</value><text>56.18</text></cell>
+			<!-- XA062 2023B --><cell id="frm2200Av2020:txtSched1_2A_2023B_ATR"><value>59.55</value><text>59.55</text></cell>
+			<!-- XA062 2024B --><cell id="frm2200Av2020:txtSched1_2A_2024B_ATR"><value>63.12</value><text>63.12</text></cell>
+		<!-- ========== XA070 ========== -->
+			<!-- XA070 2020 --><cell id="frm2200Av2020:txtSched1_2B_2020_ATR"><value>39.48</value><text>39.48</text></cell>
+			<!-- XA070 2020B --><cell id="frm2200Av2020:txtSched1_2B_2020B_ATR"><value>50.00</value><text>50.00</text></cell>
+			<!-- XA070 2021 --><cell id="frm2200Av2020:txtSched1_2B_2021_ATR"><value>53.00</value><text>53.00</text></cell>
+			<!-- XA070 2022 --><cell id="frm2200Av2020:txtSched1_2B_2022_ATR"><value>56.18</value><text>56.18</text></cell>
+			<!-- XA070 2023 --><cell id="frm2200Av2020:txtSched1_2B_2023_ATR"><value>59.55</value><text>59.55</text></cell>
+			<!-- XA070 2024 --><cell id="frm2200Av2020:txtSched1_2B_2024_ATR"><value>63.12</value><text>63.12</text></cell>
+		<!-- ========== XA080 ========== -->
+			<!-- XA080 2020 --><cell id="frm2200Av2020:txtSched1_2C_2020_ATR"><value>78.96</value><text>78.96</text></cell>
+			<!-- XA080 2020B --><cell id="frm2200Av2020:txtSched1_2C_2020B_ATR"><value>50.00</value><text>50.00</text></cell>
+			<!-- XA080 2021 --><cell id="frm2200Av2020:txtSched1_2C_2021_ATR"><value>53.00</value><text>53.00</text></cell>
+			<!-- XA080 2022 --><cell id="frm2200Av2020:txtSched1_2C_2022_ATR"><value>56.18</value><text>56.18</text></cell>
+			<!-- XA080 2023 --><cell id="frm2200Av2020:txtSched1_2C_2023_ATR"><value>59.55</value><text>59.55</text></cell>
+			<!-- XA080 2024 --><cell id="frm2200Av2020:txtSched1_2C_2024_ATR"><value>63.12</value><text>63.12</text></cell>
+		<!-- ========== XA090 ========== -->
+			<!-- XA090 2020 --><cell id="frm2200Av2020:txtSched1_2D_2020_ATR"><value>0.0</value><text>Taxed as distilled spirits</text></cell>
+			<!-- XA090 2020B --><cell id="frm2200Av2020:txtSched1_2D_2020B_ATR"><value>50.00</value><text>50.00</text></cell>
+			<!-- XA090 2021 --><cell id="frm2200Av2020:txtSched1_2D_2021_ATR"><value>53.00</value><text>53.00</text></cell>
+			<!-- XA090 2022 --><cell id="frm2200Av2020:txtSched1_2D_2022_ATR"><value>56.18</value><text>56.18</text></cell>
+			<!-- XA090 2023 --><cell id="frm2200Av2020:txtSched1_2D_2023_ATR"><value>59.55</value><text>59.55</text></cell>
+			<!-- XA090 2024 --><cell id="frm2200Av2020:txtSched1_2D_2024_ATR"><value>63.12</value><text>63.12</text></cell>
+		<!-- ========== XA055 ========== -->
+			<!-- XA055 2020 --><cell id="frm2200Av2020:txtSched1_3A_2020_ATR"><value>26.43</value><text>26.43</text></cell>
+			<!-- XA055 2020B --><cell id="frm2200Av2020:txtSched1_3A_2020B_ATR"><value>35.00</value><text>35.00</text></cell>
+			<!-- XA055 2021 --><cell id="frm2200Av2020:txtSched1_3A_2021_ATR"><value>37.00</value><text>37.00</text></cell>
+			<!-- XA055 2022 --><cell id="frm2200Av2020:txtSched1_3A_2022_ATR"><value>39.00</value><text>39.00</text></cell>
+			<!-- XA055 2023 --><cell id="frm2200Av2020:txtSched1_3A_2023_ATR"><value>41.00</value><text>41.00</text></cell>
+			<!-- XA055 2024 --><cell id="frm2200Av2020:txtSched1_3A_2024_ATR"><value>43.00</value><text>43.00</text></cell>
+		<!-- ========== XA056 ========== -->
+			<!-- XA056 2020A --><cell id="frm2200Av2020:txtSched1_3A_2020A_ATR"><value>26.43</value><text>26.43</text></cell>
+			<!-- XA056 2020B2 --><cell id="frm2200Av2020:txtSched1_3B_2020B2_ATR"><value>35.00</value><text>35.00</text></cell>
+			<!-- XA056 2021B --><cell id="frm2200Av2020:txtSched1_3A_2021B_ATR"><value>37.00</value><text>37.00</text></cell>
+			<!-- XA056 2022B --><cell id="frm2200Av2020:txtSched1_3A_2022B_ATR"><value>39.00</value><text>39.00</text></cell>
+			<!-- XA056 2023B --><cell id="frm2200Av2020:txtSched1_3A_2023B_ATR"><value>41.00</value><text>41.00</text></cell>
+			<!-- XA056 2024B --><cell id="frm2200Av2020:txtSched1_3A_2024B_ATR"><value>43.00</value><text>43.00</text></cell>
+		<!-- ========== XA057 ========== -->
+			<!-- XA057 2020 --><cell id="frm2200Av2020:txtSched1_3B_2020_ATR"><value>36.85</value><text>36.85</text></cell>
+			<!-- XA057 2020B --><cell id="frm2200Av2020:txtSched1_3B_2020B_ATR"><value>35.00</value><text>35.00</text></cell>
+			<!-- XA057 2021 --><cell id="frm2200Av2020:txtSched1_3B_2021_ATR"><value>37.00</value><text>37.00</text></cell>
+			<!-- XA057 2022 --><cell id="frm2200Av2020:txtSched1_3B_2022_ATR"><value>39.00</value><text>39.00</text></cell>
+			<!-- XA057 2023 --><cell id="frm2200Av2020:txtSched1_3B_2023_ATR"><value>41.00</value><text>41.00</text></cell>
+			<!-- XA057 2024 --><cell id="frm2200Av2020:txtSched1_3B_2024_ATR"><value>43.00</value><text>43.00</text></cell>
+
+		<!-- BIR-Form2200Cv2018 -->
+			<cell id="exciseTaxColumnH"> <!-- Page2 Part5 Schedule1 ColumnH Excise Tax -->
+				<value>0.05</value>
+				<text>5%</text> <!-- display value -->
+			</cell>
+			<cell id="vatColumnI"> <!-- Page2 Part5 Schedule1 ColumnI VAT -->
+				<value>0.12</value> 
+				<text>12%</text> <!-- display value -->
+			</cell>
+
+		<!-- BIR-Form2550DS -->
+		<!-- Page1 Part3 Item20 VAT Rate -->
+			<cell id="frm2550ds:vatRate">
+				<value>12.00%</value><!-- using 0.00%-->
+				<text></text>
+			</cell>
+
+		<!-- BIR-Form2550Qv2024 -->
+			<cell id="frm2550qv2024:hiddenVatRate">
+				<value>12.0</value>
+				<text></text>
+			</cell>
+	</data>

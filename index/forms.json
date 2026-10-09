@@ -1,0 +1,2139 @@
+{
+  "official_app_version": "7.9.6.0",
+  "forms": {
+    "forms/BIR-Form0605.hta": {
+      "sha256": "6200b57ef2a3d9d296dc79cbdb9d2f7a605fb92d1dfcdcc4883f08de7c7fa324",
+      "title": "BIR Form No. 0605",
+      "application_name": "0605",
+      "hta_version": "1.0",
+      "scripts": [
+        "jq/jquery-1.7.1.min.js",
+        "jq/jquery-ui-1.8.18.custom.min.js",
+        "js/environment.js",
+        "js/string-util.js",
+        "js/aes.js",
+        "js/lz-string-1.0.2.js",
+        "js/rijndael.js",
+        "js/lz-string-1.0.2.js",
+        "js/eBIRTools.vbs"
+      ],
+      "stylesheets": [
+        "css/styles.css",
+        "css/print.css"
+      ],
+      "missing_dependencies": [],
+      "inline_script_blocks": 1
+    },
+    "forms/BIR-Form0619E.hta": {
+      "sha256": "426205a6692a9d11a2a91447446d66b947865257261e4260f91ccb242097d87e",
+      "title": "BIR Form No. 0619-E",
+      "application_name": "0619E",
+      "hta_version": "1.0",
+      "scripts": [
+        "jq/jquery-1.7.1.min.js",
+        "jq/jquery-ui-1.8.18.custom.min.js",
+        "js/environment.js",
+        "js/string-util.js",
+        "js/aes.js",
+        "js/rijndael.js",
+        "js/lz-string-1.0.2.js",
+        "js/eBIRTools.vbs"
+      ],
+      "stylesheets": [
+        "css/styles.css",
+        "css/style2014.css",
+        "css/print.css"
+      ],
+      "missing_dependencies": [],
+      "inline_script_blocks": 2
+    },
+    "forms/BIR-Form0619F.hta": {
+      "sha256": "994818ea7b5691656d302d32025a39c6895a032d417871a6080803373436ecca",
+      "title": "BIR Form No. 0619-F",
+      "application_name": "0619F",
+      "hta_version": "1.0",
+      "scripts": [
+        "jq/jquery-1.7.1.min.js",
+        "jq/jquery-ui-1.8.18.custom.min.js",
+        "js/environment.js",
+        "js/string-util.js",
+        "js/aes.js",
+        "js/rijndael.js",
+        "js/lz-string-1.0.2.js",
+        "js/eBIRTools.vbs"
+      ],
+      "stylesheets": [
+        "css/styles.css",
+        "css/style2014.css",
+        "css/print.css"
+      ],
+      "missing_dependencies": [],
+      "inline_script_blocks": 2
+    },
+    "forms/BIR-Form0620.hta": {
+      "sha256": "8176dc97b258af9d22fa9a00768355c2f91a06d8a178874a0b840015a4c84790",
+      "title": "BIR Form No. 0620",
+      "application_name": "0620",
+      "hta_version": "1.0",
+      "scripts": [
+        "jq/jquery-1.7.1.min.js",
+        "jq/jquery-ui-1.8.18.custom.min.js",
+        "js/environment.js",
+        "js/string-util.js",
+        "js/string-util2014.js",
+        "js/aes.js",
+        "js/rijndael.js",
+        "js/lz-string-1.0.2.js",
+        "js/eBIRTools.vbs"
+      ],
+      "stylesheets": [
+        "css/styles.css",
+        "css/print.css"
+      ],
+      "missing_dependencies": [],
+      "inline_script_blocks": 2
+    },
+    "forms/BIR-Form1600.hta": {
+      "sha256": "f355c6a13759f62c06843dbc6224c58ed4cd76326de44f4111b515ae00f3644a",
+      "title": "BIR Form No. 1600",
+      "application_name": "1600",
+      "hta_version": "1.0",
+      "scripts": [
+        "jq/jquery-1.7.1.min.js",
+        "jq/jquery-ui-1.8.18.custom.min.js",
+        "js/environment.js",
+        "js/string-util.js",
+        "js/aes.js",
+        "js/rijndael.js",
+        "js/lz-string-1.0.2.js",
+        "js/eBIRTools.vbs"
+      ],
+      "stylesheets": [
+        "css/styles.css",
+        "css/print.css"
+      ],
+      "missing_dependencies": [],
+      "inline_script_blocks": 2
+    },
+    "forms/BIR-Form1600PTv2018.hta": {
+      "sha256": "2f0f2d7e58763f0a57b4b62fbe830a39656e92e03916cb8e058e0805c981af22",
+      "title": "BIR Form No. 1600PTv2018",
+      "application_name": "1600PTv2018",
+      "hta_version": "4.7",
+      "scripts": [
+        "jq/jquery-1.7.1.min.js",
+        "jq/jquery-1.11.0.js",
+        "jq/jquery-ui-1.8.18.custom.min.js",
+        "js/environment.js",
+        "js/string-util.js",
+        "js/string-util2014.js",
+        "js/aes.js",
+        "js/rijndael.js",
+        "js/jxboxV2.js",
+        "js/lib/2200C.js",
+        "js/lz-string-1.0.2.js",
+        "js/eBIRTools.vbs"
+      ],
+      "stylesheets": [
+        "css/styles.css",
+        "css/style2014.css",
+        "css/print.css"
+      ],
+      "missing_dependencies": [
+        "js/lib/2200C.js"
+      ],
+      "inline_script_blocks": 9
+    },
+    "forms/BIR-Form1600VTv2018.hta": {
+      "sha256": "4bd3ad3d6f5ff2ae3b8e9fa8802a826b01730dd29d3b5f6991c7cef09895a3bb",
+      "title": "BIR Form No. 1600VTv2018",
+      "application_name": "1600VTv2018",
+      "hta_version": "4.7",
+      "scripts": [
+        "jq/jquery-1.7.1.min.js",
+        "jq/jquery-1.11.0.js",
+        "jq/jquery-ui-1.8.18.custom.min.js",
+        "js/environment.js",
+        "js/string-util.js",
+        "js/string-util2014.js",
+        "js/aes.js",
+        "js/rijndael.js",
+        "js/jxboxV2.js",
+        "js/lib/2200C.js",
+        "js/lz-string-1.0.2.js",
+        "js/eBIRTools.vbs"
+      ],
+      "stylesheets": [
+        "css/styles.css",
+        "css/style2014.css",
+        "css/print.css"
+      ],
+      "missing_dependencies": [
+        "js/lib/2200C.js"
+      ],
+      "inline_script_blocks": 9
+    },
+    "forms/BIR-Form1600WP.hta": {
+      "sha256": "e33af59157e1083432cdfc360f648e06602caab75167a27fbb89a08853cb9420",
+      "title": "BIR Form No. 1600-WP",
+      "application_name": "1600WP",
+      "hta_version": "1.0",
+      "scripts": [
+        "jq/jquery-1.7.1.min.js",
+        "jq/jquery-ui-1.8.18.custom.min.js",
+        "js/environment.js",
+        "js/string-util.js",
+        "js/aes.js",
+        "js/lz-string-1.0.2.js",
+        "js/rijndael.js",
+        "js/lz-string-1.0.2.js",
+        "js/eBIRTools.vbs"
+      ],
+      "stylesheets": [
+        "css/styles.css",
+        "css/print.css"
+      ],
+      "missing_dependencies": [],
+      "inline_script_blocks": 2
+    },
+    "forms/BIR-Form1601C.hta": {
+      "sha256": "bff6ca139fe7a2177dc8b325dcda779f399a62d05057e51eda8c9404af377342",
+      "title": "BIR Form No. 1601-C",
+      "application_name": "1601C",
+      "hta_version": "1.0",
+      "scripts": [
+        "jq/jquery-1.7.1.min.js",
+        "jq/jquery-ui-1.8.18.custom.min.js",
+        "js/environment.js",
+        "js/string-util.js",
+        "js/aes.js",
+        "js/rijndael.js",
+        "js/lz-string-1.0.2.js",
+        "js/eBIRTools.vbs"
+      ],
+      "stylesheets": [
+        "css/styles.css",
+        "css/print.css"
+      ],
+      "missing_dependencies": [],
+      "inline_script_blocks": 2
+    },
+    "forms/BIR-Form1601Cv2018.hta": {
+      "sha256": "3fb7b4185264e47c9d77b0def4301fa696e7b4424ad30b4e973c7c0b1f759879",
+      "title": "BIR Form No. 1601Cv2018",
+      "application_name": "1601Cv2018",
+      "hta_version": "1.0",
+      "scripts": [
+        "jq/jquery-1.7.1.min.js",
+        "jq/jquery-ui-1.8.18.custom.min.js",
+        "js/environment.js",
+        "js/string-util.js",
+        "js/string-util2014.js",
+        "js/aes.js",
+        "js/rijndael.js",
+        "js/lz-string-1.0.2.js",
+        "js/eBIRTools.vbs"
+      ],
+      "stylesheets": [
+        "css/styles.css",
+        "css/print.css"
+      ],
+      "missing_dependencies": [],
+      "inline_script_blocks": 2
+    },
+    "forms/BIR-Form1601E.hta": {
+      "sha256": "c2a6e6b1e710ee894929ce747e8f418abc2790e2e774cc5b471b15b164861f45",
+      "title": "BIR Form No. 1601-E",
+      "application_name": "1601E",
+      "hta_version": "1.0",
+      "scripts": [
+        "jq/jquery-1.7.1.min.js",
+        "jq/jquery-ui-1.8.18.custom.min.js",
+        "js/environment.js",
+        "js/string-util.js",
+        "js/aes.js",
+        "js/rijndael.js",
+        "js/lz-string-1.0.2.js",
+        "js/eBIRTools.vbs"
+      ],
+      "stylesheets": [
+        "css/styles.css",
+        "css/print.css"
+      ],
+      "missing_dependencies": [],
+      "inline_script_blocks": 2
+    },
+    "forms/BIR-Form1601EQ.hta": {
+      "sha256": "cd56bf18d1da2127d578af611fe8005fe49913a65781bb603b22b31bbe548b96",
+      "title": "BIR Form No. 1601-EQ",
+      "application_name": "1601EQ",
+      "hta_version": "1.0",
+      "scripts": [
+        "jq/jquery-1.7.1.min.js",
+        "jq/jquery-ui-1.8.18.custom.min.js",
+        "js/environment.js",
+        "js/string-util.js",
+        "js/aes.js",
+        "js/rijndael.js",
+        "js/lz-string-1.0.2.js",
+        "js/eBIRTools.vbs",
+        "js/lz-string-1.3.4.js",
+        "js/json3.min.js",
+        "js/bir-formatter.js",
+        "js/formatter/SoapFormat/1601EQ-SoapFormat.js",
+        "js/formatter/forms/1601EQ.js",
+        "js/formatter/string-util2014.js",
+        "js/api-environment.js"
+      ],
+      "stylesheets": [
+        "css/styles.css",
+        "css/print.css"
+      ],
+      "missing_dependencies": [
+        "js/lz-string-1.3.4.js",
+        "js/json3.min.js",
+        "js/bir-formatter.js",
+        "js/formatter/SoapFormat/1601EQ-SoapFormat.js",
+        "js/formatter/forms/1601EQ.js",
+        "js/formatter/string-util2014.js",
+        "js/api-environment.js"
+      ],
+      "inline_script_blocks": 1
+    },
+    "forms/BIR-Form1601F.hta": {
+      "sha256": "60af196eb648a7e8b1f8f6b6276e12b20b43447b4450844ed61072315ae5f50c",
+      "title": "BIR Form No. 1601-F",
+      "application_name": "1601F",
+      "hta_version": "1.0",
+      "scripts": [
+        "jq/jquery-1.7.1.min.js",
+        "jq/jquery-ui-1.8.18.custom.min.js",
+        "js/environment.js",
+        "js/string-util.js",
+        "js/aes.js",
+        "js/rijndael.js",
+        "js/lz-string-1.0.2.js",
+        "js/eBIRTools.vbs",
+        "jq/jquery-1.7.1.min.js",
+        "jq/jquery-ui-1.8.18.custom.min.js"
+      ],
+      "stylesheets": [
+        "css/styles.css",
+        "css/print.css"
+      ],
+      "missing_dependencies": [],
+      "inline_script_blocks": 2
+    },
+    "forms/BIR-Form1601FQ.hta": {
+      "sha256": "4243225a9d19a3962388adb102164c439984af852cf555081832a076737690d3",
+      "title": "BIR Form No. 1601-FQ",
+      "application_name": "1601FQ",
+      "hta_version": "1.0",
+      "scripts": [
+        "jq/jquery-1.7.1.min.js",
+        "jq/jquery-ui-1.8.18.custom.min.js",
+        "js/environment.js",
+        "js/string-util.js",
+        "js/string-util2014.js",
+        "js/aes.js",
+        "js/rijndael.js",
+        "js/lz-string-1.0.2.js",
+        "js/eBIRTools.vbs",
+        "jq/jquery-1.7.1.min.js",
+        "jq/jquery-ui-1.8.18.custom.min.js"
+      ],
+      "stylesheets": [
+        "css/styles.css",
+        "css/print.css"
+      ],
+      "missing_dependencies": [],
+      "inline_script_blocks": 2
+    },
+    "forms/BIR-Form1602.hta": {
+      "sha256": "5e47d6b6e5a860533489d1208d39d589f309486ebc68469a6eb1b179913d4d8f",
+      "title": "BIR Form No. 1602",
+      "application_name": "1602",
+      "hta_version": "1.0",
+      "scripts": [
+        "jq/jquery-1.7.1.min.js",
+        "jq/jquery-ui-1.8.18.custom.min.js",
+        "js/environment.js",
+        "js/string-util.js",
+        "js/aes.js",
+        "js/rijndael.js",
+        "js/lz-string-1.0.2.js",
+        "js/eBIRTools.vbs"
+      ],
+      "stylesheets": [
+        "css/styles.css",
+        "css/print.css"
+      ],
+      "missing_dependencies": [],
+      "inline_script_blocks": 2
+    },
+    "forms/BIR-Form1602Qv2018.hta": {
+      "sha256": "898f83932a3e85f39b9efc6ac0c148c3a1a05d00e5feab843e15360d6465cd2e",
+      "title": "BIR Form No. 1602Qv2018",
+      "application_name": "1602Qv2018",
+      "hta_version": "1.0",
+      "scripts": [
+        "jq/jquery-1.7.1.min.js",
+        "jq/jquery-ui-1.8.18.custom.min.js",
+        "js/environment.js",
+        "js/string-util.js",
+        "js/aes.js",
+        "js/rijndael.js",
+        "js/lz-string-1.0.2.js",
+        "js/eBIRTools.vbs",
+        "js/tax-rate-helper.js"
+      ],
+      "stylesheets": [
+        "css/styles.css",
+        "css/print.css"
+      ],
+      "missing_dependencies": [
+        "js/tax-rate-helper.js"
+      ],
+      "inline_script_blocks": 2
+    },
+    "forms/BIR-Form1603.hta": {
+      "sha256": "43e03cfa82701b3a585e031078c44fde58359be1afcc7bd565aaa05aa553e96a",
+      "title": "BIR Form No. 1603",
+      "application_name": "1603",
+      "hta_version": "1.0",
+      "scripts": [
+        "jq/jquery-1.7.1.min.js",
+        "jq/jquery-ui-1.8.18.custom.min.js",
+        "js/environment.js",
+        "js/string-util.js",
+        "js/aes.js",
+        "js/rijndael.js",
+        "js/lz-string-1.0.2.js",
+        "js/eBIRTools.vbs"
+      ],
+      "stylesheets": [
+        "css/styles.css",
+        "css/print.css"
+      ],
+      "missing_dependencies": [],
+      "inline_script_blocks": 3
+    },
+    "forms/BIR-Form1603Qv2018.hta": {
+      "sha256": "823e4f7f06efc12326062da2565241d9c685db5fd82d8c04343e6dba301fa697",
+      "title": "BIR Form No. 1603Qv2018",
+      "application_name": "1603Qv2018",
+      "hta_version": "1.0",
+      "scripts": [
+        "jq/jquery-1.7.1.min.js",
+        "jq/jquery-ui-1.8.18.custom.min.js",
+        "js/environment.js",
+        "js/string-util.js",
+        "js/aes.js",
+        "js/rijndael.js",
+        "js/lz-string-1.0.2.js",
+        "js/eBIRTools.vbs",
+        "js/tax-rate-helper.js"
+      ],
+      "stylesheets": [
+        "css/styles.css",
+        "css/print.css"
+      ],
+      "missing_dependencies": [
+        "js/tax-rate-helper.js"
+      ],
+      "inline_script_blocks": 3
+    },
+    "forms/BIR-Form1604C.hta": {
+      "sha256": "cdb42a910eb6763eafb7798157b3a42f9f41c4d0e05a6240551c3b4c2a6924c6",
+      "title": "BIR Form No. 1604-C",
+      "application_name": "1604C",
+      "hta_version": "1.0",
+      "scripts": [
+        "jq/jquery-1.7.1.min.js",
+        "jq/jquery-ui-1.8.18.custom.min.js",
+        "js/environment.js",
+        "js/string-util.js",
+        "js/string-util2014.js",
+        "js/aes.js",
+        "js/lz-string-1.0.2.js",
+        "js/rijndael.js",
+        "js/lz-string-1.0.2.js",
+        "js/eBIRTools.vbs"
+      ],
+      "stylesheets": [
+        "css/styles.css",
+        "css/print.css"
+      ],
+      "missing_dependencies": [],
+      "inline_script_blocks": 2
+    },
+    "forms/BIR-Form1604CF.hta": {
+      "sha256": "a65e60b5448e1edae1a996ec16973e89abc520fe3db513f13a3cda69b142804c",
+      "title": "BIR Form No. 1604-CF",
+      "application_name": "1604CF",
+      "hta_version": "1.0",
+      "scripts": [
+        "jq/jquery-1.7.1.min.js",
+        "jq/jquery-ui-1.8.18.custom.min.js",
+        "js/environment.js",
+        "js/string-util.js",
+        "js/aes.js",
+        "js/lz-string-1.0.2.js",
+        "js/rijndael.js",
+        "js/lz-string-1.0.2.js",
+        "js/eBIRTools.vbs"
+      ],
+      "stylesheets": [
+        "css/styles.css",
+        "css/print.css"
+      ],
+      "missing_dependencies": [],
+      "inline_script_blocks": 2
+    },
+    "forms/BIR-Form1604E.hta": {
+      "sha256": "7f2f5edda67dfe8e297e26d3d6621a760d69b70c849a7bc5ef687aa4c4120f6e",
+      "title": "BIR Form No. 1604-E",
+      "application_name": "1604E",
+      "hta_version": "1.0",
+      "scripts": [
+        "jq/jquery-1.7.1.min.js",
+        "jq/jquery-ui-1.8.18.custom.min.js",
+        "js/environment.js",
+        "js/string-util.js",
+        "js/aes.js",
+        "js/lz-string-1.0.2.js",
+        "js/rijndael.js",
+        "js/lz-string-1.0.2.js",
+        "js/eBIRTools.vbs"
+      ],
+      "stylesheets": [
+        "css/styles.css",
+        "css/print.css"
+      ],
+      "missing_dependencies": [],
+      "inline_script_blocks": 2
+    },
+    "forms/BIR-Form1604Ev2018.hta": {
+      "sha256": "8e100c0457c6050dfcaeeddb0b7962443071433a5cd7b6218217d7a5288a0be8",
+      "title": "BIR Form No. 1604Ev2018",
+      "application_name": "1604Ev2018",
+      "hta_version": "1.0",
+      "scripts": [
+        "jq/jquery-1.7.1.min.js",
+        "jq/jquery-ui-1.8.18.custom.min.js",
+        "js/environment.js",
+        "js/string-util.js",
+        "js/string-util2014.js",
+        "js/aes.js",
+        "js/lz-string-1.0.2.js",
+        "js/rijndael.js",
+        "js/lz-string-1.0.2.js",
+        "js/eBIRTools.vbs"
+      ],
+      "stylesheets": [
+        "css/styles.css",
+        "css/print.css"
+      ],
+      "missing_dependencies": [],
+      "inline_script_blocks": 2
+    },
+    "forms/BIR-Form1604F.hta": {
+      "sha256": "e6bf54d0fdffac4a459ceb4ff66f7afdaec10eec15f9b0e53501f66142758741",
+      "title": "BIR Form No. 1604-F",
+      "application_name": "1604F",
+      "hta_version": "1.0",
+      "scripts": [
+        "jq/jquery-1.7.1.min.js",
+        "jq/jquery-ui-1.8.18.custom.min.js",
+        "js/environment.js",
+        "js/string-util.js",
+        "js/string-util2014.js",
+        "js/aes.js",
+        "js/lz-string-1.0.2.js",
+        "js/rijndael.js",
+        "js/lz-string-1.0.2.js",
+        "js/eBIRTools.vbs"
+      ],
+      "stylesheets": [
+        "css/styles.css",
+        "css/print.css"
+      ],
+      "missing_dependencies": [],
+      "inline_script_blocks": 2
+    },
+    "forms/BIR-Form1606.hta": {
+      "sha256": "e7c7831e29cdd110a5cc325cb0bed7ee620684c21a483d59b25555c41d378a80",
+      "title": "BIR Form No. 1606",
+      "application_name": "1606",
+      "hta_version": "1.0",
+      "scripts": [
+        "jq/jquery-1.7.1.min.js",
+        "jq/jquery-ui-1.8.18.custom.min.js",
+        "js/environment.js",
+        "js/string-util.js",
+        "js/aes.js",
+        "js/rijndael.js",
+        "js/lz-string-1.0.2.js",
+        "js/eBIRTools.vbs"
+      ],
+      "stylesheets": [
+        "css/styles.css",
+        "css/print.css"
+      ],
+      "missing_dependencies": [],
+      "inline_script_blocks": 2
+    },
+    "forms/BIR-Form1621.hta": {
+      "sha256": "30b2ee1fbda179cc1ed5b402eede7f317ef44ae96c04ad70542409ac29fd9e36",
+      "title": "BIR Form No. 1621",
+      "application_name": "1621",
+      "hta_version": "1.0",
+      "scripts": [
+        "jq/jquery-1.7.1.min.js",
+        "jq/jquery-ui-1.8.18.custom.min.js",
+        "js/environment.js",
+        "js/string-util.js",
+        "js/string-util2014.js",
+        "js/aes.js",
+        "js/lz-string-1.0.2.js",
+        "js/rijndael.js",
+        "js/lz-string-1.0.2.js",
+        "js/eBIRTools.vbs",
+        "js/tax-rate-helper.js"
+      ],
+      "stylesheets": [
+        "css/styles.css",
+        "css/print.css"
+      ],
+      "missing_dependencies": [
+        "js/tax-rate-helper.js"
+      ],
+      "inline_script_blocks": 2
+    },
+    "forms/BIR-Form1700.hta": {
+      "sha256": "d025bb0743123dc0dfdf8251da18c42cc7827c5c571f5b06ff8f39a62f8437ba",
+      "title": "BIR Form No. 1700",
+      "application_name": "1700",
+      "hta_version": "4.7",
+      "scripts": [
+        "jq/jquery-1.7.1.min.js",
+        "js/lib/jquery-1.11.0.js",
+        "jq/jquery-ui-1.8.18.custom.min.js",
+        "js/environment.js",
+        "js/string-util.js",
+        "js/string-util2014.js",
+        "js/aes.js",
+        "js/jxboxV2.js",
+        "js/rijndael.js",
+        "js/lib/1700.js",
+        "js/lz-string-1.0.2.js",
+        "js/eBIRTools.vbs"
+      ],
+      "stylesheets": [
+        "css/styles.css",
+        "css/style2014.css",
+        "css/print.css"
+      ],
+      "missing_dependencies": [],
+      "inline_script_blocks": 7
+    },
+    "forms/BIR-Form1700v2018.hta": {
+      "sha256": "7288b63d63c98e0beabe43793c3549ae310317661ec6cc4d98c985e95c398a2d",
+      "title": "BIR Form No. 1700v2018",
+      "application_name": "1700v2018",
+      "hta_version": "1.0",
+      "scripts": [
+        "jq/jquery-1.7.1.min.js",
+        "jq/jquery-ui-1.8.18.custom.min.js",
+        "js/environment.js",
+        "js/string-util.js",
+        "js/string-util2014.js",
+        "js/aes.js",
+        "js/rijndael.js",
+        "js/lz-string-1.0.2.js",
+        "js/eBIRTools.vbs"
+      ],
+      "stylesheets": [
+        "css/styles.css",
+        "css/print.css"
+      ],
+      "missing_dependencies": [],
+      "inline_script_blocks": 2
+    },
+    "forms/BIR-Form1701.hta": {
+      "sha256": "8832169627811b00a5a1bbd63f1a396e04715fd63c8a2c6ff6eb7c5845b7d89f",
+      "title": "BIR Form No. 1701",
+      "application_name": "1701",
+      "hta_version": "4.7",
+      "scripts": [
+        "jq/jquery-1.7.1.min.js",
+        "js/lib/jquery-1.11.0.js",
+        "jq/jquery-ui-1.8.18.custom.min.js",
+        "js/environment.js",
+        "js/string-util.js",
+        "js/aes.js",
+        "js/rijndael.js",
+        "js/jxboxV2.js",
+        "js/gserializer.js",
+        "js/string-util2014.js",
+        "js/lib/1701.js",
+        "js/lz-string-1.0.2.js",
+        "js/eBIRTools.vbs"
+      ],
+      "stylesheets": [
+        "css/styles.css",
+        "css/style2014.css",
+        "css/print.css"
+      ],
+      "missing_dependencies": [
+        "js/gserializer.js"
+      ],
+      "inline_script_blocks": 12
+    },
+    "forms/BIR-Form1701A.hta": {
+      "sha256": "c85f8f1e13e4752549cb2886bc598a0be4cf8b67a709d9a913d09d22f087de1b",
+      "title": "BIR Form No. 1701A",
+      "application_name": "1701A",
+      "hta_version": "4.7",
+      "scripts": [
+        "jq/jquery-1.7.1.min.js",
+        "js/lib/jquery-1.11.0.js",
+        "jq/jquery-ui-1.8.18.custom.min.js",
+        "js/environment.js",
+        "js/string-util.js",
+        "js/aes.js",
+        "js/rijndael.js",
+        "js/gserializer.js",
+        "js/string-util2014.js",
+        "js/lib/1701.js",
+        "js/lz-string-1.0.2.js",
+        "js/eBIRTools.vbs"
+      ],
+      "stylesheets": [
+        "css/styles.css",
+        "css/print.css"
+      ],
+      "missing_dependencies": [
+        "js/gserializer.js"
+      ],
+      "inline_script_blocks": 2
+    },
+    "forms/BIR-Form1701MS.hta": {
+      "sha256": "5737ddbd86d467457b613cc1f016c51d1add7fa91b396f6af88d213bccc48202",
+      "title": "BIR Form No. 1701MS",
+      "application_name": "1701MS",
+      "hta_version": "4.7",
+      "scripts": [
+        "jq/jquery-1.7.1.min.js",
+        "jq/jquery-ui-1.8.18.custom.min.js",
+        "js/environment.js",
+        "js/string-util.js",
+        "js/string-util2014.js",
+        "js/aes.js",
+        "js/rijndael.js",
+        "js/jxboxV2.js",
+        "js/lib/2200C.js",
+        "js/lz-string-1.0.2.js",
+        "js/eBIRTools.vbs"
+      ],
+      "stylesheets": [
+        "css/styles.css",
+        "css/style2014.css",
+        "css/print.css"
+      ],
+      "missing_dependencies": [
+        "js/lib/2200C.js"
+      ],
+      "inline_script_blocks": 2
+    },
+    "forms/BIR-Form1701Q.hta": {
+      "sha256": "d0caa7ff1f6726c76d875abbc4e626b2468c9dd4bd8ddd734ef3137a8a1d8afb",
+      "title": "BIR Form No. 1701Q",
+      "application_name": "1701Q",
+      "hta_version": "1.0",
+      "scripts": [
+        "jq/jquery-1.7.1.min.js",
+        "jq/jquery-ui-1.8.18.custom.min.js",
+        "js/environment.js",
+        "js/string-util.js",
+        "js/aes.js",
+        "js/rijndael.js",
+        "js/lz-string-1.0.2.js",
+        "js/eBIRTools.vbs"
+      ],
+      "stylesheets": [
+        "css/styles.css",
+        "css/print.css"
+      ],
+      "missing_dependencies": [],
+      "inline_script_blocks": 2
+    },
+    "forms/BIR-Form1701Qv2018.hta": {
+      "sha256": "5f164dde6154b96f28e23656ed2ef29406010ee3f94333e88ea6eb107fe589a0",
+      "title": "BIR Form No. 1701Qv2018",
+      "application_name": "1701Qv2018",
+      "hta_version": "1.0",
+      "scripts": [
+        "jq/jquery-1.7.1.min.js",
+        "jq/jquery-ui-1.8.18.custom.min.js",
+        "js/environment.js",
+        "js/string-util.js",
+        "js/string-util2014.js",
+        "js/aes.js",
+        "js/rijndael.js",
+        "js/lz-string-1.0.2.js",
+        "js/eBIRTools.vbs"
+      ],
+      "stylesheets": [
+        "css/styles.css",
+        "css/print.css"
+      ],
+      "missing_dependencies": [],
+      "inline_script_blocks": 2
+    },
+    "forms/BIR-Form1701v2018.hta": {
+      "sha256": "debd0a5716ea8b8a352247e7008a973d77ecd2ca6936b365c6efa3b0e9cf308b",
+      "title": "BIR Form No. 1701v2018",
+      "application_name": "1701v2018",
+      "hta_version": "1.0",
+      "scripts": [
+        "jq/jquery-1.7.1.min.js",
+        "jq/jquery-ui-1.8.18.custom.min.js",
+        "js/environment.js",
+        "js/string-util.js",
+        "js/string-util2014.js",
+        "js/aes.js",
+        "js/rijndael.js",
+        "js/lz-string-1.0.2.js",
+        "js/eBIRTools.vbs"
+      ],
+      "stylesheets": [
+        "css/styles.css",
+        "css/print.css"
+      ],
+      "missing_dependencies": [],
+      "inline_script_blocks": 2
+    },
+    "forms/BIR-Form1702EX.hta": {
+      "sha256": "5dbc2357e5c46b82688396cc0eeaf48aeb76e6ceda95e5e38577fe3d0ce91960",
+      "title": "BIR Form No. 1702EX",
+      "application_name": "1702EX",
+      "hta_version": "4.7",
+      "scripts": [
+        "jq/jquery-1.7.1.min.js",
+        "jq/jquery-1.11.0.js",
+        "jq/jquery-ui-1.8.18.custom.min.js",
+        "js/environment.js",
+        "js/string-util.js",
+        "js/string-util2014.js",
+        "js/aes.js",
+        "js/rijndael.js",
+        "js/jxboxV2.js",
+        "js/lib/1702EX.js",
+        "js/lz-string-1.0.2.js",
+        "js/eBIRTools.vbs"
+      ],
+      "stylesheets": [
+        "css/styles.css",
+        "css/style2014.css",
+        "css/print.css"
+      ],
+      "missing_dependencies": [],
+      "inline_script_blocks": 30
+    },
+    "forms/BIR-Form1702EXv2018.hta": {
+      "sha256": "6bad84a723c0e4bd8ec3e2488f11946bd9d5117f0c7bfba7231edfb68e71d641",
+      "title": "BIR Form No. 1702EXv2018",
+      "application_name": "1702EXv2018",
+      "hta_version": "4.7",
+      "scripts": [
+        "jq/jquery-1.7.1.min.js",
+        "jq/jquery-1.11.0.js",
+        "jq/jquery-ui-1.8.18.custom.min.js",
+        "js/environment.js",
+        "js/string-util.js",
+        "js/string-util2014.js",
+        "js/aes.js",
+        "js/rijndael.js",
+        "js/jxboxV2.js",
+        "js/lib/1702EX.js",
+        "js/lz-string-1.0.2.js",
+        "js/eBIRTools.vbs",
+        "js/tax-rate-helper.js"
+      ],
+      "stylesheets": [
+        "css/styles.css",
+        "css/style2014.css",
+        "css/print.css"
+      ],
+      "missing_dependencies": [
+        "js/tax-rate-helper.js"
+      ],
+      "inline_script_blocks": 14
+    },
+    "forms/BIR-Form1702EXv2018C.hta": {
+      "sha256": "1c2f990e08d6ad02bd488bffdcd1b6cf1666d3c173ed0b5617f5faa0c546a7ed",
+      "title": "BIR Form No. 1702EXv2018",
+      "application_name": "1702EXv2018",
+      "hta_version": "4.7",
+      "scripts": [
+        "jq/jquery-1.7.1.min.js",
+        "jq/jquery-1.11.0.js",
+        "jq/jquery-ui-1.8.18.custom.min.js",
+        "js/environment.js",
+        "js/string-util.js",
+        "js/string-util2014.js",
+        "js/aes.js",
+        "js/rijndael.js",
+        "js/jxboxV2.js",
+        "js/lib/1702EX.js",
+        "js/lz-string-1.0.2.js",
+        "js/eBIRTools.vbs"
+      ],
+      "stylesheets": [
+        "css/styles.css",
+        "css/style2014.css",
+        "css/print.css"
+      ],
+      "missing_dependencies": [],
+      "inline_script_blocks": 14
+    },
+    "forms/BIR-Form1702MX.hta": {
+      "sha256": "204a34390bc3e566eeef931cccc5b1d1785db658218e7c3bef6c8c3523f994e7",
+      "title": "BIR Form No. 1702MX",
+      "application_name": "1702MX",
+      "hta_version": "4.7",
+      "scripts": [
+        "jq/jquery-1.7.1.min.js",
+        "jq/jquery-1.11.0.js",
+        "jq/jquery-ui-1.8.18.custom.min.js",
+        "js/environment.js",
+        "js/string-util.js",
+        "js/string-util2014.js",
+        "js/aes.js",
+        "js/rijndael.js",
+        "js/jxboxV2.js",
+        "js/lib/1702MX.js",
+        "js/lz-string-1.0.2.js",
+        "js/eBIRTools.vbs"
+      ],
+      "stylesheets": [
+        "css/styles.css",
+        "css/style2014.css",
+        "css/print.css"
+      ],
+      "missing_dependencies": [],
+      "inline_script_blocks": 8
+    },
+    "forms/BIR-Form1702MXv2018.hta": {
+      "sha256": "3c802280ae660e2cdf64eb8fd16494f5e2c1eaaed1894c9b976a85160a5bb0b0",
+      "title": "BIR Form No. 1702MXv2018",
+      "application_name": "1702MXv2018",
+      "hta_version": "4.7",
+      "scripts": [
+        "jq/jquery-1.7.1.min.js",
+        "jq/jquery-1.11.0.js",
+        "jq/jquery-ui-1.8.18.custom.min.js",
+        "js/environment.js",
+        "js/string-util.js",
+        "js/string-util2014.js",
+        "js/aes.js",
+        "js/rijndael.js",
+        "js/gserializer.js",
+        "js/lib/1702MX.js",
+        "js/lib/test.js",
+        "js/lib/jquery-1.11.0.js",
+        "js/jxboxprinting.js",
+        "js/lz-string-1.0.2.js",
+        "js/eBIRTools.vbs"
+      ],
+      "stylesheets": [
+        "css/styles.css",
+        "css/style2014.css",
+        "css/print.css"
+      ],
+      "missing_dependencies": [
+        "js/gserializer.js",
+        "js/lib/test.js",
+        "js/jxboxprinting.js"
+      ],
+      "inline_script_blocks": 8
+    },
+    "forms/BIR-Form1702MXv2018C.hta": {
+      "sha256": "34dbe79d6bf934718e86c73d8fdea4eb4a4e6a86c939ab0ecf231282d744acf7",
+      "title": "BIR Form No. 1702MXv2018",
+      "application_name": "1702MXv2018",
+      "hta_version": "4.7",
+      "scripts": [
+        "jq/jquery-1.7.1.min.js",
+        "jq/jquery-1.11.0.js",
+        "jq/jquery-ui-1.8.18.custom.min.js",
+        "js/environment.js",
+        "js/string-util.js",
+        "js/string-util2014.js",
+        "js/aes.js",
+        "js/rijndael.js",
+        "js/gserializer.js",
+        "js/lib/1702MX.js",
+        "js/lib/test.js",
+        "js/lib/jquery-1.11.0.js",
+        "js/jxboxprinting.js",
+        "js/lz-string-1.0.2.js",
+        "js/eBIRTools.vbs"
+      ],
+      "stylesheets": [
+        "css/styles.css",
+        "css/style2014.css",
+        "css/print.css"
+      ],
+      "missing_dependencies": [
+        "js/gserializer.js",
+        "js/lib/test.js",
+        "js/jxboxprinting.js"
+      ],
+      "inline_script_blocks": 8
+    },
+    "forms/BIR-Form1702MXv2018Cxx.hta": {
+      "sha256": "6df5242d3155fb9038878c0077e5a6275acb2d9e62e380c61d3b9e167f3319c6",
+      "title": "BIR Form No. 1702MXv2018",
+      "application_name": "1702MXv2018",
+      "hta_version": "4.7",
+      "scripts": [
+        "jq/jquery-1.7.1.min.js",
+        "jq/jquery-1.11.0.js",
+        "jq/jquery-ui-1.8.18.custom.min.js",
+        "js/environment.js",
+        "js/string-util.js",
+        "js/string-util2014.js",
+        "js/aes.js",
+        "js/rijndael.js",
+        "js/gserializer.js",
+        "js/lib/1702MX.js",
+        "js/lib/test.js",
+        "js/lib/jquery-1.11.0.js",
+        "js/jxboxprinting.js",
+        "js/lz-string-1.0.2.js",
+        "js/eBIRTools.vbs"
+      ],
+      "stylesheets": [
+        "css/styles.css",
+        "css/style2014.css",
+        "css/print.css"
+      ],
+      "missing_dependencies": [
+        "js/gserializer.js",
+        "js/lib/test.js",
+        "js/jxboxprinting.js"
+      ],
+      "inline_script_blocks": 8
+    },
+    "forms/BIR-Form1702Q.hta": {
+      "sha256": "56f6c3bad1356522f9fcf864ad9752999484e5c0072f10699824451b4af6d7c3",
+      "title": "BIR Form No. 1702Q",
+      "application_name": "1702Q",
+      "hta_version": "1.0",
+      "scripts": [
+        "jq/jquery-1.7.1.min.js",
+        "jq/jquery-ui-1.8.18.custom.min.js",
+        "js/environment.js",
+        "js/string-util.js",
+        "js/aes.js",
+        "js/rijndael.js",
+        "js/lz-string-1.0.2.js",
+        "js/eBIRTools.vbs"
+      ],
+      "stylesheets": [
+        "css/styles.css",
+        "css/print.css"
+      ],
+      "missing_dependencies": [],
+      "inline_script_blocks": 2
+    },
+    "forms/BIR-Form1702Qv2008C.hta": {
+      "sha256": "ae7b5989d97bbcf861d2e0ff51f14136ed40634b8587aa7a26e3b8ef99c606d6",
+      "title": "BIR Form No. 1702Q",
+      "application_name": "1702Q",
+      "hta_version": "1.0",
+      "scripts": [
+        "jq/jquery-1.7.1.min.js",
+        "jq/jquery-ui-1.8.18.custom.min.js",
+        "js/environment.js",
+        "js/string-util.js",
+        "js/aes.js",
+        "js/rijndael.js",
+        "js/lz-string-1.0.2.js",
+        "js/eBIRTools.vbs"
+      ],
+      "stylesheets": [
+        "css/styles.css",
+        "css/print.css"
+      ],
+      "missing_dependencies": [],
+      "inline_script_blocks": 2
+    },
+    "forms/BIR-Form1702Qv2018C.hta": {
+      "sha256": "7184de87a76401da98da3df38dab9e29f848acf6150b425e36574f0a2443ab01",
+      "title": "BIR Form No. 1702Qv2018",
+      "application_name": "1702Qv2018",
+      "hta_version": "7.9.3.b",
+      "scripts": [
+        "jq/jquery-1.7.1.min.js",
+        "jq/jquery-ui-1.8.18.custom.min.js",
+        "js/environment.js",
+        "js/string-util.js",
+        "js/string-util2014.js",
+        "js/aes.js",
+        "js/rijndael.js",
+        "js/lz-string-1.0.2.js",
+        "js/eBIRTools.vbs"
+      ],
+      "stylesheets": [
+        "css/styles.css",
+        "css/print.css"
+      ],
+      "missing_dependencies": [],
+      "inline_script_blocks": 2
+    },
+    "forms/BIR-Form1702RT.hta": {
+      "sha256": "ad1bb5977a280bb9a2810c2193aa2dd1a8eee4509d33218e478b5646ec7c2b60",
+      "title": "BIR Form No. 1702RT",
+      "application_name": "1702RT",
+      "hta_version": "4.7",
+      "scripts": [
+        "jq/jquery-1.7.1.min.js",
+        "jq/jquery-1.11.0.js",
+        "jq/jquery-ui-1.8.18.custom.min.js",
+        "js/environment.js",
+        "js/string-util.js",
+        "js/string-util2014.js",
+        "js/aes.js",
+        "js/rijndael.js",
+        "js/gserializer.js",
+        "js/jxboxV2.js",
+        "js/lib/1702RT.js",
+        "js/lib/test.js",
+        "js/lib/jquery-1.11.0.js",
+        "js/jxboxprinting.js",
+        "js/lz-string-1.0.2.js",
+        "js/eBIRTools.vbs"
+      ],
+      "stylesheets": [
+        "css/styles.css",
+        "css/style2014.css",
+        "css/print.css"
+      ],
+      "missing_dependencies": [
+        "js/gserializer.js",
+        "js/lib/test.js",
+        "js/jxboxprinting.js"
+      ],
+      "inline_script_blocks": 15
+    },
+    "forms/BIR-Form1702RTv2018.hta": {
+      "sha256": "fdd0db4946a35dc1e07cbfe0d1fad5a25f2c3071ceb72f75426887c5cc3baab2",
+      "title": "BIR Form No. 1702RTv2018",
+      "application_name": "1702RTv2018",
+      "hta_version": "4.7",
+      "scripts": [
+        "jq/jquery-1.7.1.min.js",
+        "jq/jquery-1.11.0.js",
+        "jq/jquery-ui-1.8.18.custom.min.js",
+        "js/environment.js",
+        "js/string-util.js",
+        "js/string-util2014.js",
+        "js/aes.js",
+        "js/rijndael.js",
+        "js/gserializer.js",
+        "js/jxboxV2.js",
+        "js/lib/1702RT.js",
+        "js/lib/test.js",
+        "js/lib/jquery-1.11.0.js",
+        "js/jxboxprinting.js",
+        "js/lz-string-1.0.2.js",
+        "js/eBIRTools.vbs",
+        "js/tax-rate-helper.js"
+      ],
+      "stylesheets": [
+        "css/styles.css",
+        "css/style2014.css",
+        "css/print.css"
+      ],
+      "missing_dependencies": [
+        "js/gserializer.js",
+        "js/lib/test.js",
+        "js/jxboxprinting.js",
+        "js/tax-rate-helper.js"
+      ],
+      "inline_script_blocks": 10
+    },
+    "forms/BIR-Form1702RTv2018C.hta": {
+      "sha256": "fbbaa75784bb054f3658ab0a357ad50b65807c59c437c2d010e69aa1ad64081a",
+      "title": "BIR Form No. 1702RTv2018",
+      "application_name": "1702RTv2018C",
+      "hta_version": "4.7",
+      "scripts": [
+        "jq/jquery-1.7.1.min.js",
+        "jq/jquery-1.11.0.js",
+        "jq/jquery-ui-1.8.18.custom.min.js",
+        "js/environment.js",
+        "js/string-util.js",
+        "js/string-util2014.js",
+        "js/aes.js",
+        "js/rijndael.js",
+        "js/gserializer.js",
+        "js/jxboxV2.js",
+        "js/lib/1702RT.js",
+        "js/lib/test.js",
+        "js/lib/jquery-1.11.0.js",
+        "js/jxboxprinting.js",
+        "js/lz-string-1.0.2.js",
+        "js/eBIRTools.vbs"
+      ],
+      "stylesheets": [
+        "css/styles.css",
+        "css/style2014.css",
+        "css/print.css"
+      ],
+      "missing_dependencies": [
+        "js/gserializer.js",
+        "js/lib/test.js",
+        "js/jxboxprinting.js"
+      ],
+      "inline_script_blocks": 10
+    },
+    "forms/BIR-Form1704.hta": {
+      "sha256": "f28cd9333086296c83590c75393e225c9fe14967d4225d4dc9757e93b5c57f6f",
+      "title": "BIR Form No. 1704",
+      "application_name": "1704",
+      "hta_version": "1.0",
+      "scripts": [
+        "jq/jquery-1.7.1.min.js",
+        "jq/jquery-ui-1.8.18.custom.min.js",
+        "js/environment.js",
+        "js/string-util.js",
+        "js/aes.js",
+        "js/lz-string-1.0.2.js",
+        "js/rijndael.js",
+        "js/lz-string-1.0.2.js",
+        "js/eBIRTools.vbs"
+      ],
+      "stylesheets": [
+        "css/styles.css",
+        "css/print.css"
+      ],
+      "missing_dependencies": [],
+      "inline_script_blocks": 2
+    },
+    "forms/BIR-Form1706.hta": {
+      "sha256": "f29a02e0a80fb4a72cc90046e2773d05ac631df2ec06845f4c885eabcabafca1",
+      "title": "BIR Form No. 1706",
+      "application_name": "1706",
+      "hta_version": "1.0",
+      "scripts": [
+        "jq/jquery-1.7.1.min.js",
+        "jq/jquery-ui-1.8.18.custom.min.js",
+        "js/environment.js",
+        "js/string-util.js",
+        "js/aes.js",
+        "js/lz-string-1.0.2.js",
+        "js/rijndael.js",
+        "js/lz-string-1.0.2.js",
+        "js/eBIRTools.vbs"
+      ],
+      "stylesheets": [
+        "css/styles.css",
+        "css/print.css"
+      ],
+      "missing_dependencies": [],
+      "inline_script_blocks": 2
+    },
+    "forms/BIR-Form1707.hta": {
+      "sha256": "66f34ac0ff6ab7f07794bdffa10d4f3074b7b235f712a1f6f1718d950a5c06c7",
+      "title": "BIR Form No. 1707",
+      "application_name": "1707",
+      "hta_version": "1.0",
+      "scripts": [
+        "jq/jquery-1.7.1.min.js",
+        "jq/jquery-ui-1.8.18.custom.min.js",
+        "js/environment.js",
+        "js/string-util.js",
+        "js/aes.js",
+        "js/lz-string-1.0.2.js",
+        "js/rijndael.js",
+        "js/lz-string-1.0.2.js",
+        "js/eBIRTools.vbs"
+      ],
+      "stylesheets": [
+        "css/styles.css",
+        "css/print.css"
+      ],
+      "missing_dependencies": [],
+      "inline_script_blocks": 2
+    },
+    "forms/BIR-Form1707A.hta": {
+      "sha256": "c119206a80a218f5b0cf78e4d9a94ff5f461bb8d8dfb25a262b2b30ed4aa0166",
+      "title": "BIR Form No. 1707A",
+      "application_name": "1707",
+      "hta_version": "1.0",
+      "scripts": [
+        "jq/jquery-1.7.1.min.js",
+        "jq/jquery-ui-1.8.18.custom.min.js",
+        "js/environment.js",
+        "js/string-util.js",
+        "js/aes.js",
+        "js/rijndael.js",
+        "js/lz-string-1.0.2.js",
+        "js/eBIRTools.vbs",
+        "js/string-util2014.js"
+      ],
+      "stylesheets": [
+        "css/styles.css",
+        "css/style2014.css",
+        "css/print.css"
+      ],
+      "missing_dependencies": [],
+      "inline_script_blocks": 2
+    },
+    "forms/BIR-Form1707Av2021.hta": {
+      "sha256": "cd1112c6c14bc338cdd81b19f405bdd788866e0c0164591b968c630feb1b07f1",
+      "title": "BIR Form No. 1707Av2021",
+      "application_name": "1707",
+      "hta_version": "1.0",
+      "scripts": [
+        "jq/jquery-1.7.1.min.js",
+        "jq/jquery-ui-1.8.18.custom.min.js",
+        "js/environment.js",
+        "js/string-util.js",
+        "js/aes.js",
+        "js/rijndael.js",
+        "js/lz-string-1.0.2.js",
+        "js/eBIRTools.vbs",
+        "js/string-util2014.js",
+        "js/tax-rate-helper.js"
+      ],
+      "stylesheets": [
+        "css/styles.css",
+        "css/style2014.css",
+        "css/print.css"
+      ],
+      "missing_dependencies": [
+        "js/tax-rate-helper.js"
+      ],
+      "inline_script_blocks": 3
+    },
+    "forms/BIR-Form1707v2018.hta": {
+      "sha256": "2d995beea0061dfdef2ee74558f2dbf6cedd30c91fc7ac3e18668515dafab158",
+      "title": "BIR Form No. 1707v2018",
+      "application_name": "1707v2018",
+      "hta_version": "4.7",
+      "scripts": [
+        "jq/jquery-1.7.1.min.js",
+        "jq/jquery-1.11.0.js",
+        "jq/jquery-ui-1.8.18.custom.min.js",
+        "js/environment.js",
+        "js/string-util.js",
+        "js/string-util2014.js",
+        "js/aes.js",
+        "js/rijndael.js",
+        "js/jxboxV2.js",
+        "js/lib/2200C.js",
+        "js/lz-string-1.0.2.js",
+        "js/eBIRTools.vbs"
+      ],
+      "stylesheets": [
+        "css/styles.css",
+        "css/style2014.css",
+        "css/print.css"
+      ],
+      "missing_dependencies": [
+        "js/lib/2200C.js"
+      ],
+      "inline_script_blocks": 11
+    },
+    "forms/BIR-Form1707v2021.hta": {
+      "sha256": "a645463cf3bc7a80f0ec96a08796adde33c76ae65c617b3fefdb478e61496cd4",
+      "title": "BIR Form No. 1707v2021",
+      "application_name": "1707v2021",
+      "hta_version": "4.7",
+      "scripts": [
+        "jq/jquery-1.7.1.min.js",
+        "jq/jquery-1.11.0.js",
+        "jq/jquery-ui-1.8.18.custom.min.js",
+        "js/environment.js",
+        "js/string-util.js",
+        "js/string-util2014.js",
+        "js/aes.js",
+        "js/rijndael.js",
+        "js/jxboxV2.js",
+        "js/lib/2200C.js",
+        "js/lz-string-1.0.2.js",
+        "js/eBIRTools.vbs",
+        "js/tax-rate-helper.js"
+      ],
+      "stylesheets": [
+        "css/styles.css",
+        "css/style2014.css",
+        "css/print.css"
+      ],
+      "missing_dependencies": [
+        "js/lib/2200C.js",
+        "js/tax-rate-helper.js"
+      ],
+      "inline_script_blocks": 11
+    },
+    "forms/BIR-Form1800.hta": {
+      "sha256": "0b69656574f35c1b13c0cca56fc59670ace3525453ae3d765c2a0991197a81ed",
+      "title": "BIR Form No. 1800",
+      "application_name": "1800",
+      "hta_version": "1.0",
+      "scripts": [
+        "jq/jquery-1.7.1.min.js",
+        "jq/jquery-ui-1.8.18.custom.min.js",
+        "js/environment.js",
+        "js/string-util.js",
+        "js/aes.js",
+        "js/lz-string-1.0.2.js",
+        "js/rijndael.js",
+        "js/lz-string-1.0.2.js",
+        "js/eBIRTools.vbs"
+      ],
+      "stylesheets": [
+        "css/styles.css",
+        "css/print.css"
+      ],
+      "missing_dependencies": [],
+      "inline_script_blocks": 2
+    },
+    "forms/BIR-Form1800v2018.hta": {
+      "sha256": "58b1ff5157f6d66f1ed1252c696d13ab9afe090bae0c1793faf42ef104159d37",
+      "title": "BIR Form No. 1800v2018",
+      "application_name": "1800v2018",
+      "hta_version": "1.0",
+      "scripts": [
+        "jq/jquery-1.7.1.min.js",
+        "jq/jquery-ui-1.8.18.custom.min.js",
+        "js/environment.js",
+        "js/string-util.js",
+        "js/string-util2014.js",
+        "js/aes.js",
+        "js/lz-string-1.0.2.js",
+        "js/rijndael.js",
+        "js/lz-string-1.0.2.js",
+        "js/eBIRTools.vbs",
+        "js/tax-rate-helper.js"
+      ],
+      "stylesheets": [
+        "css/styles.css",
+        "css/print.css"
+      ],
+      "missing_dependencies": [
+        "js/tax-rate-helper.js"
+      ],
+      "inline_script_blocks": 2
+    },
+    "forms/BIR-Form1801.hta": {
+      "sha256": "c102cf9b62a73dbe491e6e181e33384668d5fd8152e49b4005ee4563f4cb908b",
+      "title": "BIR Form No. 1801",
+      "application_name": "1801",
+      "hta_version": "1.0",
+      "scripts": [
+        "jq/jquery-1.7.1.min.js",
+        "jq/jquery-ui-1.8.18.custom.min.js",
+        "js/environment.js",
+        "js/string-util.js",
+        "js/aes.js",
+        "js/lz-string-1.0.2.js",
+        "js/rijndael.js",
+        "js/lz-string-1.0.2.js",
+        "js/eBIRTools.vbs"
+      ],
+      "stylesheets": [
+        "css/styles.css",
+        "css/print.css"
+      ],
+      "missing_dependencies": [],
+      "inline_script_blocks": 2
+    },
+    "forms/BIR-Form1801v2018.hta": {
+      "sha256": "d19c4ebe40ed109094ef43687ed5486a003bd11a67a251bdd5545a41c2f46d8d",
+      "title": "BIR Form No. 1801v2018",
+      "application_name": "1801v2018",
+      "hta_version": "1.0",
+      "scripts": [
+        "jq/jquery-1.7.1.min.js",
+        "jq/jquery-ui-1.8.18.custom.min.js",
+        "js/environment.js",
+        "js/string-util.js",
+        "js/string-util2014.js",
+        "js/aes.js",
+        "js/lz-string-1.0.2.js",
+        "js/rijndael.js",
+        "js/lz-string-1.0.2.js",
+        "js/eBIRTools.vbs",
+        "js/tax-rate-helper.js"
+      ],
+      "stylesheets": [
+        "css/styles.css",
+        "css/print.css"
+      ],
+      "missing_dependencies": [
+        "js/tax-rate-helper.js"
+      ],
+      "inline_script_blocks": 2
+    },
+    "forms/BIR-Form2000.hta": {
+      "sha256": "8b80e909f7f70785dbdf002488b2c14b0a4a2fca7b3c783b68cdd5a59f3ca475",
+      "title": "BIR Form No. 2000",
+      "application_name": "2000",
+      "hta_version": "1.0",
+      "scripts": [
+        "jq/jquery-1.7.1.min.js",
+        "jq/jquery-ui-1.8.18.custom.min.js",
+        "js/environment.js",
+        "js/string-util.js",
+        "js/aes.js",
+        "js/lz-string-1.0.2.js",
+        "js/rijndael.js",
+        "js/lz-string-1.0.2.js",
+        "js/eBIRTools.vbs"
+      ],
+      "stylesheets": [
+        "css/styles.css",
+        "css/print.css"
+      ],
+      "missing_dependencies": [],
+      "inline_script_blocks": 2
+    },
+    "forms/BIR-Form2000OT.hta": {
+      "sha256": "cb989655cc9161a7791e95a6a535604d16419bb38cfc69411d64a32b23ab19f6",
+      "title": "BIR Form No. 2000-OT",
+      "application_name": "2000OT",
+      "hta_version": "1.0",
+      "scripts": [
+        "jq/jquery-1.7.1.min.js",
+        "jq/jquery-ui-1.8.18.custom.min.js",
+        "js/environment.js",
+        "js/string-util.js",
+        "js/aes.js",
+        "js/lz-string-1.0.2.js",
+        "js/rijndael.js",
+        "js/lz-string-1.0.2.js",
+        "js/eBIRTools.vbs"
+      ],
+      "stylesheets": [
+        "css/styles.css",
+        "css/print.css"
+      ],
+      "missing_dependencies": [],
+      "inline_script_blocks": 2
+    },
+    "forms/BIR-Form2000OTv2018.hta": {
+      "sha256": "e44331e99dd8edb8d6fd01529f82e5d6612a9640307c7421b8be397ac87ebe33",
+      "title": "BIR Form No. 2000OTv2018",
+      "application_name": "2000OTv2018",
+      "hta_version": "1.0",
+      "scripts": [
+        "jq/jquery-1.7.1.min.js",
+        "jq/jquery-ui-1.8.18.custom.min.js",
+        "js/environment.js",
+        "js/string-util.js",
+        "js/string-util2014.js",
+        "js/aes.js",
+        "js/lz-string-1.0.2.js",
+        "js/rijndael.js",
+        "js/lz-string-1.0.2.js",
+        "js/eBIRTools.vbs"
+      ],
+      "stylesheets": [
+        "css/styles.css",
+        "css/print.css"
+      ],
+      "missing_dependencies": [],
+      "inline_script_blocks": 2
+    },
+    "forms/BIR-Form2000v2018.hta": {
+      "sha256": "43aa6fcdba1ffb40bebb3dc1e8509a87b84799b38937bb6bc57273e9021c4a7b",
+      "title": "BIR Form No. 2000v2018",
+      "application_name": "2000v2018",
+      "hta_version": "1.0",
+      "scripts": [
+        "jq/jquery-1.7.1.min.js",
+        "jq/jquery-ui-1.8.18.custom.min.js",
+        "js/environment.js",
+        "js/string-util.js",
+        "js/string-util2014.js",
+        "js/aes.js",
+        "js/lz-string-1.0.2.js",
+        "js/rijndael.js",
+        "js/lz-string-1.0.2.js",
+        "js/eBIRTools.vbs"
+      ],
+      "stylesheets": [
+        "css/styles.css",
+        "css/print.css"
+      ],
+      "missing_dependencies": [],
+      "inline_script_blocks": 2
+    },
+    "forms/BIR-Form2200A.hta": {
+      "sha256": "192f730cc713179f5a1d8233cb5133cdd62bd3e5896b54546da14b82fa226a3f",
+      "title": "BIR Form No. 2200-A",
+      "application_name": "2200A",
+      "hta_version": "4.7",
+      "scripts": [
+        "jq/jquery-1.7.1.min.js",
+        "jq/jquery-ui-1.8.18.custom.min.js",
+        "js/environment.js",
+        "js/string-util.js",
+        "js/string-util2014.js",
+        "js/aes.js",
+        "js/lz-string-1.0.2.js",
+        "js/rijndael.js",
+        "js/lz-string-1.0.2.js",
+        "js/eBIRTools.vbs",
+        "js/lib/json3.min.js",
+        "js/lib/2200A-T.js"
+      ],
+      "stylesheets": [
+        "css/styles.css",
+        "css/style2014.css",
+        "css/print.css"
+      ],
+      "missing_dependencies": [],
+      "inline_script_blocks": 4
+    },
+    "forms/BIR-Form2200AN.hta": {
+      "sha256": "e3f84d83c3455424c66c9223d124b65f30027d3c57ff4af793b6b5b54feeecb4",
+      "title": "BIR Form No. 2200-AN",
+      "application_name": "2200AN",
+      "hta_version": "1.0",
+      "scripts": [
+        "jq/jquery-1.7.1.min.js",
+        "jq/jquery-ui-1.8.18.custom.min.js",
+        "js/environment.js",
+        "js/string-util.js",
+        "js/aes.js",
+        "js/lz-string-1.0.2.js",
+        "js/rijndael.js",
+        "js/lz-string-1.0.2.js",
+        "js/eBIRTools.vbs"
+      ],
+      "stylesheets": [
+        "css/styles.css",
+        "css/print.css"
+      ],
+      "missing_dependencies": [],
+      "inline_script_blocks": 3
+    },
+    "forms/BIR-Form2200ANv2018.hta": {
+      "sha256": "23b5502509383379d993fe724e28fdf2d13010b75cd2694c394bc8c72af34f29",
+      "title": "BIR Form No. 2200ANv2018",
+      "application_name": "2200ANv2018",
+      "hta_version": "1.0",
+      "scripts": [
+        "jq/jquery-1.7.1.min.js",
+        "jq/jquery-ui-1.8.18.custom.min.js",
+        "js/environment.js",
+        "js/string-util.js",
+        "js/aes.js",
+        "js/rijndael.js",
+        "js/lz-string-1.0.2.js",
+        "js/eBIRTools.vbs"
+      ],
+      "stylesheets": [
+        "css/styles.css",
+        "css/print.css"
+      ],
+      "missing_dependencies": [],
+      "inline_script_blocks": 2
+    },
+    "forms/BIR-Form2200Av2020.hta": {
+      "sha256": "1df302eeb1352eccb88f6aa7a23fdcc185b6fbb4d15435996250f985a0198e2c",
+      "title": "BIR Form No. 2200Av2020",
+      "application_name": "2200Av2020",
+      "hta_version": "1.0",
+      "scripts": [
+        "jq/jquery-1.7.1.min.js",
+        "jq/jquery-ui-1.8.18.custom.min.js",
+        "js/environment.js",
+        "js/string-util.js",
+        "js/string-util2014.js",
+        "js/aes.js",
+        "js/lz-string-1.0.2.js",
+        "js/rijndael.js",
+        "js/lz-string-1.0.2.js",
+        "js/eBIRTools.vbs",
+        "js/tax-rate-helper.js"
+      ],
+      "stylesheets": [
+        "css/styles.css",
+        "css/print.css"
+      ],
+      "missing_dependencies": [
+        "js/tax-rate-helper.js"
+      ],
+      "inline_script_blocks": 2
+    },
+    "forms/BIR-Form2200Cv2018.hta": {
+      "sha256": "d9f47fba52eafa26f03fedb113db4ef1a0074635359d991f1cd7a160383a705c",
+      "title": "BIR Form No. 2200Cv2018",
+      "application_name": "2200Cv2018",
+      "hta_version": "4.7",
+      "scripts": [
+        "jq/jquery-1.7.1.min.js",
+        "jq/jquery-1.11.0.js",
+        "jq/jquery-ui-1.8.18.custom.min.js",
+        "js/environment.js",
+        "js/string-util.js",
+        "js/string-util2014.js",
+        "js/aes.js",
+        "js/rijndael.js",
+        "js/jxboxV2.js",
+        "js/lib/2200C.js",
+        "js/lz-string-1.0.2.js",
+        "js/eBIRTools.vbs",
+        "js/tax-rate-helper.js"
+      ],
+      "stylesheets": [
+        "css/styles.css",
+        "css/style2014.css",
+        "css/print.css"
+      ],
+      "missing_dependencies": [
+        "js/lib/2200C.js",
+        "js/tax-rate-helper.js"
+      ],
+      "inline_script_blocks": 9
+    },
+    "forms/BIR-Form2200M.hta": {
+      "sha256": "5a9935fd72160013c0dd1468918bd7b0944dd669f19f71ce61638a2c8ba98e48",
+      "title": "BIR Form No. 2200-M",
+      "application_name": "2200M",
+      "hta_version": "1.0",
+      "scripts": [
+        "jq/jquery-1.7.1.min.js",
+        "jq/jquery-ui-1.8.18.custom.min.js",
+        "js/environment.js",
+        "js/string-util.js",
+        "js/aes.js",
+        "js/lz-string-1.0.2.js",
+        "js/rijndael.js",
+        "js/lz-string-1.0.2.js",
+        "js/eBIRTools.vbs"
+      ],
+      "stylesheets": [
+        "css/styles.css",
+        "css/print.css"
+      ],
+      "missing_dependencies": [],
+      "inline_script_blocks": 3
+    },
+    "forms/BIR-Form2200Mv2018.hta": {
+      "sha256": "5f0f128a166da6429a237883f662fa36393c4a5ac1472be79db1d04a9e27eef5",
+      "title": "BIR Form No. 2200Mv2018",
+      "application_name": "2200Mv2018",
+      "hta_version": "4.7",
+      "scripts": [
+        "jq/jquery-1.7.1.min.js",
+        "jq/jquery-1.11.0.js",
+        "jq/jquery-ui-1.8.18.custom.min.js",
+        "js/environment.js",
+        "js/string-util.js",
+        "js/string-util2014.js",
+        "js/aes.js",
+        "js/rijndael.js",
+        "js/jxboxV2.js",
+        "js/lib/2200C.js",
+        "js/lz-string-1.0.2.js",
+        "js/eBIRTools.vbs"
+      ],
+      "stylesheets": [
+        "css/styles.css",
+        "css/style2014.css",
+        "css/print.css"
+      ],
+      "missing_dependencies": [
+        "js/lib/2200C.js"
+      ],
+      "inline_script_blocks": 9
+    },
+    "forms/BIR-Form2200P.hta": {
+      "sha256": "2a41a474b4e81c85d597f304f5c373b49f279a2116698c347032ec2e8f1d830a",
+      "title": "BIR Form No. 2200-P",
+      "application_name": "2200P",
+      "hta_version": "1.0",
+      "scripts": [
+        "jq/jquery-1.7.1.min.js",
+        "jq/jquery-ui-1.8.18.custom.min.js",
+        "js/environment.js",
+        "js/string-util.js",
+        "js/aes.js",
+        "js/lz-string-1.0.2.js",
+        "js/rijndael.js",
+        "js/lz-string-1.0.2.js",
+        "js/eBIRTools.vbs",
+        "js/tax-rate-helper.js"
+      ],
+      "stylesheets": [
+        "css/styles.css",
+        "css/print.css"
+      ],
+      "missing_dependencies": [
+        "js/tax-rate-helper.js"
+      ],
+      "inline_script_blocks": 3
+    },
+    "forms/BIR-Form2200Pv2020.hta": {
+      "sha256": "fbfa4f1224b99aa2effcad00f4aa3deaf960b4cc4f0d3899bfdbc63a2a02f8ec",
+      "title": "BIR Form No. 2200Pv2020",
+      "application_name": "2200Pv2020",
+      "hta_version": "4.7",
+      "scripts": [
+        "jq/jquery-1.7.1.min.js",
+        "jq/jquery-1.11.0.js",
+        "jq/jquery-ui-1.8.18.custom.min.js",
+        "js/environment.js",
+        "js/string-util.js",
+        "js/string-util2014.js",
+        "js/aes.js",
+        "js/rijndael.js",
+        "js/jxboxV2.js",
+        "js/lib/2200C.js",
+        "js/lz-string-1.0.2.js",
+        "js/eBIRTools.vbs"
+      ],
+      "stylesheets": [
+        "css/styles.css",
+        "css/style2014.css",
+        "css/print.css"
+      ],
+      "missing_dependencies": [
+        "js/lib/2200C.js"
+      ],
+      "inline_script_blocks": 9
+    },
+    "forms/BIR-Form2200S.hta": {
+      "sha256": "2ccf624c87c8a951443630a0803e5f1f4bd7800bceb850ff14e8160f5f6b59fd",
+      "title": "BIR Form No. 2200-S",
+      "application_name": "2200S",
+      "hta_version": "4.7",
+      "scripts": [
+        "jq/jquery-1.7.1.min.js",
+        "jq/jquery-ui-1.8.18.custom.min.js",
+        "js/environment.js",
+        "js/string-util.js",
+        "js/string-util2014.js",
+        "js/lib/json3.min.js",
+        "js/aes.js",
+        "js/lz-string-1.0.2.js",
+        "js/rijndael.js",
+        "js/lz-string-1.0.2.js",
+        "js/eBIRTools.vbs",
+        "js/lib/2200A-T.js"
+      ],
+      "stylesheets": [
+        "css/styles.css",
+        "css/style2014.css",
+        "css/print.css"
+      ],
+      "missing_dependencies": [],
+      "inline_script_blocks": 8
+    },
+    "forms/BIR-Form2200T.hta": {
+      "sha256": "10da2116020cb8d911b66defa7451b67060a512272601b7c48412be720a23b75",
+      "title": "BIR Form No. 2200-T",
+      "application_name": "2200T",
+      "hta_version": "4.7",
+      "scripts": [
+        "jq/jquery-1.7.1.min.js",
+        "jq/jquery-ui-1.8.18.custom.min.js",
+        "js/environment.js",
+        "js/string-util.js",
+        "js/string-util2014.js",
+        "js/lib/json3.min.js",
+        "js/aes.js",
+        "js/lz-string-1.0.2.js",
+        "js/rijndael.js",
+        "js/lz-string-1.0.2.js",
+        "js/eBIRTools.vbs",
+        "js/lib/2200A-T.js",
+        "js/tax-rate-helper.js"
+      ],
+      "stylesheets": [
+        "css/styles.css",
+        "css/style2014.css",
+        "css/print.css"
+      ],
+      "missing_dependencies": [
+        "js/tax-rate-helper.js"
+      ],
+      "inline_script_blocks": 8
+    },
+    "forms/BIR-Form2200Tv2020.hta": {
+      "sha256": "8ac4eaa1aa8fd5cc323e62133c6841bd9e8696bd719d27e08f1eef1d201dfe78",
+      "title": "BIR Form No. 2200Tv2020",
+      "application_name": "2200Tv2020",
+      "hta_version": "1.0",
+      "scripts": [
+        "jq/jquery-1.7.1.min.js",
+        "jq/jquery-ui-1.8.18.custom.min.js",
+        "js/environment.js",
+        "js/string-util.js",
+        "js/string-util2014.js",
+        "js/aes.js",
+        "js/lz-string-1.0.2.js",
+        "js/rijndael.js",
+        "js/lz-string-1.0.2.js",
+        "js/eBIRTools.vbs"
+      ],
+      "stylesheets": [
+        "css/styles.css",
+        "css/print.css"
+      ],
+      "missing_dependencies": [],
+      "inline_script_blocks": 2
+    },
+    "forms/BIR-Form2550DS.hta": {
+      "sha256": "caef2579821294c39b289e1f3c539d5e4b430aecf1c2605ea03d737b24a43a63",
+      "title": "BIR Form No. 2550-DS",
+      "application_name": "2550DS",
+      "hta_version": "1.0",
+      "scripts": [
+        "jq/jquery-1.7.1.min.js",
+        "jq/jquery-ui-1.8.18.custom.min.js",
+        "js/environment.js",
+        "js/string-util.js",
+        "js/aes.js",
+        "js/rijndael.js",
+        "js/lz-string-1.0.2.js",
+        "js/eBIRTools.vbs",
+        "js/lz-string-1.3.4.js",
+        "js/bir-formatter.js",
+        "js/tax-rate-helper.js"
+      ],
+      "stylesheets": [
+        "css/styles.css",
+        "css/print.css"
+      ],
+      "missing_dependencies": [
+        "js/lz-string-1.3.4.js",
+        "js/bir-formatter.js",
+        "js/tax-rate-helper.js"
+      ],
+      "inline_script_blocks": 1
+    },
+    "forms/BIR-Form2550M.hta": {
+      "sha256": "72f1422dab2f8523d140aa51fe5f54f7d9025acc2cf877b37c8d92b60c7668b5",
+      "title": "BIR Form No. 2550-M",
+      "application_name": "2550M",
+      "hta_version": "1.0",
+      "scripts": [
+        "jq/jquery-1.7.1.min.js",
+        "jq/jquery-ui-1.8.18.custom.min.js",
+        "js/environment.js",
+        "js/string-util.js",
+        "js/blowfish.js",
+        "js/aes.js",
+        "js/rijndael.js",
+        "js/lz-string-1.0.2.js",
+        "js/eBIRTools.vbs"
+      ],
+      "stylesheets": [
+        "css/styles.css",
+        "css/print.css"
+      ],
+      "missing_dependencies": [],
+      "inline_script_blocks": 2
+    },
+    "forms/BIR-Form2550Q.hta": {
+      "sha256": "4296e329c10466d081e79f2972f556d46a71cc932f0b01adb8bc06374874b9e3",
+      "title": "BIR Form No. 2550-Q",
+      "application_name": "2550Q",
+      "hta_version": "1.0",
+      "scripts": [
+        "jq/jquery-1.7.1.min.js",
+        "jq/jquery-ui-1.8.18.custom.min.js",
+        "js/environment.js",
+        "js/string-util.js",
+        "js/aes.js",
+        "js/rijndael.js",
+        "js/lz-string-1.0.2.js",
+        "js/eBIRTools.vbs"
+      ],
+      "stylesheets": [
+        "css/styles.css",
+        "css/print.css"
+      ],
+      "missing_dependencies": [],
+      "inline_script_blocks": 2
+    },
+    "forms/BIR-Form2550Qv2024.hta": {
+      "sha256": "3a5a4d3b2b342a4dfc55a05c69b560fb9be47af6451d8c651d19e1d33406ec70",
+      "title": "BIR Form No. 2550Qv2024-Q",
+      "application_name": "2550Qv2024",
+      "hta_version": "1.0",
+      "scripts": [
+        "jq/jquery-1.7.1.min.js",
+        "jq/jquery-ui-1.8.18.custom.min.js",
+        "js/environment.js",
+        "js/string-util.js",
+        "js/aes.js",
+        "js/rijndael.js",
+        "js/lz-string-1.0.2.js",
+        "js/eBIRTools.vbs",
+        "js/lz-string-1.3.4.js",
+        "js/bir-formatter.js"
+      ],
+      "stylesheets": [
+        "css/styles.css",
+        "css/print.css"
+      ],
+      "missing_dependencies": [
+        "js/lz-string-1.3.4.js",
+        "js/bir-formatter.js"
+      ],
+      "inline_script_blocks": 1
+    },
+    "forms/BIR-Form2551.hta": {
+      "sha256": "fa86bf965e317068f23f9477add3a1d18a960f58bd6f15d4886840dd9d760583",
+      "title": "BIR Form No. 2551Q",
+      "application_name": "2551",
+      "hta_version": "1.0",
+      "scripts": [
+        "jq/jquery-1.7.1.min.js",
+        "jq/jquery-ui-1.8.18.custom.min.js",
+        "js/environment.js",
+        "js/string-util.js",
+        "js/aes.js",
+        "js/rijndael.js",
+        "js/lz-string-1.0.2.js",
+        "js/eBIRTools.vbs"
+      ],
+      "stylesheets": [
+        "css/styles.css",
+        "css/print.css"
+      ],
+      "missing_dependencies": [],
+      "inline_script_blocks": 2
+    },
+    "forms/BIR-Form2551M.hta": {
+      "sha256": "3a7108dfd356b2be846c9933717d04145ee6e4337c9e58d5a8cdf55dbbacde48",
+      "title": "BIR Form No. 2551M",
+      "application_name": "2551M",
+      "hta_version": "1.0",
+      "scripts": [
+        "jq/jquery-1.7.1.min.js",
+        "jq/jquery-ui-1.8.18.custom.min.js",
+        "js/environment.js",
+        "js/string-util.js",
+        "js/aes.js",
+        "js/rijndael.js",
+        "js/lz-string-1.0.2.js",
+        "js/eBIRTools.vbs"
+      ],
+      "stylesheets": [
+        "css/styles.css",
+        "css/print.css"
+      ],
+      "missing_dependencies": [],
+      "inline_script_blocks": 2
+    },
+    "forms/BIR-Form2551Qv2018.hta": {
+      "sha256": "dc5c19710400e9bd15ceccd1bbeafc5290074b17b2d460af5f8921c6a7f93186",
+      "title": "BIR Form No. 2551Qv2018",
+      "application_name": "2551Qv2018",
+      "hta_version": "1.0",
+      "scripts": [
+        "jq/jquery-1.7.1.min.js",
+        "jq/jquery-ui-1.8.18.custom.min.js",
+        "js/environment.js",
+        "js/string-util.js",
+        "js/aes.js",
+        "js/rijndael.js",
+        "js/lz-string-1.0.2.js",
+        "js/eBIRTools.vbs"
+      ],
+      "stylesheets": [
+        "css/styles.css",
+        "css/print.css"
+      ],
+      "missing_dependencies": [],
+      "inline_script_blocks": 2
+    },
+    "forms/BIR-Form2552.hta": {
+      "sha256": "3692c9ca93e09e982db28197323de56982a958da2c714f92c6749dbe856dd32e",
+      "title": "BIR Form No. 2552",
+      "application_name": "2552",
+      "hta_version": "1.0",
+      "scripts": [
+        "jq/jquery-1.7.1.min.js",
+        "jq/jquery-ui-1.8.18.custom.min.js",
+        "js/environment.js",
+        "js/string-util.js",
+        "js/aes.js",
+        "js/lz-string-1.0.2.js",
+        "js/rijndael.js",
+        "js/lz-string-1.0.2.js",
+        "js/eBIRTools.vbs"
+      ],
+      "stylesheets": [
+        "css/styles.css",
+        "css/print.css"
+      ],
+      "missing_dependencies": [],
+      "inline_script_blocks": 2
+    },
+    "forms/BIR-Form2552v2018.hta": {
+      "sha256": "a608d954cff716ea0240a5648ae01bdff42e50dc0244dafe32c2747eb59114a4",
+      "title": "BIR Form No. 2552v2018",
+      "application_name": "2552v2018",
+      "hta_version": "4.7",
+      "scripts": [
+        "jq/jquery-1.7.1.min.js",
+        "jq/jquery-1.11.0.js",
+        "jq/jquery-ui-1.8.18.custom.min.js",
+        "js/environment.js",
+        "js/string-util.js",
+        "js/string-util2014.js",
+        "js/aes.js",
+        "js/rijndael.js",
+        "js/jxboxV2.js",
+        "js/lib/2200C.js",
+        "js/lz-string-1.0.2.js",
+        "js/eBIRTools.vbs"
+      ],
+      "stylesheets": [
+        "css/styles.css",
+        "css/style2014.css",
+        "css/print.css"
+      ],
+      "missing_dependencies": [
+        "js/lib/2200C.js"
+      ],
+      "inline_script_blocks": 10
+    },
+    "forms/BIR-Form2553.hta": {
+      "sha256": "67f3bb050668791c87060c0e7f2c20f3215434082ed443f5309bcb3f8e79c2df",
+      "title": "BIR Form No. 2553",
+      "application_name": "2553",
+      "hta_version": "1.0",
+      "scripts": [
+        "jq/jquery-1.7.1.min.js",
+        "jq/jquery-ui-1.8.18.custom.min.js",
+        "js/environment.js",
+        "js/string-util.js",
+        "js/aes.js",
+        "js/lz-string-1.0.2.js",
+        "js/rijndael.js",
+        "js/lz-string-1.0.2.js",
+        "js/eBIRTools.vbs"
+      ],
+      "stylesheets": [
+        "css/styles.css",
+        "css/print.css"
+      ],
+      "missing_dependencies": [],
+      "inline_script_blocks": 3
+    }
+  }
+}

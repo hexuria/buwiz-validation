@@ -1,0 +1,2 @@
+# Keep official bytes exact; manifests pin SHA-256 of every file.
+* -text

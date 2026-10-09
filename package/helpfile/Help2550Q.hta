@@ -1,0 +1,282 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <meta http-equiv="x-ua-compatible" content="ie=9">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <hta:application id="0605"
+        applicationname="0605"
+        version="1.0"
+        caption="yes"
+        showintaskbar="yes"
+        icon="../img/bir_icon.ico"
+        singleinstance="YES"
+        sysmenu="YES"
+        navigable="YES"
+        contextmenu="NO"
+        windowstate="maximize"
+        scrollflat="YES">	
+		<script src='../jq/jquery-1.7.1.min.js'></script>
+		<script src='../jq/jquery-ui-1.8.18.custom.min.js'></script>	
+        <script src='../js/environment.js'></script>			
+		<script src='../js/string-util.js'></script>
+        <title>BIR Form No. 2550Q</title>
+        <link href="../css/styles.css" rel="stylesheet" type="text/css" />	
+        <style type="text/css">
+            <!--
+            .style2 {
+                font-size: 10px;
+            }
+
+            .style3 {
+                font-size: 10pt;
+            }
+
+            .style4 {
+                font-size: 12pt;
+            }
+            -->
+        </style>
+</head>
+<body>
+    <ul class="topnav printButtonClass">
+        <li>
+            <a href="#" class='toplevel'>File</a>
+            <ul class="subnav">
+                <li><a href="../BIRForms.hta">Main Screen</a></li>
+                <li><a href="#" onclick="window.close(); self.close();">Exit</a></li>
+            </ul>
+        </li>
+
+    </ul>
+    <!--topnav-->
+    <div class="printButtonClass" style="position: fixed; top: 10px; font-size: 11px; z-index: 1000000000000000; right: 5px; width: auto;">Government Property Not For Sale</div>
+
+    <!--title-->
+    <img class="printButtonClass" id="bg" src="../img/bg_n.png" height="100%" align="top" />
+    <!--watermark-->
+
+    <style>
+        .atcNames {
+            font-weight: bold;
+        }
+
+        tr.atc td {
+            border-bottom: 1px #e1e1e1 solid;
+        }
+
+        tr.atc:hover td {
+            background: #FFC;
+        }
+
+        td.atc {
+            padding: 4px;
+        }
+
+        #header, .menu {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            height: 25px;
+            background: #fefefe;
+            white-space: nowrap;
+            font-weight: bold;
+            border: 1px #ccc solid;
+            visibility: hidden;
+            z-index: 3000;
+        }
+
+        .menu {
+            visibility: visible;
+        }
+
+        #header input {
+            background: none;
+            border: none;
+            pointer: cursor;
+            font-weight: bolder;
+            height: 25px;
+            border-right: 1px #ccc solid;
+            visibility: visible !important;
+            float: left;
+            width: auto;
+            padding-left: 3px;
+            padding-right: 3px;
+        }
+
+            #header input:hover {
+                background: #FFC;
+            }
+
+        #container {
+            margin-top: 40px;
+        }
+    </style>
+
+    <form id="frmMain" name="frmMain">
+        <div id="container">
+            <div id="wrapper" style="margin: 0 auto; position: relative; width: 830px;">
+                <div id="formPaper">
+                    <div id="Content" align="center">
+                        <table border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td>
+                                    <span class="formTitle"><b>BIR Form No. 2550Q</b>
+                                        <br />
+                                        Guidelines and Instructions</span>
+                                    <!--<img src="../img/2550Qhelp.jpg" alt="2550Qhelp" height="100%" width="100%" align="top" />-->
+                                    <table id="inserted">
+                                        <div class="titlecol">
+                                            BIR FORM NO. 2550Q – Quarterly Value-Added Tax Return<div class="subtitle">Guidelines and Instructions</div>
+                                        </div>
+                                        <br />
+                                        <br />
+                                        <tr>
+                                            <td class="firstcol">
+                                                <b>Who shall file</b>
+                                                <p></p>
+                                                <ol class="indent">
+                                                    This return shall be filed in triplicate by the following taxpayers:
+                                                <li>A VAT -registered person; and</li>
+                                                    <li>A person required to register as a VAT taxpayer but failed to register; and</li>
+                                                    <p>This return must be filed by the aforementioned taxpayers for as long as the VAT registration has not yet been cancelled, even if there is no taxable transaction during the quarter or the aggregate sales/receipts for any 12-month period did not exceed the P1,500,000.00 threshold.</p>
+                                                    <p>A person who imports goods shall use the form prescribed by the Bureau of Custom.</p>
+                                                </ol>
+                                                <br />
+                                                <b>When and Where to file</b>
+                                                <p></p>
+                                                <p>The returns must be filed not later than the 25th day following the close of the quarter.</p>
+                                                <p>The returns must be filed with any Authorized Agent Bank (AAB) within the jurisdiction of the Revenue District Office where the taxpayer is required to register. In places where there are no Authorized Agent Bank (AAB), the returns shall be filed with the Revenue Collection Officer or duly Authorized City or Municipal Treasurer located within the revenue district where the taxpayer is required to register.</p>
+
+                                                <p>Any taxpayer whose registration has been cancelled shall file a return and pay the tax due thereon within 25 days from date of cancellation of registration. For taxpayers with branches, only one consolidated return shall be filed for the principal place of business or head office and all the branches.</p>
+                                                <br />
+                                                <b>When and Where to Pay</b>
+                                                <p></p>
+                                                <p>Upon filing this return, the total amount payable shall be paid to the Authorized Agent Bank (AAB) where the return is filed. In places where there are no AABs, payment shall be made to the Revenue Collection Officer or duly Authorized City or Municipal Treasurer who shall issue a Revenue Official Receipt (ROR) therefor.</p>
+
+                                                <p>Where the return is filed with an AAB, taxpayer must accomplish and submit BIR-prescribed deposit slip, which the bank teller shall machine validate as evidence that payment was received by the AAB. The AAB receiving the tax return shall stamp mark the word “Received” on the return and also machine validate the return as proof of filing the return and payment of the tax by the taxpayer, respectively. The machine validation shall reflect the date of payment, amount paid and transactions code, the name of the bank, branch code, teller’s code and teller’s initial. Bank debit memo number and date should be indicated in the return for taxpayers paying under the bank debit system.</p>
+                                                <br />
+                                                <b>For Electronic Filing and Payment System (EFPS) Taxpayer</b>
+                                                <p></p>
+                                                <p>The deadline for electronically filing and paying the taxes due thereon shall be in accordance with the provisions of existing applicable revenue issuances.</p>
+                                                <br />
+                                                <b>Rates and Bases of Tax</b>
+                                                <p></p>
+                                                <ol type="A" class="indent">
+                                                    <li>On Sale of Goods and Properties – twelve percent (12%) of the gross selling  price    or	gross    value    in	money	of	the	goods   or properties   sold, bartered or exchanged.</li>
+                                                    <li>On Sale of Services and Use or Lease of Properties – twelve percent (12%) of gross receipts derived from the sale or exchange of services, including the use or lease of properties.</li>
+                                                    <li>On Importation of Goods – twelve percent (12%) based on the total value used by the Bureau of Customs in determining tariff and customs duties, plus customs duties, excise taxes, if any, and other charges, such tax to be paid by the importer prior to the release of such goods from customs custody: Provided, That where the customs duties are determined on the basis of quantity or volume of the goods, the value added tax shall be based on the landed cost plus excise taxes, if any.</li>
+                                                    <li>On Export Sales and Other Zero-rated Sales   - 0%.</li>
+                                                </ol>
+                                                <br />
+                                            </td>
+                                            <td class="secondcol">
+                                                <b>Definition of Terms</b>
+                                                <p></p>
+                                                <p>Input Tax means the value-added tax due from or  paid by  a  VAT - registered person in the course of his trade or business on importation of goods, or local purchase of goods or services, including lease or use of property, from a VAT-registered person. It shall also include the transitional input tax determined in accordance with Section 111 of the National Internal Revenue Code, presumptive input tax and deferred input tax from previous period.</p>
+                                                <p>Output  Tax  means   the  value-added   tax  due   on   the   sale   or   lease of  taxable  goods  or    properties    or    services    by   any	person registered or required to register under Section 236 of the National Internal Revenue Code.</p>
+                                                <br />
+                                                <b>Penalties</b>
+                                                <p></p>
+                                                <ol class="indent">
+                                                    There shall be imposed and collected as part of the tax:
+                                                    <li>A surcharge of twenty five percent (25%) for each of the following violations:</li>
+                                                    <ol type="a" class="indent">
+                                                        <li>Failure to file any return and pay the amount of tax or installment due on or before the due date;</li>
+                                                        <li>Unless otherwise authorized by the Commissioner, filing a return with a person or office other than those with whom it is required to be filed;</li>
+                                                        <li>Failure to pay the full or part of the amount of tax shown on the return, or the full amount of tax due for which no return is required to be filed on or before the due date;</li>
+                                                        <li>Failure to pay the deficiency tax within the time prescribed for its payment in the notice of assessment.</li>
+                                                    </ol>
+                                                    <li>A surcharge of fifty percent (50%) of the tax or of the deficiency tax, in
+case any payment has been made on the basis of such return before the discovery of the falsity or fraud, for each of the following violations:
+                                                    </li>
+                                                    <ol type="a" class="indent">
+                                                        <li>Willful neglect to file the return within the period prescribed by the Code or by rules and regulations; or</li>
+                                                        <li>In case a false or fraudulent return is willfully made.</li>
+                                                    </ol>
+                                                    <li>Interest at the rate of twenty percent (20%) per annum, on any unpaid amount of tax, from the date prescribed for the payment until the amount is fully paid.</li>
+                                                    <li>Compromise penalty.</li>
+                                                </ol>
+                                                <br />
+                                                <b>Attachments</b>
+                                               <p></p>
+                                                <ol>
+                                                    <li>Duly issued Certificate of Creditable VAT Withheld at Source, if applicable;</li>
+
+
+                                                    <li>Duly approved Tax Debit Memo, if applicable;</li>
+                                                    <li>Duly approved Tax Credit Certificate, if applicable.</li>
+                                                    <li>Proof of the payment and the return previously filed, for amended return.</li>
+                                                    <li>Authorization letter, if return is filed by authorized representative.</li>
+                                                </ol>
+                                                <br />
+                                                <b>Note: All background information must be properly filled up.</b>
+                                                <p></p>
+                                                <ul>
+                                                    <li>All returns filed by an accredited tax representative on behalf of a taxpayer shall bear the following information:</li>
+                                                    <ol type="A" class="indent">
+                                                        <li>A. For CPAs and others (individual practitioners and members of GPPs);</li>
+                                                        <dl class="indent">
+                                                            <dd>a.1 Taxpayer Identification Number (TIN); and</dd>
+                                                            <dd>a.2 Certificate of Accreditation Number, Date of Issuance, and Date of Expiry.</dd>
+                                                        </dl>
+                                                        <li>B. For members of the Philippine Bar (individual practitioners, members of GPPs);</li>
+                                                        <dl class="indent">
+                                                            <dd>b.1 Taxpayer Identification Number (TIN); and</dd>
+                                                            <dd>b.2 Attorney’s Roll number or Accreditation Number, if any.</dd>
+                                                        </dl>
+                                                    </ol>
+                                                    <li>Box No. 1 refers to transaction period and not the date of filing this return.</li>
+                                                    <li>The last 3 digits of the 12-digit TIN refers to the branch code.</li>
+                                                    <li>TIN = Taxpayer Identification Number</li>
+                                                </ul>
+                                                <br />
+                                                <br />
+                                                <div class="small" style="text-align: right"><b>ENCS</b></div>
+                                            </td>
+                                        </tr>
+                                    </table>
+
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
+
+<script type="text/javascript">
+    //topNav
+    $(document).ready(function () {
+        $("ul.subnav").parent().append("<span></span>"); //Only shows drop down trigger when js is enabled (Adds empty span tag after ul.subnav*)  
+        $("ul.topnav li span").click(function () { //When trigger is clicked...            
+            //Following events are applied to the subnav itself (moving subnav up and down)  
+            $(this).parent().find("ul.subnav").slideDown('fast').show(); //Drop down the subnav on click    
+            $(this).parent().hover(function () {
+            }, function () {
+                $(this).parent().find("ul.subnav").slideUp('slow'); //When the mouse hovers out of the subnav, move it back up  
+            });
+            //Following events are applied to the trigger (Hover events for the trigger)  
+        }).hover(function () {
+            $(this).addClass("subhover"); //On hover over, add class "subhover"  
+        }, function () {  //On Hover Out  
+            $(this).removeClass("subhover"); //On hover out, remove class "subhover"  
+        });
+        $("ul.topnav .toplevel").click(function () { //When trigger is clicked...            
+            //Following events are applied to the subnav itself (moving subnav up and down)  
+            $(this).parent().find("ul.subnav").slideDown('fast').show(); //Drop down the subnav on click    
+            $(this).parent().hover(function () {
+            }, function () {
+                $(this).parent().find("ul.subnav").slideUp('slow'); //When the mouse hovers out of the subnav, move it back up  
+            });
+            //Following events are applied to the trigger (Hover events for the trigger)  
+        }).hover(function () {
+            $(this).addClass("subhover"); //On hover over, add class "subhover"  
+        }, function () {  //On Hover Out  
+            $(this).removeClass("subhover"); //On hover out, remove class "subhover"  
+        });
+    });
+
+</script>

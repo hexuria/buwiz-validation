@@ -1,0 +1,1 @@
+This folder contains all the previously saved user profiles.

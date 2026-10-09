@@ -1,0 +1,329 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+    <head>
+        <meta http-equiv="x-ua-compatible" content="ie=9">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <HTA:APPLICATION ID="0605" 
+        APPLICATIONNAME="0605" 
+        VERSION="1.0" 
+        CAPTION="yes"
+        SHOWINTASKBAR="yes"
+        ICON="../img/bir_icon.ico"
+        SINGLEINSTANCE="YES"
+        SYSMENU="YES"
+        NAVIGABLE="YES"
+        CONTEXTMENU="NO"
+        WINDOWSTATE="maximize"
+        SCROLLFLAT="YES">	
+		<script src='../jq/jquery-1.7.1.min.js'></script>
+		<script src='../jq/jquery-ui-1.8.18.custom.min.js'></script>
+        <script src='../js/environment.js'></script>		
+		<script src='../js/string-util.js'></script>
+        <title>BIR Form No. 1601C</title>
+        <link href="../css/styles.css" rel="stylesheet" type="text/css" />	
+        <style type="text/css">
+            <!--
+            .style2 {font-size: 10px}
+            .style3 {font-size: 10pt}
+            .style4 {font-size: 12pt}
+            -->
+        </style>
+    </head>
+    <body>
+    <ul class="topnav printButtonClass">  
+        <li>
+        	<a href="#" class='toplevel' >File</a>
+        	<ul class="subnav">  
+                <li><a href="../BIRForms.hta">Main Screen</a></li>  
+				<li><a href="#" onclick="window.close(); self.close();">Exit</a></li>  
+            </ul> 
+        </li>  
+
+    </ul>
+    <!--topnav-->
+	<div class="printButtonClass" style="position:fixed; top:10px; font-size:11px; z-index:1000000000000000; right:5px; width:auto;">Government Property Not For Sale</div>
+    
+    <!--title-->
+	<img class="printButtonClass" id="bg" src="../img/bg_n.png" height="100%" align="top"/> <!--watermark-->
+
+	<style>
+	.atcNames { font-weight:bold; }
+	tr.atc td { border-bottom: 1px #e1e1e1 solid; }
+	tr.atc:hover td { background:#FFC; }
+	td.atc { padding:4px; }
+	
+	#header,.menu { 
+		position:fixed; width:100%; top:0; left:0; height:25px; background:#fefefe; white-space:nowrap; font-weight:bold;
+		border: 1px #ccc solid; visibility:hidden; z-index:3000;
+	} .menu { visibility:visible; }
+	#header input {
+		background:none; border:none; pointer:cursor; font-weight:bolder; height:25px;
+		border-right: 1px #ccc solid; visibility:visible !important; float:left; width:auto; padding-left:3px; padding-right:3px;
+	}
+	#header input:hover {
+		background:#FFC;
+	}
+	#container {
+		margin-top:40px;
+	}
+	</style>
+
+	<form id="frmMain" name="frmMain">
+        <div id="container">
+            <div id="wrapper" style="margin: 0 auto; position: relative; width: 830px; ">
+                <div id="formPaper">
+                    <div id="Content" >
+                        <table border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td>
+								    <span class="formTitle"><b>BIR Form no. 1601C</b> <br/>Guidelines and Instructions</span>
+									<!--<img src="../img/1601Chelp.jpg" alt="1601Chelp" height="100%" width="100%" align="top" />-->
+                                </td>
+                            </tr>
+                        </table>
+                        <div class="smallSubtitle" align="center">BIR Form No. 1601-C Monthly Remittance Return of Income Taxes Withheld on Compensation</div>
+                    <div class="smallSubtitle" align="center">Guidelines and Instructions</div>
+                        <br />
+                        <table id="inserted">
+                            <tr>
+                                <td class="firstcol">
+                                    <dt>Who Shall File
+</dt>
+                                    <p>This return shall be filed in triplicate by every withholding agent
+(WA)/payor who is either an individual or non-individual, required to deduct and
+withhold taxes on compensation paid to employees. If the Government of the
+Philippines or any political subdivision agency or instrumentality thereof, as well
+as a government-owned or controlled corporation, is the employer, the return
+may be made by the officer or employee having control of payment of
+compensation/other income payment or other officer or employee appropriately
+designated for the purpose.</p>
+                                    <p>If the person required to withhold and pay the tax is a corporation, the
+return shall be made in the name of the corporation and shall be signed and
+verified by the president, vice-president, or any authorized officer and
+countersigned by the treasurer or assistant treasurer.</p>
+                                    <p>With respect to a fiduciary, the return shall be made in the name of the
+individual, estate or trust for which such fiduciary acts and shall be signed and
+verified by such fiduciary. In case of two or more joint fiduciaries, the return
+shall be signed and verified by one of such fiduciaries.
+</p>
+                                    <p>In the case of hazardous employment, the employer in the private sector
+shall attach to BIR Form No. 1601-C, for return periods March, June, September
+and December a copy of the list submitted to the Department of Labor &
+Employment Regional/Provincial Offices – Operations Division/Unit. The list
+shall show the names of the Minimum Wage Earners who received the hazard
+pay, period of employment, amount of hazard pay per month and justification for
+payment of hazard pay as certified by said DOLE/allied agency that the hazard
+pay is justifiable. In the same manner, for the aforementioned return periods,
+employer in the public sector shall attach a copy of Department of Budget and
+Management (DBM) circular/s or equivalent, as to who are allowed to receive
+hazard pay. 
+</p>
+                                    <dt>When and Where to File and Remit</dt>
+                                    <p>The return shall be filed and the tax paid on or before the tenth (10th) day
+of the month following the month in which withholding was made except for
+taxes withheld for December which shall be filed/paid on or before January 15 of
+the succeeding year. </p>
+                                    <p>Provided, however, with respect to non-large and large taxpayers who
+availed of the EFPS (Electronic Filing and Payment System), the deadline for
+electronically filing the return and paying the taxes due thereon via EFPS shall
+be five (5) days later than the deadline set above.</p>
+                                    <p>The return shall be filed and the tax paid with the Authorized Agent Bank
+(AAB) of the Revenue District Office having jurisdiction over the withholding
+agent's place of business/office. In places where there are no Authorized Agent
+Banks, the return shall be filed and the tax paid with the Revenue Collection
+Officer or the duly Authorized City or Municipal Treasurer within the Revenue
+District where the withholding agent's place of business/office is located, who
+will issue a Revenue Official Receipt (BIR Form No.2524) therefor.</p>
+                                    <p>Where the return is filed with an AAB, taxpayer must accomplish and
+submit BIR- prescribed deposit slip, which the bank teller shall machine validate
+as evidence that payment was received by the AAB. The AAB receiving the tax
+return shall stamp mark the word “Received” on the return and also machine
+validate the return as proof of filing the return and payment of the tax by the
+taxpayer, respectively. The machine validation shall reflect the date of payment,
+amount paid and transaction code, the name of the bank, branch code, teller’s
+code and teller’s initial. Bank debit memo number and date should be indicated
+in the return for taxpayers paying under the bank debit system.
+</p>
+                                    <p>A taxpayer may file a separate return for the head office and for each
+branch or place of business/office or a consolidated return for the head office and
+all the branches/offices except in the case of large taxpayers where only one
+consolidated return is required.</p>
+                                    <dt>Penalties</dt>
+                                    <p>There shall be imposed and collected as part of the tax:</p>
+                                    <ol>
+                                        <li>A surcharge of twenty five percent (25%) for each of the following
+violations:
+</li>
+                                        <ol class="indent" type="a">
+                                            <li>Failure to file any return and pay the amount of tax or
+installment due on or before the due date;
+</li>
+                                            <li>Unless otherwise authorized by the Commissioner, filing a
+return with a person or office other than those with whom it is
+required to be filed;
+</li>
+                                              <li>Failure to pay the full or part of the amount of tax shown on the
+return, or the full amount of tax due for which no return is
+required to be filed on or before the due date;
+</li>
+                                              <li>Failure to pay the deficiency tax within the time prescribed for
+its payment in the notice of assessment.</li>
+                                        </ol>
+                                        <li>A surcharge of fifty percent (50%) of the tax or of the deficiency tax, in
+case any payment has been made on the basis of such return before the
+discovery of the falsity or fraud, for each of the following violations:</li>
+                                       <ol class="indent" type="a">
+                                           <li>Willful neglect to file the return within the period prescribed by
+the Code or by rules and regulations; or</li>
+                                           <li>In case a false or fraudulent return is willfully made.</li>
+                                       </ol>
+                                        <li>Interest at the rate of twenty percent (20%) per annum, or such higher rate
+as may be prescribed by rules and regulations, on any unpaid
+amount of tax, from the date prescribed for the payment until the amount
+is fully paid.</li>
+                                        <li>Compromise penalty.</li>
+
+                                    </ol>
+                                </td>
+                                <td class="secondcol">
+                                    <dt>Violation of Withholding Tax Provisions</dt>
+
+                                    <p>Any person required to withhold, account for, and remit any tax imposed
+by the National Internal Revenue Code or who willfully fails to withhold such
+tax, or account for and remit such tax, or aids or abets in any manner to evade
+any such tax or the payment thereof, shall, in addition to other penalties provided
+for under this Law, be liable upon conviction to a penalty equal to the total
+amount of the tax not withheld, or not accounted for and remitted.</p>
+                                    <p>Any employer/withholding agent who fails or refuses to refund excess
+withholding tax shall, in addition to the penalties provided in the other provisions
+of the National Internal Revenue Code, be liable to a penalty equal to the total
+amount of refunds which was not refunded to the employees resulting from any
+excess of the amount withheld over the tax actually due on their return.
+</p>
+                                    <p>Any person required under the National Internal Revenue Code or by rules
+and regulations promulgated thereunder to pay any tax, make a return, keep any
+record, or supply correct and accurate information, who willfully fails to pay
+such tax, make such return, keep such record, or supply such correct and accurate
+information, or withhold or remit taxes withheld, or refund excess taxes withheld
+on compensation, at the time or times required by law or rules and regulations
+shall, in addition to the other penalties provided by law, upon conviction thereof,
+be punished by a fine of not less than ten thousand pesos (P= 10,000.00) and
+suffer imprisonment of not less than one (1) year but not more than ten (10)
+years.</p>
+                                    <p>Every officer or employee of the Government of the Republic of the
+Philippines or any of its agencies and instrumentalities, its political subdivisions,
+as well as government-owned or controlled corporations, including the Bangko
+Sentral ng Pilipinas, who, under the provisions of the Code, as amended, or
+regulations promulgated thereunder, is charged with the duty to deduct and
+withhold any internal revenue tax and to remit the same in accordance with the
+provisions of the Tax Code, as amended, and other laws is guilty of any offense
+herein below specified shall, upon conviction of each act or omission, be fined
+in a sum not less than five thousand pesos (P= 5,000) but not more than fifty
+thousand pesos (P= 50,000) or imprisoned for a term of not less than six (6)
+months and one day but not more than two (2) years, or both:
+</p>
+                                    <ol class="indent" type="a">
+                                        <li>Those who fail or cause the failure to deduct and withhold any
+internal revenue tax under any of the withholding tax laws and
+implementing regulations;</li>
+                                        <li>Those who fail or cause the failure to remit taxes deducted and
+withheld within the time prescribed by law, and implementing
+regulations; and
+</li>
+                                        <li>Those who fail or cause the failure to file a return or statement
+within the time prescribed, or render or furnish a false or
+fraudulent return or statement required under the withholding
+tax laws and regulations. 
+</li>
+                                        
+                                    </ol>
+                                    <p>If the withholding agent is the Government or any of its agencies, political
+subdivisions or instrumentalities, or a government-owned or controlled
+corporation, the employee thereof responsible for the withholding and remittance
+of tax shall be personally liable for the additions to the tax prescribed by the
+National Internal Revenue Code.
+</p>
+                                    <dt>Attachment Required</dt>
+                                     <br />
+                                    <ol class="indent">
+                                        <li>For amended return , proof of remittance and the return previously
+filed
+</li>
+                                        <li>For advance payments, BIR Form No. 0605</li>
+                                          <li>For Private Sector, copy of the list submitted to the DOLE
+Regional/Provincial Offices – Operations Division/Unit.</li>
+                                          <li>For Public Sector, copy of Department of Budget and Management
+(DBM) circular/s or equivalent.</li>
+                                    </ol>
+                                    <dt>Note: All background information must be properly filled up.</dt>
+                                    <br />
+                                    <ul>
+                                        <li>All returns filed by an accredited tax representative on behalf of a
+taxpayer shall bear the following information:
+</li>
+                                        <ol class="indent" type="a">
+                                            <li>For CPAs and others (individual practitioners and members of
+GPPs);
+</li>
+                                            <dd>a.1 Taxpayer Identification Number (TIN); and </dd>
+                                               <dd>a.2 Certificate of Accreditation Number, Date of Issuance,
+ and Date of Expiry.</dd>
+                                              <li>For members of the Philippine Bar (individual practitioners,
+members of GPPs):
+</li>
+                                            <dd>b.1 Taxpayer Identification Number (TIN); and
+</dd>
+                                            <dd>b.2 Attorney’s Roll Number or Accreditation Number, if
+ any.</dd>
+                                        </ol>
+                                        <li>Box No. 1 refers to transaction period and not the date of
+ filing this return.</li>
+                                        <li>The last 4 digits of the 13-digit TIN refers to the branch code.</li>
+                                        <li>TIN = Taxpayer Identification Number</li>
+                                    </ul>
+                                    <br />
+                                    <div align="right"><strong>ENCS</strong></div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
+
+<script type="text/javascript">	
+	//topNav
+	$(document).ready(function(){    
+		$("ul.subnav").parent().append("<span></span>"); //Only shows drop down trigger when js is enabled (Adds empty span tag after ul.subnav*)  
+		$("ul.topnav li span").click(function() { //When trigger is clicked...            
+			//Following events are applied to the subnav itself (moving subnav up and down)  
+			$(this).parent().find("ul.subnav").slideDown('fast').show(); //Drop down the subnav on click    
+			$(this).parent().hover(function() {  
+			}, function(){    
+				$(this).parent().find("ul.subnav").slideUp('slow'); //When the mouse hovers out of the subnav, move it back up  
+			});  
+			//Following events are applied to the trigger (Hover events for the trigger)  
+			}).hover(function() {   
+				$(this).addClass("subhover"); //On hover over, add class "subhover"  
+			}, function(){  //On Hover Out  
+				$(this).removeClass("subhover"); //On hover out, remove class "subhover"  
+		});
+		$("ul.topnav .toplevel").click(function() { //When trigger is clicked...            
+			//Following events are applied to the subnav itself (moving subnav up and down)  
+			$(this).parent().find("ul.subnav").slideDown('fast').show(); //Drop down the subnav on click    
+			$(this).parent().hover(function() {  
+			}, function(){    
+				$(this).parent().find("ul.subnav").slideUp('slow'); //When the mouse hovers out of the subnav, move it back up  
+			});  
+			//Following events are applied to the trigger (Hover events for the trigger)  
+			}).hover(function() {   
+				$(this).addClass("subhover"); //On hover over, add class "subhover"  
+			}, function(){  //On Hover Out  
+				$(this).removeClass("subhover"); //On hover out, remove class "subhover"  
+		}); 
+	});	
+	
+</script>

@@ -1,0 +1,256 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <meta http-equiv="x-ua-compatible" content="ie=9">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <hta:application id="2200P"
+        applicationname="2200P"
+        version="1.0"
+        caption="yes"
+        showintaskbar="yes"
+        icon="../img/bir_icon.ico"
+        singleinstance="YES"
+        sysmenu="YES"
+        navigable="YES"
+        contextmenu="NO"
+        windowstate="maximize"
+        scrollflat="YES">	
+		<script src='../jq/jquery-1.7.1.min.js'></script>
+		<script src='../jq/jquery-ui-1.8.18.custom.min.js'></script>	
+        <script src='../js/environment.js'></script>		
+		<script src='../js/string-util.js'></script>
+        <title>BIR Form No. 2200P</title>
+        <link href="../css/styles.css" rel="stylesheet" type="text/css" />	
+        <style type="text/css">
+            <!--
+            .style2 {
+                font-size: 10px;
+            }
+
+            .style3 {
+                font-size: 10pt;
+            }
+
+            .style4 {
+                font-size: 12pt;
+            }
+            -->
+        </style>
+</head>
+<body>
+    <ul class="topnav printButtonClass">
+        <li>
+            <a href="#" class='toplevel'>File</a>
+            <ul class="subnav">
+                <li><a href="../BIRForms.hta">Main Screen</a></li>
+                <li><a href="#" onclick="window.close(); self.close();">Exit</a></li>
+            </ul>
+        </li>
+
+    </ul>
+    <!--topnav-->
+    <div class="printButtonClass" style="position: fixed; top: 10px; font-size: 11px; z-index: 1000000000000000; right: 5px; width: auto;">Government Property Not For Sale</div>
+
+    <!--title-->
+    <img class="printButtonClass" id="bg" src="../img/bg_n.png" height="100%" align="top" />
+    <!--watermark-->
+
+    <style>
+        .atcNames {
+            font-weight: bold;
+        }
+
+        tr.atc td {
+            border-bottom: 1px #e1e1e1 solid;
+        }
+
+        tr.atc:hover td {
+            background: #FFC;
+        }
+
+        td.atc {
+            padding: 4px;
+        }
+
+        #header, .menu {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            height: 25px;
+            background: #fefefe;
+            white-space: nowrap;
+            font-weight: bold;
+            border: 1px #ccc solid;
+            visibility: hidden;
+            z-index: 3000;
+        }
+
+        .menu {
+            visibility: visible;
+        }
+
+        #header input {
+            background: none;
+            border: none;
+            pointer: cursor;
+            font-weight: bolder;
+            height: 25px;
+            border-right: 1px #ccc solid;
+            visibility: visible !important;
+            float: left;
+            width: auto;
+            padding-left: 3px;
+            padding-right: 3px;
+        }
+
+            #header input:hover {
+                background: #FFC;
+            }
+
+        #container {
+            margin-top: 40px;
+        }
+    </style>
+
+    <form id="frmMain" name="frmMain">
+        <div id="container">
+            <div id="wrapper" style="margin: 0 auto; position: relative; width: 830px;">
+                <div id="formPaper">
+                    <div id="Content" align="center">
+                        <table border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td>
+                                    <span class="formTitle"><b>BIR Form No. 2200P</b>
+                                        <br />
+                                        Guidelines and Instructions</span>
+                                    <!--<img src="../img/2200Phelp.png" alt="2200Phelp" height="100%" width="100%" align="center" />-->
+                                    <table id="inserted">
+                                        <tr>
+                                            <td class="firstcol">
+                                                <b>Who shall File</b>
+                                                <br />
+                                                <br />
+                                                <ol class="indent">
+                                                    This return shall be filed in triplicate by the following:
+                                                    <li>Manufacturer or  producer  of  locally  manufactured  or  produced  petroleum products;</li>
+                                                    <li>Any person engaged in reprocessing, re-refining or recycling of petroleum products previously taxed;</li>
+                                                    <li>Importer or purchaser who resells or uses kerosene as aviation fuel;</li>
+                                                    <li>Any person using denatured alcohol for motive power; and</li>
+                                                    <li>Owner or person having possession of petroleum products which were removed from the place of production without the payment of excise tax</li>
+                                                </ol>
+                                                <p>For imported petroleum products, the excise tax shall be paid by the importer or owner to the  Customs Officers before  removal  of  such  imported articles from  the customs-house. </p>
+                                                <br />
+                                                <b>Time and Manner of Filing and Payment</b>
+                                                <br />
+                                                <p>For each place of production, a separate return shall be filed and the excise tax due shall be paid before removal of the petroleum products from  the  place  of  production  with  any Authorized Agent Bank (AAB) located within the territorial jurisdiction of the Revenue District Office where the taxpayer is required to register. In places where there are no AABs, the return shall be filed and the tax due shall be paid with the Revenue Collection Officer or Duly Authorized City or Municipal Treasurer of the city or municipality falling under the jurisdiction of the a foresaid Revenue District Office. </p>
+                                                <p>Identified excise la rge taxpayers duly informed in writing as such by the Commissioner of Internal Revenue, or his duly  authorize d representative, shall file  a consolidated excise tax return and pay the excise tax due with the Authorized Agent Bank located in the BIR National Office , Diliman, Quezon City.</p>
+                                                <br />
+                                                <b>Penalties</b>
+                                                <br />
+                                                <ol>
+                                                    <li>A surcharge of twenty five per cent (25%) for each of the following violations:</li>
+                                                    <ol type="a" class="indent">
+                                                        <li>Failure to file any return and pay the tax due thereon  on the date  prescribed;</li>
+                                                        <li>Unless otherwise authorized by the Commissioner, filing a return with a person or office other than those  with whom it is require d to be filed;</li>
+                                                        <li>Failure to pay the full or part of the amount of tax  shown  on the return or the full amount of tax due for which  no  return  is  required  to be filed on or before the due date; or</li>
+
+                                                        <br />
+                                                        <br />
+                                                    </ol>
+                                                </ol>
+                                            </td>
+                                            <td class="secondcol">
+                                                <ol start="2" class="indent">
+                                                    <ol type="a" class="indent">
+                                                        <li value="4">Failure  to  pay  the   deficiency  tax  within the  time   prescribed   for its payment in the Notice  of Assessment.</li>
+                                                    </ol>
+                                                    <li>A surcharge of fifty percent (50%) of the tax or of the deficiency tax, in case any payment has been made  on  the basis  of such  return before the discovery of the falsity  or  fraud, for each of the following violations:</li>
+                                                    <ol type="a" class="indent">
+                                                        <li>Willful neglect to file the return within the period prescribed by the code or by rules and regulations; or</li>
+                                                        <li>In case  a false or fraudulent return is willfully made.</li>
+                                                    </ol>
+                                                    <li>An interest of twenty percent (20%) per annum or such higher  rate as may be  prescribed by rules  and  regulations  on any  unpaid   amount of tax, from the date prescribed for the payment until it is fully paid.</li>
+                                                    <li>Compromise penalty</li>
+                                                    <br />
+                                                </ol>
+                                                <b>Attachment Required:</b>
+                                                <br />
+                                                All returns filed by an authorized representative must attach authorization letter.
+                                                <br />
+                                                <br />
+                                                <b>Note: </b>
+                                                <ul>
+                                                    <li>This return shall be used in the following instances:</li>
+                                                    <ol>
+                                                        <li>For   payment  of excise   tax due  on  the  actual  volume   of  petroleum  products   to be removed  from  the  place of  production; and</li>
+                                                        <li>For prepayments, advance deposits or other similar schemes in payment of  excise  tax on locally manufactured or produced petroleum products.  For  every  such  payments, the excise tax due on removals made from the date of filing of the previous return up to date of payment of advance deposit shall be deducted from the balance of  deposit   per previous return filed. In the event that the balance is insufficient to cover the excise tax due, penalties shall be computed and imposed on the difference. These shall be computed from the date of removal when the insufficiency shall have been incurred.</li>
+                                                    </ol>
+                                                    <li>All returns filed by an accredited tax agent on behalf of a taxpayer shall bear the following information:</li>
+                                                    <ol class="indent">
+                                                        <li>For CPAs and others (individual practitioners and members of GGPs);</li>
+                                                        <dl class="indent">
+                                                            <dd>1.1 Taxpayer Identification Number (TIN); and</dd>
+                                                            <dd>1.2 Certificate of Accreditation Number, Date of Issuance and Date of Expiry</dd>
+                                                        </dl>
+                                                        <li>For members of the Philippine Bar(individual practitioners, members of GPPs);    </li>
+                                                       <dl  class="indent">
+                                                           <dd>2.1 Taxpayer Identification Number (TIN); and</dd>
+                                                           <dd>2.2 Attorney's Roll number or Accreditation Number, if any.</dd>
+                                                       </dl>
+                                                    
+                                                    </ol>
+
+                                                </ul>
+                                                <br />
+                                                <br />
+                                                <div class="small" style="text-align: right;"><b>ENCS</b></div>
+
+                                            </td>
+
+                                        </tr>
+                                    </table>
+
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
+
+<script type="text/javascript">
+    //topNav
+    $(document).ready(function () {
+        $("ul.subnav").parent().append("<span></span>"); //Only shows drop down trigger when js is enabled (Adds empty span tag after ul.subnav*)  
+        $("ul.topnav li span").click(function () { //When trigger is clicked...            
+            //Following events are applied to the subnav itself (moving subnav up and down)  
+            $(this).parent().find("ul.subnav").slideDown('fast').show(); //Drop down the subnav on click    
+            $(this).parent().hover(function () {
+            }, function () {
+                $(this).parent().find("ul.subnav").slideUp('slow'); //When the mouse hovers out of the subnav, move it back up  
+            });
+            //Following events are applied to the trigger (Hover events for the trigger)  
+        }).hover(function () {
+            $(this).addClass("subhover"); //On hover over, add class "subhover"  
+        }, function () {  //On Hover Out  
+            $(this).removeClass("subhover"); //On hover out, remove class "subhover"  
+        });
+        $("ul.topnav .toplevel").click(function () { //When trigger is clicked...            
+            //Following events are applied to the subnav itself (moving subnav up and down)  
+            $(this).parent().find("ul.subnav").slideDown('fast').show(); //Drop down the subnav on click    
+            $(this).parent().hover(function () {
+            }, function () {
+                $(this).parent().find("ul.subnav").slideUp('slow'); //When the mouse hovers out of the subnav, move it back up  
+            });
+            //Following events are applied to the trigger (Hover events for the trigger)  
+        }).hover(function () {
+            $(this).addClass("subhover"); //On hover over, add class "subhover"  
+        }, function () {  //On Hover Out  
+            $(this).removeClass("subhover"); //On hover out, remove class "subhover"  
+        });
+    });
+
+</script>

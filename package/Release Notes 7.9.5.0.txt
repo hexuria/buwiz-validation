@@ -1,0 +1,553 @@
+﻿Offline eBIRForms Package
+Release Notes
+
+---------------------------------------------------------------------
+v7.9.5.0
+---------------------------------------------------------------------
+R.A. 10963-TRAIN Law / R.A. 11534 CREATE Law / R.A. 11976 EOPT Law
+Change Request No. 2024-02, Added the enhanced BIR Form No. 2550Q version 2024
+Change Request No. 2021-05, Added the enhanced BIR Form No. 1702Q version 2018
+Change Request No. 2024-04, Enhancement of BIR Form 2000 version 2018
+	- Mode of Affixture - Only 1 item can be selected
+	- If Constructive Affixture is selected, schedules 1, 2 and 4 are enabled
+	- Schedule 1 - Amount input should reflect negative value in part 2
+	- Tax Base and tax due should be editable on ATCs DS103, DS106, DS109, DS120, DS121, DS124, DS132
+	- Adopt same computation in eFPS, DS130, DS131
+	- Computation of tax due DS117 - If P100.00, tax due should be P2.00
+Change Request No. 2024-10
+Enhancement of the following BIR Forms
+   - BIR Form No. 1800 version 2018    – Modify Description of Item 22, Part III Details of Payment
+                  From: Tax Debit Memo      To: Tax Debit Memo/ 5% PERA Tax Credit Certificate
+   - BIR Form No. 2000-OT version 2018 – Modify Description of Item 24, Part III Details of Payment
+                  From: Tax Debit Memo      To: Tax Debit Memo/ 5% PERA Tax Credit Certificate
+   - BIR Form No. 1706                 – Modify Description of Item 21, Part III Details of Payment
+                  From: Tax Debit Memo      To: Tax Debit Memo/ 5% PERA Tax Credit Certificate
+
+RMO No. 18-2024 - BIR Form No. 1601EQv2018, Included new/modified ATCs.
+	WI770-Income payments made by joint ventures, whether incorporated or not, taxable or non-taxable, to their local/resident supplier of goods - Individual
+	WC770-Income payments made by joint ventures, whether incorporated or not, taxable or non-taxable, to their local/resident supplier of goods - Corporate
+	WI780-Income payments made by joint ventures, whether incorporated or not, taxable or non-taxable, to their local/resident supplier of services - Individual
+	WC780-Income payments made by joint ventures, whether incorporated or not, taxable or non-taxable, to their local/resident supplier of services - Corporate
+	WC790-On the share of each co-venturer/member from the net income of the joint venture/consortium not taxable as corporation prior to actual or constructive distribution thereof - Corporate
+		
+RR No. 5-2025 - BIR Form No. 1601EQv2018, Included new ATCs
+	WI820-On Gross remittances by e-marketplace operators to the sellers/merchants for the goods or services sold/paid through their platform/facility - Individual	1/2%
+	WC820-On Gross remittances by e-marketplace operators to the sellers/merchants for the goods or services sold/paid through their platform/facility - Corporate	1/2%
+	WI830-On Gross remittances by digital financial services providers to the sellers/merchants for the goods or services sold/paid through their platform/facility - Individual	1/2%
+	WC830-On Gross remittances by digital financial services providers to the sellers/merchants for the goods or services sold/paid through their platform/facility - Corporate	1/2%
+
+RA 12023 - BIR Form No. 1600VT, Included new ATCs
+	WV080-Final Withholding VAT on purchase of digital service consumed in the Philippines from non-resident Digital Service Providers (Private Withholding Agent) - 12%
+	WV090-Final Withholding VAT on purchase of digital service consumed in the Philippines from non-resident Digital Service Providers (Government Withholding Agent) - 12%
+	WV100-Final Withholding VAT on the gross amount by resident eMarketplace to the non-resident sellers/merchants for the digital services sold/paid thru their platform/facility - 12%
+
+Change Request No. 3-2024, Memorandum on Advance Payment of Percentage Tax Using BIR Form No. 0605
+	BIR Form No. 0605, Added the following ATCs: PT010, PT040, PT041, PT060, PT070, PT090, PT140, PT150, PT160, PT170, PT180
+				PT101, PT102, PT103, PT104, PT105, PT113, PT114, PT115, PT120, PT130, PT132	
+
+RMO 12-2024 - BIR Form No. 1601FQv2018, Included new ATC WI750 - On gross income earned by foreign nationals 
+                  or non-Filipino citizens, regardless of their residency, who are employed and assigned in 
+                  the Philippines by Offshore Gaming Licensee or its Accredited Service Provider 
+
+RMO No. 49-2024 - BIR Form No. 1601FQv2018, Included new ATC 
+	WC810 - On final tax representing Franchise Tax on payments to NRFC supplier of PAGCOR related to its gaming operations	5%
+				  
+Bug fix on production issue - BIR Form No. 0619E, cannot file Return Period of previous years same as current month and year. 
+		Error prompt states: "Invalid month on Item 1. Month should not be a current Date".
+
+---------------------------------------------------------------------
+v7.9.4.2
+---------------------------------------------------------------------
+Fixes on production issue
+SR2024-000173271 -  BIR Form No. 1700v2018, Incorrect computation of income tax due for taxable year 2023 onwards.
+
+---------------------------------------------------------------------
+v7.9.4.1
+---------------------------------------------------------------------
+Implemented the following:
+
+Change Request No. 2023-02, Included these Alphanumeric Tax Codes (ATCs) in BIR Form No. 1702-RT 
+	IC101 – Regional Operating Headquarters
+	IC190 - Offshore Banking Units; and
+	IC191 – Foreign Currency Deposit Units
+
+Fixes on Production Issues
+
+SR2023-000079352 -  BIR Form No. 1702MXv2018C, Item 3D in Schedule 4 should have no validation since it is auto-computed 
+			by the system. The value for Item 3D should be the sum of Items 3A to 3C.
+PR2023-000000287 -  BIR Form No. 1702MXv2018, The taxpayer has 35 activities under EXEMPT Tax Regime. The taxpayer fills-out 35 mandatory attachments 
+			(Part V-Mandatory Attachments) but the consolidated amount on the corresponding columns of Part V 
+			did not reflect correctly to Part IV. Only the amount from 9 mandatory attachments have been consolidated to Part IV.
+SR2023-000137248 - BIR Form No. 1701, Incorrect income tax rate for taxable year 2023. It should compute based on updated Income Tax Table for 2023 onwards.
+
+---------------------------------------------------------------------
+v7.9.4
+---------------------------------------------------------------------
+Implemented the following:
+
+R.A. 10963-TRAIN Law / R.A. CREATE Law
+Change Request No. 2022-08, Added the following new/enhanced Forms:
+	BIR Form No. 1707 version 2021
+	BIR Form No. 1707A version 2021
+Change Request No. 2022-05, Revised content of email confirmation 
+	to taxpayers after successful return submission
+
+---------------------------------------------------------------------
+v7.9.3
+---------------------------------------------------------------------
+Implemented the following:
+
+SR2022-000015030 - Change Request No. 2022-06, BIR Form No. 0605, Inserted the following ATCs for tax payment of international carriers.
+			DS010 - Documentary Stamp Tax in general
+			IC080 - Income Tax for International carriers
+			PT041 - Percentage Tax for International carriers
+
+IR2022-000000664 - Change Request No. 2022-03, Notice to Taxpayers on the PROFILE Page of eBIRForms Package with the following text:
+                       "The designation of official e-mail address of the taxpayer is mandatory.
+                        It shall be used as an additional manner of serving BIR orders, notices, letters, communications and 
+                        other processes to the taxpayer.  Service through this official e-mail address shall be presumed valid 
+                        unless the taxpayer promptly informs BIR by updating his/her/its registration information with the Bureau."
+
+IR2022-000000665 - Revised Terms of Service Agreement (TOSA) in eBIRForms System (BIR Form Nos. 0605, 1701Qv2018, 1702Qv2008C, 1702Q,  
+			2550Q, 2550M, 2551Qv2018, 1601Cv2018, 1600, 0619F, 0619E).
+
+SR2022-000010042 - BIR Form Nos. 1702Qv2008/C - System should be able to detect and not successfully validate if Return Period is equal to zero.
+
+---------------------------------------------------------------------
+v7.9.2.1
+---------------------------------------------------------------------
+Implemented fixes on production issues:
+
+SR2021-002732025 - BIR Form Nos. 1600PT and 1600VT, Total Amount Still Due (Item 27) should not be rounded-off and should have 2 decimal places. 
+SR2021-002743482 - BIR Form No. 1702Q, Fields with long text values such as in the 31Gothers, 1stQtr, 2ndQtr and 3rdQtr, portions 
+                                       should not be accepted as valid entries. 
+SR2021-002743487 - BIR Form No. 1800v2018, Disable the save button if the mandatory fields such as TIN and Return Period are not properly filled-up.  
+SR2021-002743495 - BIR Form No. 1604Ev2018, Disable the save button if the mandatory fields such as TIN and Return Period are not properly filled-up.
+SR2021-002743498 - BIR Form No. 2000OTv2018 - Disable the save button if the mandatory fields such as TIN and Return Period are not properly filled-up.
+SR2021-002745543 - BIR Form No. 1601Cv2018. - Disable successful validation if mandatory fields such as Return Period for Month(MM) are not properly filled-up. 
+SR2021-002766256 - BIR Form No. 1702MXv2018C - Address issue on 'Cannot Validate and error message displayed' if Page 3 Schedule 4 Item 2 = zero.
+SR2022-002781550 - BIR Form No. 2000OTv2018 - Amount in Item 17 should round-off when computing for the tax due.
+
+---------------------------------------------------------------------
+v7.9.2
+---------------------------------------------------------------------
+RA 10963-TRAIN LAW:
+Added the following new/enhanced forms
+BIR Form No. 1707 version 2018
+BIR Form No. 2200C version 2018
+BIR Form No. 2552 version 2018
+BIR Form No. 1600PT
+BIR Form No. 1600VT
+
+Implemented fixes on BIR Form Nos. 1702MXv2018C and 1702MXv2018:
+SR2021-002641518 - Schedule 10 Item 4 and Item 9: Wrong computations. Incorrect amount in Item 4 and 9 results in wrong net taxable income/(loss) in Item 10.
+			  a. Computation of Item 4 shall be the total of Item 1 to Item 3.
+			  b. Item 9  shall be a Total of Item 5 to Item 8.
+SR2021-002641521 - Cannot open the saved and validated but not yet submitted return.
+SR2021-002641523 - After the return saved and validated but not yet submitted), the selected box in Part IV (Instructions) 
+                           is missing and the attachment is also missing.
+SR2021-002641526 - There's an error message when "Delete this Attachment" is clicked.
+SR2021-002641528 - Date of Incorporation is less than 4years from the Date of Filing, user can still enter the amount of MCIT in Item 18. 
+			MCIT is imposed beginning on the fourth taxable year immediately following the year in which such corporation commenced its business. operations.
+SR2021-002641529 - In schedule 2, page 2, NO amount of NET TAXABLE INCOME/LOSS  computed by the system.
+SR2021-002641532 - Even if the return is not an AMENDED RETURN, the user can still fill out Schedule 3-Tax credits/Payments,  ITEM 17.
+SR2021-002641534 - System Validated  Successfully, despite empty Schedule 1 -Basis of Tax Relief.
+SR2021-002641537 - Under the MCIT Schedule, Validation successful pop-up message appears despite NO YEAR inputted in row 2. 
+SR2021-002641539 - Entered 3 EXEMPT activities in the Mandatory Attachments, Total Itemized Deductions were not computed by the system 
+                          in the main form and EMPTY Net Taxable Income/Loss.
+SR2021-002641542 - User was able to validate successfully the form even though the highlighted column did not provide the details of NOLCO, only year was entered. 
+SR2021-002641544 - On the print preview button, the radio buttons became empty and there's no way to print the mandatory attachments. 
+SR2021-002641547 - User was able to validate it successfully even though the amount fields were empty but there were descriptions entered.
+SR2021-002641549 - Scenario: Taxpayer opted to use the OSD and mark OSD in Part I Item 13.
+                             This option shall be applicable only to Column C or regular, so OSD shall be enabled in this column 
+                             and the itemized deductions shall be disabled.
+                             Itemized deductions fields in Column A - Exempt and Column B- Special will always be enabled even if the TP opted to OSD.
+SR2021-002641550 - Columns A and B did not compute for the total itemized deductions and total taxable income.
+
+
+---------------------------------------------------------------------
+v7.9.1
+---------------------------------------------------------------------
+RA 11534 - CREATE LAW:
+Form for QUARTERLY Corporate Income Tax Returns affected by CREATE Law
+	1702Qv2008C
+SR2021-002526622 - BIR Form No. 1600, New tax rates for the following ATCs:
+			WB080-1%; WB082-1%; WB084-1%
+		   Form Form No. 1601FQ, New tax rates for the following ATCs:
+			WC212 - 25%; WC213 - 25%; WC230 - 25%; WI240 - 20%; WI341 - 20%; WI350 - 20%
+			
+Production fix:
+SR2021-002525552 - BIR Form 1702MXv2018 and 1702MXv2018C, If the Taxpayer opted to use OSD, 
+		This OSD applies only to column C so OSD is enabled but the itemized deductions should be disabled 
+		In Column A - Exempt and Column B - Special, even if the TP chose the OSD, 
+		OSD in these Columns shall always be disabled and itemized deductions shall always be enabled.
+
+RMC No. 35-2021
+SR2021-002484074 - BIR Form No. 1601FQ Schedule 5, Additional Tax Treaty Codes and Countries
+			Treaty Code	Country
+			LK		Sri Lanka
+			MX		Mexico
+			QA		Qatar
+			TR		Turkey
+
+---------------------------------------------------------------------
+v7.9
+---------------------------------------------------------------------
+RA 11534 - CREATE LAW:
+Form for Annual Corporate Income Tax Returns affected by CREATE Law
+	1702RTv2018C
+	1702EXv2018C
+	1702MXv2018C
+SR2021-002503065 - BIR Form No. 2551Qv2018, Include new 1% tax rate, ATC PT010' 
+
+Production fixes:
+SR2021-002491540 - BIR Form No. 1701v2018, Fix on Page 2 If Item 31 is less than zero, Item 32 should be zero.
+BIR Form No. 1701A – If user select Amended = Yes in Item 2 and save the file, then Edit/Change the Return Period (Year) 
+			and click Save again, the XML filename (return period) remains the same.
+BIR Form No. 1800v2018 - If the return is amended, system do not suffix the version number (V1, V2) at the XML filename.
+BIR Form No. 1702EXv2018: Part V – Tax Relief Availment Item 52, shall reflect the amount from Item 39 multiplied by the existing tax rate. 
+			Part V – Tax Relief Availment Item 53, shall reflect the amount from Item 36 multiplied by the existing tax rate.
+BIR Form No.1604Ev2018 - If user did not input Year and click on ‘Save’, the XML filename has no Return Period (Year).
+
+---------------------------------------------------------------------
+v7.8.1
+---------------------------------------------------------------------
+SR2021-002484136 - BIR Form No. 1800v2018. Correction of tax rate from 16% to 6%
+
+---------------------------------------------------------------------
+v7.8
+---------------------------------------------------------------------
+RA 10963-TRAIN LAW:
+Change Request No. 2020-02: Added New Form, 2000OT version 2018
+			    Added New Form, 1800 version 2018
+			    Added New Form, 1801 version 2018
+
+SR2021-002368182 - BIR Form No. 1700v2018. Part VI, Schedule 1, 
+			Item e.Tax Withheld should accept amount = 0 even if 
+			Item c. Compensation Income Subject to Regular/Graduated Rates is greater than 0
+			     
+SR2020-002341710 - BIR Form No. 1604C. Part II Summary of Remittances - Adjustment column to accept negative values.
+
+---------------------------------------------------------------------
+v7.7
+---------------------------------------------------------------------
+RA 10963-TRAIN LAW:
+
+RMC No. 73-2019
+Change Request No. 2019-03: Added New Form, 1604C 
+			    Added New Form, 1604F 
+			    Added New Form, 1604E version 2018
+
+SR2020-002317156 - BIR Form No. 2551Q version 2018. Change in ATC rates per RMO No. 36-2019
+			ATC PT120 From 5% to 2%
+			ATC PT130 From 10% to 4%
+---------------------------------------------------------------------
+v7.6.1
+---------------------------------------------------------------------
+Implemented fixes for the following forms:
+SR2020-001201069 - BIR Form No. 1700 version 2018
+	System shall not compute value with centavo. If 49 or less, drop down and if 50 or more, round up.
+	All decimal places rounded off.
+	Part II Item 18 - Invalid TIN popup message even if TIN entered is valid.
+	If TP change the taxpayer type in Item 6 and Item 20 from Employee (Regular Rates) 
+		to NRANETB (25%), all date in Column C shall be cleared disabled. 
+		Same when taxpayer type is chnage from NRANETB (25%) to Employee (Regular Rate), Column D shall be cleared and disabled.
+	Amount in item 29 should be 50% or less of item 26, both taxpayer and spouse.
+	Amount in item 29 should be not more than the amount in item 28 (both taxpayer and spouse).
+	If the amount in item 28 is negative, item 29 should be in gray or not enterable.
+	Item 3 ATC should be a non-editable field.
+	Popup message spelling - 'laeter' should be 'later'.
+	Item 1 should not accept future date.
+	Item 9 should not accept future date.
+	Schedule 1 - There should be no validation successful message for incomplete details/rows.
+	Part V.A Items 44 and 46 - Offsetting should not be allowed.
+
+SR2020-001201072 - for BIR Form 1701 version 2018
+	If Spouse is ‘Purely Compensation Income, amount of Tax Due-Compensation Income on Schedule 2 Item 7 shall be reflected on Page 1 Part II Item 22.B.
+	If Spouse is earning purely compensation income, Part IV Item 12 and 12A is not a mandatory field. 
+	If Part II Item 24A/24B is zero or negative, Item 25A/25B shall be grayed or non-enterable.
+	For Filer - If "NO" is ticked in Part I Item 19 and Item 20, Part VIII.A and Part VIII.B shall be grayed/disabled.
+	For Spouse - If "NO" is ticked in Part IV Item 10 and Item 11, Part VIII.A and Part VIII.B shall be grayed/disabled.
+	When only the legal basis and amount is inputted, description is not being required by the system. Same when only amount is inputted, description and legal basis is not being required by the system
+	When validated and edit the form, Schedule 5.B, Legal Basis and Amount becomes non-editable.
+	Part V Schedule 3.B  Item 26 - If Gross Receipts is more than 3 Million, there shall be a pop-up message that TP is not qualified to 8% Tax Rate. 
+	The tax due-compensation income from Schedule 2 Item 7 shall be reflected to Item 22 of Part II (if Spouse is purely compensation), this is to avoid a negative amount/overpayment on the part of spouse.
+
+SR2020-001201077 - for BIR Form 1702EX version 2018
+	Part VI Schedules Item 17i.1 to 17i.4 did not compute the total other deductions. 
+	The amount of other deductions or the item 17i shall be part of the total computation of Items.
+	RECONCILIATION TABLE
+	Upon validation and table 3 has no entry, the package validates the return which should not be the case. 
+		Just like the behavior of the June 2013 version, a pop message should appear and states that “Part IV, Item 39 should be equal to Schedule 3, Item 10”.
+	Table 6 - Reconciliation Table: Upon validation and table 6 has no entry, a pop up message appear with a message as stated on June 2013 version.
+	Schedule 3 amount fields should be rounded off.
+	The amount auto populated in Item 17i with no decimal places. Please make the amount to have a comma separator and no 2 decimal places.
+	The amount auto populated in Item 4 with no decimal places. Please make the amount to have no 2 decimal places.
+	Computation of Tax Relief - Please make a formula to compute the tax relief availment. The applicable income tax rate here for items 52 and 53 is 30% (for the year 2018 and 2019). The rate was intentionally not reflected here in anticipation to the increase/decrease of income tax rate which will be brought by the TRAIN Package.
+	Effectivity start date of tax relief/exemption should not be more than the taxable year. 
+	Upon clicking the OSD, schedule 1 and 2 are still enterable. Schedule 1 and 2 should be disabled if opting for OSD.
+	Validation successful even if the row is not completely filled-up. Pop up message should be displayed for the error
+	Item 17 should not allow expired Tax Relief Exemption
+	Schedule 3 must be a mandatory field
+	If Item 6 is (Purely) Compensation Income, system should not require inputs in Part IX - Reconciliation of Net Income per Books Against Taxable Income. Applicable for both Filer and Spouse.
+
+SR2020-001201080 - for BIR Form 1702RT version 2018
+	Missing Iterating Rows in Schedule 1 – Ordinary Allowable Itemized  Deductions Item 17i
+	Schedule III is applicable only for Net Operating Loss and if deduction is greater than Gross Income (system shall not accept value if gross income is greater than deduction)
+	Schedule 3 - If Gross Income is higher than Ordinary Allowable Deductions, NOLCO Schedule shall be empty. System shall not compute any amount. 
+	Schedule 2 - Wrong computation, sum of iterating rows not included in the total amount.
+	Item 9 - Registered Address formatting and missing letters
+	Part II Item 21 - Wrong computation of TOTAL AMOUNT PAYABLE
+
+SR2020-001201084 - for BIR Form 1702MX version 2018
+	Schedule 5 Item 17d to 17i - if not completely filled out, validation shall not be succesful. A pop up message shall appear for incomplete information.
+	Schedule 8 Computation of NOLCO for Special Rate - amount shall not be auto-populated if gross income is greater than ordinary allowable deductions
+	Schedule 10 – Reconciliation of Net Income per Books
+	System shall not succesfully validate if the amount in Schedule 10 Item 10 Columns A, B, C and D is not equal to Schedule 2 Item 13 Columns A, B, C and D. 
+		Just like the behavior of the June 2013 version, a pop message should appear and states that “Page 2 Schedule 10 Item 13 Columns A, B, C & D 
+		must be equal to Page 4 Schedule 10 Item 10 Columns A, B, C & D."
+	Part V Mandatory Attachments - if not completely filled out, validation shall not be succesful. A pop up message shall appear for incomplete information.
+	Part V Mandatory Attachments  - If Gross Income is higher than Ordinary Allowable Deductions, NOLCO Schedule shall be empty. System shall not compute any amount.
+	Part V Mandatory Attachments - There should be no validation succesful message for incomplete details/rows.
+	Part V Mandatory Attachment Schedule F Item 7 Year Incurred shall be auto-populated and non-enterable.
+	Part V Mandatory Attachment Items 5 and 6 - Expired Tax Relief Exemption should not be allowed.
+	Part V Mandatory Attachment - If under EXEMPT TAX REGIME, NOLCO shall not be allowed, therefore, Part V Schedule F shall be disabled.
+	Missing Item 22.
+
+---------------------------------------------------------------------
+v7.6
+---------------------------------------------------------------------
+RA 10963-TRAIN LAW:
+Change Request No. 2019-03: Added New Form, 1702MX version 2018
+Change Request No. 2018-05: Added New Form, 1700 version 2018
+
+Form 1701 version 2018 - Implemented field validations and automated computation
+
+---------------------------------------------------------------------
+v7.5
+---------------------------------------------------------------------
+RA 10963-TRAIN LAW:
+Change Request No. 2018-05: Added New Form, 1702RT version 2018
+			    Added New Form, 1702EX version 2018
+
+Change Request No. 2019-02:  System Enhancement (eBIRForms) 
+	affected by RAO No.  6-2019- Included RDO 21C - Clark Freeport Zone in the list of RDOs in Profile Page.
+
+SR2019-776374 - Form 1601EQ, Change in ATC rates depending on the return period.
+	WI650 and WC650: From 25% to 15%; WI651 and WC651: From 32% to 15%; WI663 and WC663: From 20% to 15%; WI710 and WC710: From 20% to 15%. 
+	If return period is year 2018, old ATC rate. If return period is year 2019 onwards, new ATC rate.
+
+SR2019-776377 - Form 1601EQ, If item 30 is negative amount or overpayment, this is mandatory and the user is prompted to select one of the given options.
+
+SR2019-776385 - Form 1602Q, If return period is year 2018, Item no. 15, WI165 is enabled. If return period is year 2019 onwards, Item no. 15, WI165 is disabled.
+
+SR2019-776391 - Form 1701A, System shall not validate if TP/User file an advance return/future date in Item 1.
+SR2019-776392 - Form 1701A, Round off all decimal computations to the nearest peso.
+
+SR2019-776397 - Form 1701A, If item 30 is negative amount or overpayment, this field is mandatory and the user is prompted to select one of the given options.
+
+SR2019-776406 - Form 2000v2018, Computation of ATC Code DS106 (Original Issue of All Debt Instruments) shall be P1.50 one each Two Hundred Pesos (P200.00), 
+	or proportional amount in accordance with the ratio of its terms in number of days to 365 days if terms of debt instrument is less than 1 year.
+
+SR2019-776417 - Form 2551Qv2018, Implemented new ATC Rates prescribed per RMO 22-2019. PT120-From 2% to 5%; PT130-From 4% to 10%.
+
+SR2019-000560185 - Form 2551Qv2018, Corrections in the validation of Item 13 and Schedule 1.
+
+SR2019-776431 - Form 1701Qv2018, Rounding off all decimal computations to the nearest peso.
+---------------------------------------------------------------------
+v7.4.2
+---------------------------------------------------------------------
+*RR 1-2019 - Update rates of the following ATCs, Form 1601EQ:
+		WI650 and WC650: From 25% to 15%
+		WI651 and WC651: From 32% to 15%
+		WI663 and WC663: From 20% to 15%
+		WI710 and WC710: From 20% to 15%
+
+---------------------------------------------------------------------
+v7.4.1
+---------------------------------------------------------------------
+*SR2019-000534600 - Form 1701v2018: Resolve printing issue
+*SR2019-000534633 - Form 1701v2018: Enable input of negative value on certain amount fields.
+*SR2019-000534634 - Form 1701v2018: Page 3 and 4 displays different TIN.
+
+---------------------------------------------------------------------
+v7.4
+---------------------------------------------------------------------
+RA 10963-TRAIN LAW:
+*RR No. 8-2018 	 - Added New Form, 1701 version 2018, Annual Income Tax Return for Individuals 
+			(including mixed income earner), Estates and Trusts 
+
+---------------------------------------------------------------------
+v7.3.1
+---------------------------------------------------------------------
+*SR2019-000513909 - Form 1701A: Resolve printing error
+*SR2019-000502324 - Form 0619F: Resolve issue on amount do not appear in Item 19 when printing the form
+*SR2019-000501104 - Form 1701A: Resolve issue If item 30 is negative amount or overpayment, overpayment options field shall become mandatory and TP shall be prompt to select one of the given options.
+*SR2019-000501264 - Form 1604CF: script error during printing
+
+---------------------------------------------------------------------
+v7.3
+---------------------------------------------------------------------
+*RR No. 8-2018 	 - Added New Form, 1701A: Annual Income Tax Return for Individuals Earning Income Purely from Business/Profession 
+*RMC No. 88-2018 - Added New Form, 2000: Monthly Documentary Stamp Tax Declaration/Return
+
+*SR2018-000467971 - 1701Qv2018: Schedule 1, Item 41 Description changed to "Net Income/(Loss) This Quarter (If Itemized: Item 38 Less Item 39; If OSD: Item 38 Less Item 40)".
+*SR2018-000470329 - Resolve the Help Page for 1701Qv2018 which displays blank screen
+*SR2018-000470333 – Resolve the	Help Page for 1701Q (Old Form) which displays script error
+*SR2019-000496095 - Resolve printing error for 1601EQ Item 7 blank RDO Code 
+
+---------------------------------------------------------------------
+v7.2.1
+---------------------------------------------------------------------
+Bug fixes:
+*SR2019-000485145 - Form 1601Cv2018, Invalid Return Period error when entering year 2018 in Item No. 1
+*SR2019-000485148 - Form 0619E, Return Period Error when entering year 2018 in Item No. 1
+*SR2019-000485150 - Form 0619F, Return Period Error when entering year 2018 in Item No. 1
+
+---------------------------------------------------------------------
+v7.2
+---------------------------------------------------------------------
+RA 10963-TRAIN LAW:
+*RR No. 11-2018 - Added New Form, 1601-C: Monthly Remittance Return of Income Taxes Withheld on compensation
+		- Added New Form, 1602-Q: Quarterly Remittance Return of Final Taxes Withheld on Interest Paid on Deposits and Deposits Substitutes/Trusts/Etc.
+		- Added New Form, 1603-Q: Quarterly Remittance Return of final Income Taxes Withheld on Fringe Benefits Paid to Employees Other than Rank and File
+*RR No. 8-2018	- Added New Form, 2551-Q: Quarterly Percentage Tax Return
+*RMO No. 29-2018 - Creation of New ATCs:
+		Form 2200-P,	XP105 - Naphtha and pyrolysis gasoline, when used as a raw material in the production of petrochemical products
+					or in the refining of petroleum products, or as replacement fuel for natural-gas-fired-combined cycle power plant
+					in lieu of locally-extracted natural gas during the non-availability thereof, per liter of volume capacity
+				XP085 - Pyrolysis gasoline, per liter of volume capacity
+				XP165 - Liquefied petroleum gas when used as raw material in the production of petrochemical products per kilogram
+				XP200 - Petroleum Coke, per metric ton 
+				XP210 - Petroleum Coke when used as feedstock to any power generating facility per metric ton
+		Form 2200-AN	XG065 - Hybrid Vehicles (50% of applicable tax rate)
+					Up to P600,000 - 4%
+					Over P600,000 to P1,000,000 - 10%
+					Over P1,000,000 to P4,000,000 - 20%
+					Over P4,000,000 - 50%
+				XG068 - Purely Electric Hybrid Vehicles - Exempt
+				XG055 - Pick-Ups - Exempt
+		Form 0605	XC010 - Performance of Services on invasive cosmetics procedures - 5%
+
+*SR2018-000377115 - Form 1701Q- Amount fields rounded off to the nearest peso
+*SR2018-000396503 - Form 1601-FQ, Resolve International Tax Treaty Tax Rate when inquired reverts back to default 30% rate
+*SR2018-000417261 - Resolve inconsistencies in the behavior of the print button  
+*Bank Bulletin No. 2018-15 - Form 0605, Included new ATC:XC010 and new Tax Type:XC for payment of excise tax on Invasive Cosmetic Procedures 
+*RR No. 13-2004	- Form 2000, Modified the ATC Description of DS106
+			From: "Exchange, ETC issued by the gov't or any of its instrumentalities, etc."
+			To  : "Original issue of all debt instruments"  
+
+
+---------------------------------------------------------------------
+v7.1
+---------------------------------------------------------------------
+ENHANCEMENT:
+RA 10963-TRAIN LAW:
+*RR No. 8-2018 	- Added New Form, 1701Q: Quarterly Income Tax Return for Individuals, Estates and Trusts
+*RR No. 11-2018 - Added New Form, 0619-E: Monthly Remittance Form for Creditable Income Taxes Withheld (Expanded)
+		- Added New Form, 0619-F: Monthly Remittance Form for Final Income Taxes Withheld
+		
+		- Form 1603, Reverted ATC WF320 from 65%-35% (per RMC 2-2018) to 85%-15% (RR 11-2018)
+		- Form 1603, Modified the ATC Description of WF360 
+				From	: “Other (In General)*” 
+				To: “In General, for Citizen, Resident Alien and Non-Resident Alien Engaged in Trade or Business within the Philippines”
+		- Form 1603, Modified ATC Tax Rates of WF360 from 0%-0% to 65%-35%
+		- Prohibited the filing of Forms 1601-E and 1601-F for Return Period 2018 onwards 
+
+*Operations Memo- Added New Form, 2200-S: Excise Tax Return for Sweetened Beverages
+
+*SR2018-000329548 - Updated the JURAT portion of the New Forms to comply with the Data Privacy Act of 2012 (R.A. No. 10173)
+
+---------------------------------------------------------------------
+v7.0
+---------------------------------------------------------------------
+ENHANCEMENT:
+RA 10963-TRAIN LAW:
+*RR 11-2018 	- 	Added New Form, 1601-EQ: Quarterly Remittance Return of Creditable Income Taxes Withheld (Expanded)
+	    	-	Added New Form, 1601-FQ: Quarterly Remittance Return of Final Income Taxes Withheld
+*Memorandum to DCIR, ISG dated March 7, 2018
+	    	- Frequency of Filing of Percentage Tax Return from Monthly to Quarterly (From 2551M to 2551Q)
+
+*SR2018-000323903 - Form 2000OT- Resolve wrong computation of tax due, ATC: DS102, Item 16
+
+---------------------------------------------------------------------
+v6.4
+---------------------------------------------------------------------
+ENHANCEMENT:
+RA 10963-TRAIN LAW:
+*RMC No. 2-2018 - Form 0605, Add new tax type: XB (Excise Tax - Sweetened Beverages)
+*RMO 16-2018/OM 2017-12-06
+		-  Form 0605, Add new ATCs: XB010, XB020, XB030, XB040, XB050, XB060, XB070, XB080, XB090 and XB100
+*RMC No. 2-2018 - Form 1602, Change tax rate from 7.5% to 15%. ATCs: WI170 and WC170
+		- Form 1603, Change tax rate from 15% to 35% and Change Percentage Divisor from 85% to 65%. ATC: WF320
+		- Form 2552, Change tax rate from 1/2 of 1% to 6/10 of 1% ATC: PT200
+*RMC No. 3-2018 - Form 2000, Change tax rate from P1.00/200.00 to P2.00/200.00 ATC: DS101
+		- Form 2000, Change tax rate from P0.75/P200 to P1.50/200.00 ATC: DS102
+		- Form 2000, Change tax rate from P0.50/200 to 1.00/200 ATC: DS104
+		- Form 2000, Change tax rate from P1.50 to P3.00 per piece of check ATC: DS105
+		- Form 2000, Change tax rate from P1.00/P200 to 1.50/P200.00 of FV or fraction of 365 days for intruments with term of less than 1 year ATC: DS106
+		- Form 2000, Change tax rate from P0.30/P200 to P0.60/P200.00 ATC: DS107
+		- Form 2000, Change tax rate from P0.30/P200.00 to P0.60/P200.00 ATC: DS108
+		- Form 2000, Change tax rate of ATC DS109 to:
+				>if the life insurance policies amount does not exceed P100,000.00 = Exempt
+				>if the life insurance policies amount exceeds P100,000.00 but does not exceed P300,000.00 = P20
+				>if the life insurance policies amount exceeds P300,000.00 but does not exceed P500,000.00 = P50
+				>if the life insurance policies amount exceeds P500,000.00 but does not exceed P750,000.00 = P100
+				>if the life insurance policies amount exceeds P750,000.00 but does not exceed P1,000,000.00 = P150.00
+				>if the life insurance policies amount exceeds P1,000,000.00 = P200
+		- Form 2000, Change tax rate from 25% to 50% of DST paid on original issue of such stock ATC: DS125
+		- Form 2000, Change tax rate from P0.30/P200.00 to P0.60/P200.00 ATC: DS126
+		- Form 2000OT, Change tax rate from P0.75/P200 to P1.50/200.00 ATC: DS102
+		- Form 2000OT, Change tax rate from 25% to 50% of DST paid on original issue of such stock ATC: DS125	
+
+---------------------------------------------------------------------
+v6.3
+---------------------------------------------------------------------
+ENHANCEMENT:
+*SR2016-000044995 - Amended Return should be saved as amended (with V suffix)
+*SR2016-000046790 - In eBIRForms Package FTP codes, create single parameter only for bothUAT and Prod version
+*SR2016-000046791 - eBIRForms Package - Profile information: Taxpayer should be able to enter 1 email only per TIN
+*SR2017-000096797 - BIR Forms 1700 and 1701: To accommodate PWD as dependent, any age should be accepted by the system as long as the box for mentally or physically incapacitated is being marked.
+
+BUG FIXES:
+*SR2016-000040526 - Form 2000OT - Resolve wrong computation of Tax Due, ATC: DS 122, Item 16
+*SR2016-000040527 - Form 2000OT - Resolve Wrong Spelling: ATC: DS 122, Description – “DEES” should be spelled “DEED” OF SALE AND CONVEYANCE OF REAL PROPERTY
+*SR2017-000096791 - Form 1701 - Resolve error in TOSA page
+---------------------------------------------------------------------
+v6.2
+---------------------------------------------------------------------
+ENHANCEMENT:
+*SR2016-000010045 - Form 1702MX - eBIRForms_Enhancement on 1702MX based on RA 10693
+*SR2016-000013539 - ONETT forms updated guidelines and instructions as per RMO No. 15-2003
+*SR2016-000015929 - Add "043" in the list of RDO based on RAO No.2-2016
+*SR2016-000015932 - Add facility to check the version of offline package
+*SR2016-000015934 - Form 0605 - Updates on list of ATCs
+
+BUG FIXES:
+*HD2016-1330987 - Form 1701Q - Resolve issue in items 33A and 33B to comply with RR2-2010
+*SR2016-000011252 - Form 2550M - Resolve issue in schedule 3, estimated useful life.
+*SR2016-000011277 - Form 1701Q - Cannot input negative value in item 35
+*SR2016-000011283 - Form 1601-E Update the list of Alpha Numeric Tax Codes (ATCs)
+*SR2016-000014315 - Resolve blank popoup issue
+*SR2016-000014557 - Form 1707 - Resolve total tax due computation error
+---------------------------------------------------------------------
+v6.1
+---------------------------------------------------------------------
+ENHANCEMENT:
+2550Q - Correction in the computation of Sum of total applied amount
+
+BUG FIXES:
+*HD2016-1329475 - Form 1700v2013- Remove %20 on FirstName Field
+*HD2016-1328509 - Form 2000 - Add Missing fields (Section C, 14A-E)
+*HD2016-1331702 - Form 1702Q - Resolve problem in printing
+---------------------------------------------------------------------
+v6.0
+---------------------------------------------------------------------
+ENHANCEMENT:
+*One Submit Final Copy Button
+*TIN Validation Using Check Digit
+*Image to HTML Conversion of img/jurat/ folder
+BUG FIXES:
+*HD2015-1313594 - BF2550Q, Schedule 2 Aggregate Amount fields validation, should not exceed 1 million per month
+*HD2016-1324474 - Remove Mandatory, Page 2 Item1 - 3 compensation Income should not be zero when Page3 Item 6 have value
+*HD2016-1324774 - TIN and Email should not be required when TP choose married

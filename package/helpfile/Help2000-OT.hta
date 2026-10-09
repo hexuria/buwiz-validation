@@ -1,0 +1,289 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <meta http-equiv="x-ua-compatible" content="ie=9">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <hta:application id="0605"
+        applicationname="0605"
+        version="1.0"
+        caption="yes"
+        showintaskbar="yes"
+        icon="../img/bir_icon.ico"
+        singleinstance="YES"
+        sysmenu="YES"
+        navigable="YES"
+        contextmenu="NO"
+        windowstate="maximize"
+        scrollflat="YES">	
+		<script src='../jq/jquery-1.7.1.min.js'></script>
+		<script src='../jq/jquery-ui-1.8.18.custom.min.js'></script>	
+        <script src='../js/environment.js'></script>		
+		<script src='../js/string-util.js'></script>
+        <title>BIR Form No. 2000OT</title>
+        <link href="../css/styles.css" rel="stylesheet" type="text/css" />	
+        <style type="text/css">
+            <!--
+            .style2 {
+                font-size: 10px;
+            }
+
+            .style3 {
+                font-size: 10pt;
+            }
+
+            .style4 {
+                font-size: 12pt;
+            }
+            -->
+        </style>
+</head>
+<body>
+    <ul class="topnav printButtonClass">
+        <li>
+            <a href="#" class='toplevel'>File</a>
+            <ul class="subnav">
+                <li><a href="../BIRForms.hta">Main Screen</a></li>
+                <li><a href="#" onclick="window.close(); self.close();">Exit</a></li>
+            </ul>
+        </li>
+
+    </ul>
+    <!--topnav-->
+    <div class="printButtonClass" style="position: fixed; top: 10px; font-size: 11px; z-index: 1000000000000000; right: 5px; width: auto;">Government Property Not For Sale</div>
+
+    <!--title-->
+    <img class="printButtonClass" id="bg" src="../img/bg_n.png" height="100%" align="top" />
+    <!--watermark-->
+
+    <style>
+        .atcNames {
+            font-weight: bold;
+        }
+
+        tr.atc td {
+            border-bottom: 1px #e1e1e1 solid;
+        }
+
+        tr.atc:hover td {
+            background: #FFC;
+        }
+
+        td.atc {
+            padding: 4px;
+        }
+
+        #header, .menu {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            height: 25px;
+            background: #fefefe;
+            white-space: nowrap;
+            font-weight: bold;
+            border: 1px #ccc solid;
+            visibility: hidden;
+            z-index: 3000;
+        }
+
+        .menu {
+            visibility: visible;
+        }
+
+        #header input {
+            background: none;
+            border: none;
+            pointer: cursor;
+            font-weight: bolder;
+            height: 25px;
+            border-right: 1px #ccc solid;
+            visibility: visible !important;
+            float: left;
+            width: auto;
+            padding-left: 3px;
+            padding-right: 3px;
+        }
+
+            #header input:hover {
+                background: #FFC;
+            }
+
+        #container {
+            margin-top: 40px;
+        }
+    </style>
+
+    <form id="frmMain" name="frmMain">
+        <div id="container">
+            <div id="wrapper" style="margin: 0 auto; position: relative; width: 830px;">
+                <div id="formPaper">
+                    <div id="Content" align="center">
+                        <table border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td>
+                                    <span class="formTitle"><b>BIR Form No. 2000OT</b>
+
+                                        Guidelines and Instructions</span>
+                                    <!--<img src="../img/2000OThelp.png" alt="2000OThelp" height="100%" width="100%" align="top" />-->
+                                </td>
+                            </tr>
+                        </table>
+                        <div class="smallSubtitle">
+                            BIR FORM 2000-OT - DOCUMENTARY STAMP TAX DECLARATION/RETURN(ONE-TIME-TRANSACTIONS)
+                                         
+                        </div>
+                        <div class="smallSubtitle">GUIDELINES AND INSTRUCTIONS</div>
+                        <br />
+                        <br />
+                        <table id="inserted">
+                            <tr>
+                                <td class="firstcol">
+                                    <b>Who Shall File</b>
+                                    <p>This return shall be filed in triplicate by the following person making, signing, issuing, accepting or transferring the document or facility evidencing transaction:</p>
+                                    <ol class="indent">
+                                        <li>Every natural or juridical person, resident or non-resident, for sale, barter, exchange or other onerous disposition of shares of stock in a domestic corporation, classified as <ins>capital asset</ins> , not traded in the local stock exchange;</li>
+                                        <li>Every withholding agent/buyer/seller on the sale, transfer or exchange of real property classified as <ins>capital asset</ins> . The “sale” includes pacto de retro sale and other forms of conditional sale; and</li>
+                                        <li>Every withholding agent/buyer/seller on the sale, transfer or exchange of real property classified as <ins>ordinary asset</ins>.</li>
+                                    </ol>
+                                    <p>Whenever one party to the taxable document enjoys exemption from the tax herein imposed, the other party thereto who is not exempt shall be the one directly liable for the tax.</p>
+                                    <br />
+                                    <b>When and Where to File and Pay</b>
+                                    <p>The return shall be filed and the tax paid within five (5) days after the close of the month when the taxable document was made, signed, issued, accepted or transferred.</p>
+                                    <p>The return shall be filed with and the tax paid to the Authorized Agent Bank (AAB) within the territorial jurisdiction of Revenue District Office (RDO) where the seller/transferor is required to be registered or where the property is located in case of sale of real property. In places where there are no AAB’s, the return shall be filed directly with and tax paid to the Revenue Collect ion Officer (RCO) or duly Authorized City or Municipal Treasurer within the RDO where the seller/transferor is required to be registered or where the property is located in case of real property.</p>
+                                    <p>Where the return is filed with an AAB, taxpayer must accomplish and submit BIR-prescribed deposit slip which the bank teller shall machine validate as evidence that the BIR tax payment is deposited to the account of the Bureau of Treasury. The AAB receiving the tax return/payment form shall also machine validat e and stamp mark the word “Received” on the return/payment form as proof of filing the return/payment form and payment of the tax by the taxpayer. The machine validation shall reflect the date of payment, amount paid and transactions code, the name of the bank, branch code, teller’s code and teller’s initial. Bank debit advice/memo shall still be issued to taxpayers paying under the bank debit system.</p>
+                                    <br />
+                                    <b>Taxable Base</b>
+                                    <ol class="indent" type="A">
+                                        <li>For Transfer of Shares of Stocks:</li>
+                                        <div class="indent">
+                                            <p>For <strong>Shares of Stocks With Par Value</strong>, the documentary stamp tax shall be based on the par value of shares being sold or transferred; and</p>
+                                            <p>For <strong>Shares of Stocks Without Par Value</strong>, the documentary stamp tax shall be based on documentary stamp tax paid upon the original issue of the stock.</p>
+                                        </div>
+                                        <li>For Transfer of Real Property (Capital and Ordinary assets):</li>
+                                        <ol class="indent">
+                                            <p>The Documentary Stamp Tax shall be based on whichever is higher of the following:</p>
+                                            <li>The fair market value as determined by the Commissioner (zonal value);</li>
+                                            <li>The fair market value as shown in the Schedule of Values of
+the Provincial and City Assessors; or
+                                            </li>
+                                            <li>The selling price of the property or fair market value of the property received in an exchange transaction.</li>
+                                            <p>
+                                                Provided, that when the sale is thru mortgage foreclosure sale
+or when one of the contracting parties is the Government, the tax herein imposed shall be based on the actual consideration.
+                                            </p>
+                                        </ol>
+                                    </ol>
+                                    <p>
+                                        In case of sale of real property paid under installment payment or deferred payment basis, the payment of documentary stamp tax (DST) shall accrue upon the execution of the Deed of Absolute Sale but the basis for the imposition
+                                    </p>
+                                </td>
+                                <td class="secondcol">thereof shall be the gross selling price or fair market value of the property, whichever is higher, at the time of the execution of the Contract to Sell.
+                                    <br />
+                                    <br />
+                                    <b>Effect of Failure to Stamp Taxable Document</b>
+
+                                    <p>An    instrument,    document   or   paper which is	required   by    law	to   be stamped and which has been signed, issued, accepted or transferred without being duly stamped,	shall	not  be recorded,  nor  shall  it or any copy thereof or any record of transfer of the same be admitted or used in evidence in any court until the requisite stamp or stamps shall have been affixed thereto and cancelled.</p>
+
+                                    <p>No notary public or other officer authorized to administer oaths shall add his jurat or acknowledgment to any document subject to documentary stamp tax unless the proper documentary stamps are affixed thereto and cancelled.</p>
+                                    <br />
+                                    <b>Penalties</b>
+                                    <br />
+                                     
+                                   <p> There shall be imposed and collected as part of the tax:</p>
+                                    <ol class="indent">
+                                        <li>A surcharge of twenty five percent (25%) for each of the following violations:</li>
+                                        <ol class="indent" type="a">
+                                            <li>Failure to file any return and pay the amount of tax or installment due on or before the due date;</li>
+                                            <li>Unless otherwise authorized by the Commissioner, filing a return with a
+person or office other than those with whom it is required to be filed;
+                                            </li>
+                                            <li>Failure to pay the full or part of the amount of tax shown on the return, or the full amount of tax due for which no return is required to be filed on or before the due date;</li>
+                                            <li>Failure to pay the deficiency tax within the time prescribed for its payment in the notice of assessment.</li>
+                                        </ol>
+                                        <li>A surcharge of fifty percent (50%) of the tax or of the deficiency tax, in case any payment has been made on the basis of such return before the discovery of the falsity or fraud, for each of the following violations:</li>
+                                        <ol class="indent" type="a">
+                                            <li>Willful neglect to file the return within the period prescribed by the Code or by rules and regulations; or</li>
+                                            <li>In case a false or fraudulent return is wilfully made.</li>
+                                        </ol>
+                                        <li>Interest at the rate of twenty percent (20%) per annum, or such high er rate as may be prescribed by rules and regulations, on any unpaid amount of tax, from the date prescribed for the payment until the amount is fully paid.</li>
+                                        <li>Compromise penalty.</li>
+                                    </ol>
+                                    <br />
+                                    <b>Attachments</b>
+                                    <p></p>
+                                    <ol class="indent">
+                                        <li>Photocopy of the document to which the documentary stamp shall be affixed;</li>
+                                        <li>Original copy of duly approved Tax Debit Memo, if applicable;</li>
+                                        <li>Proof of exemption under special laws, if applicable.</li>
+                                        <li>Proof of payment of documentary stamp tax paid upon the original issue of the stock, if applicable.</li>
+                                    </ol>
+                                    <br />
+                                    <b>Note: All background information must be properly filled up.</b>
+                                    <ul>
+
+                                        <li>All returns filed by an accredited tax agent on behalf of a taxpayer shall bear the following information:</li>
+                                        <ol type="A" class="indent">
+                                            <br />
+                                            <li>For CPAs and others (individual practitioners and members of GPPs);</li>
+                                            <dl class="indent">
+
+                                                <dd>a.1 Taxpayer Identificat ion Number (TIN); and</dd>
+                                                <dd>a.2 Certificate of Accreditation Number, Date of Issuance, and Date of Expiry.</dd>
+                                            </dl>
+                                            <li>For members of the Philippine Bar (individual practitioners, members of GPPs):</li>
+                                            <dl class="indent">
+                                                <dd>b.1 Taxpayer Identification Number (TIN); and</dd>
+                                                <dd>b.2 Attorney’s Roll Number or Accreditation Number, if any.</dd>
+                                            </dl>
+                                        </ol>
+                                        </p>
+
+                                        <li>BIR Form 2000-OT (in triplicate copies) should be filed for every taxable document/transaction. Constructive affixture means filing a tax return and paying the tax in accordance with the law.</li>
+                                        <li>TIN = Taxpayer Identification Number.</li>
+                                    </ul>
+                                    <br />
+                                    <br />
+                                    <div class="small" style="text-align: right"><b>ENCS</b></div>
+                    </div>
+                    </tr>
+                        </table>
+
+                </div>
+            </div>
+        </div>
+</body>
+</html>
+
+<script type="text/javascript">
+    //topNav
+    $(document).ready(function () {
+        $("ul.subnav").parent().append("<span></span>"); //Only shows drop down trigger when js is enabled (Adds empty span tag after ul.subnav*)  
+        $("ul.topnav li span").click(function () { //When trigger is clicked...            
+            //Following events are applied to the subnav itself (moving subnav up and down)  
+            $(this).parent().find("ul.subnav").slideDown('fast').show(); //Drop down the subnav on click    
+            $(this).parent().hover(function () {
+            }, function () {
+                $(this).parent().find("ul.subnav").slideUp('slow'); //When the mouse hovers out of the subnav, move it back up  
+            });
+            //Following events are applied to the trigger (Hover events for the trigger)  
+        }).hover(function () {
+            $(this).addClass("subhover"); //On hover over, add class "subhover"  
+        }, function () {  //On Hover Out  
+            $(this).removeClass("subhover"); //On hover out, remove class "subhover"  
+        });
+        $("ul.topnav .toplevel").click(function () { //When trigger is clicked...            
+            //Following events are applied to the subnav itself (moving subnav up and down)  
+            $(this).parent().find("ul.subnav").slideDown('fast').show(); //Drop down the subnav on click    
+            $(this).parent().hover(function () {
+            }, function () {
+                $(this).parent().find("ul.subnav").slideUp('slow'); //When the mouse hovers out of the subnav, move it back up  
+            });
+            //Following events are applied to the trigger (Hover events for the trigger)  
+        }).hover(function () {
+            $(this).addClass("subhover"); //On hover over, add class "subhover"  
+        }, function () {  //On Hover Out  
+            $(this).removeClass("subhover"); //On hover out, remove class "subhover"  
+        });
+    });
+
+</script>
