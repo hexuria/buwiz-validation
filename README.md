@@ -40,8 +40,7 @@ git diff --stat v7.9.6.0 v7.9.6.2.1
 git diff v7.9.6.0 v7.9.6.2.1 -- package/js/string-util.js
 ```
 
-Some HTAs are UTF-16; `git diff` shows them as binary unless you add
-`*.hta diff=utf16` with `git config diff.utf16.textconv "iconv -f utf-16 -t utf-8"`.
+All HTAs are UTF-8 (most with a BOM), so `git diff` shows them as text.
 
 ## Adding a new BIR release
 
