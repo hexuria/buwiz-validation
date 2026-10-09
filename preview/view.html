@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>eBIRForms Preview</title>
+<style>
+  :root { --bg:#f6f7f9; --fg:#1d2330; --muted:#5d6676; --bar:#ffffff; --line:#d9dde5;
+          --err:#b42318; --warn:#9a6700; --ok:#1a7f37; --accent:#0b57d0; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#14171c; --fg:#e6e9ef; --muted:#9aa3b2; --bar:#1c2027; --line:#2e343e;
+            --err:#ff8a80; --warn:#e3b341; --ok:#56d364; --accent:#8ab4f8; }
+  }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; margin: 0; }
+  body { background: var(--bg); color: var(--fg); font: 14px/1.4 system-ui, sans-serif;
+         display: flex; flex-direction: column; }
+  header { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; padding: 8px 16px;
+           background: var(--bar); border-bottom: 1px solid var(--line); }
+  header a, header button { color: var(--accent); text-decoration: none; background: none;
+           border: 1px solid var(--line); border-radius: 6px; padding: 4px 10px; font: inherit; cursor: pointer; }
+  header h1 { font-size: 15px; margin: 0; flex: 1 1 200px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  header .path { color: var(--muted); font-weight: 400; font-size: 12px; }
+  .count { font-variant-numeric: tabular-nums; }
+  .count.err { color: var(--err); border-color: var(--err); }
+  .count.ok { color: var(--ok); }
+  #log { display: none; max-height: 35vh; overflow: auto; margin: 0; padding: 8px 16px;
+         background: var(--bar); border-bottom: 1px solid var(--line); font: 12px/1.5 ui-monospace, monospace; }
+  #log.open { display: block; }
+  #log div { white-space: pre-wrap; word-break: break-all; }
+  #log .error, #log .missing { color: var(--err); }
+  #log .alert, #log .vbs, #log .case { color: var(--muted); }
+  iframe { flex: 1; width: 100%; border: 0; background: #fff; }
+  body.embed header, body.embed #log { display: none; }
+</style>
+</head>
+<body>
+<header>
+  <a href="./">All forms</a>
+  <h1 id="title">Loading…</h1>
+  <a id="prev" href="#">◀</a><a id="next" href="#">▶</a>
+  <button id="issues" class="count" type="button" title="Show what the browser reported">…</button>
+  <a id="source" target="_blank" rel="noopener">Source</a>
+</header>
+<div id="log"></div>
+<iframe id="form" title="Form"></iframe>
+<script>
+(function () {
+  var params = new URLSearchParams(location.search);
+  var f = (params.get('f') || 'forms/BIR-Form0605.hta').replace(/^\/+/, '');
+  var embed = params.has('embed');
+  if (embed) document.body.classList.add('embed');
+  if (/(^|\/)\.\.(\/|$)/.test(f)) { document.getElementById('title').textContent = 'Bad path'; return; }
+
+  var pkg = new URL('../package/', location.href);
+  var formUrl = new URL(f, pkg);
+  var shimUrl = new URL('ie-shim.js', location.href);
+  var frame = document.getElementById('form');
+  var log = document.getElementById('log');
+  var issuesBtn = document.getElementById('issues');
+  var counts = { error: 0, missing: 0, alert: 0, vbs: 0 };
+  var seen = {};
+
+  document.getElementById('source').href =
+    'https://github.com/hexuria/buwiz-validation/blob/main/package/' + f;
+  issuesBtn.onclick = function () { log.classList.toggle('open'); };
+
+  function render() {
+    var bad = counts.error + counts.missing;
+    issuesBtn.textContent = bad ? bad + ' issue' + (bad > 1 ? 's' : '') : 'No errors';
+    issuesBtn.className = 'count ' + (bad ? 'err' : 'ok');
+  }
+  function add(kind, detail) {
+    var key = kind + detail;
+    if (seen[key]) return;
+    seen[key] = 1;
+    counts[kind] = (counts[kind] || 0) + 1;
+    var d = document.createElement('div');
+    d.className = kind;
+    d.textContent = kind + ': ' + detail;
+    log.appendChild(d);
+    render();
+  }
+  window.addEventListener('message', function (e) {
+    if (e.source === frame.contentWindow && e.data && e.data.ebirPreview) add(e.data.ebirPreview, e.data.detail);
+  });
+
+  // Prev/next through the forms list; the manifest gives every file's exact
+  // spelling for the shim's case-insensitive lookup.
+  var index = fetch('../index/forms.json').then(function (r) { return r.json(); });
+  var files = index.then(function (idx) {
+    return fetch('../manifests/' + idx.official_app_version + '.json');
+  }).then(function (r) { return r.json(); }).then(function (m) {
+    var map = {};
+    Object.keys(m.package).forEach(function (p) { map[p.toLowerCase()] = p; });
+    return map;
+  }).catch(function () { return {}; });
+  index.then(function (idx) {
+    var list = Object.keys(idx.forms).sort();
+    var i = list.indexOf(f);
+    var link = function (id, j) {
+      var a = document.getElementById(id);
+      if (i < 0 || j < 0 || j >= list.length) { a.style.visibility = 'hidden'; return; }
+      a.href = '?f=' + encodeURIComponent(list[j]);
+      a.title = list[j];
+    };
+    link('prev', i - 1); link('next', i + 1);
+  }).catch(function () {});
+
+  files.then(function () { return fetch(formUrl); }).then(function (r) {
+    if (!r.ok) throw new Error('HTTP ' + r.status + ' for ' + f);
+    return r.text();
+  }).then(function (html) {
+    var vbs = [];
+    var re = /<script[^>]*language\s*=\s*["']?vbscript["']?[^>]*src\s*=\s*["']([^"']+)["']/ig, m;
+    while ((m = re.exec(html))) vbs.push(new URL(m[1], formUrl).href);
+    return Promise.all(vbs.map(function (u) {
+      return fetch(u).then(function (r) { return r.ok ? r.text() : ''; }).catch(function () { return ''; });
+    })).then(function (sources) {
+      return files.then(function (map) { show(html, sources, map); });
+    });
+  }).catch(function (e) {
+    add('missing', String(e.message || e));
+    document.getElementById('title').textContent = f;
+    if (embed) parent.postMessage({ ebirCheck: f, counts: counts, issues: [String(e)] }, '*');
+  });
+
+  function show(html, sources, map) {
+      var names = [];
+      sources.join('\n').replace(/^\s*(?:public\s+|private\s+)?(?:function|sub)\s+(\w+)/igm, function (_, n) { names.push(n); });
+      var t = /<title>([^<]*)<\/title>/i.exec(html);
+      document.title = (t ? t[1].trim() : f) + ' · eBIRForms Preview';
+      document.getElementById('title').innerHTML = '';
+      document.getElementById('title').append(t ? t[1].trim() + ' ' : '');
+      var p = document.createElement('span'); p.className = 'path'; p.textContent = f;
+      document.getElementById('title').append(p);
+
+      var inject = '<base href="' + formUrl.href + '">' +
+        '<script>window.__ebirVbsFunctions=' + JSON.stringify(names) +
+        ';window.__ebirViewer=' + JSON.stringify(location.href.split('?')[0]) +
+        ';window.__ebirPackage=' + JSON.stringify(pkg.href) +
+        ';window.__ebirFiles=' + JSON.stringify(map) + ';<\/script>' +
+        '<script src="' + shimUrl.href + '"><\/script>';
+      var doc = /<head[^>]*>/i.test(html)
+        ? html.replace(/<head[^>]*>/i, function (h) { return h + inject; })
+        : inject + html;
+      frame.addEventListener('load', function () {
+        render();
+        if (embed) setTimeout(function () {
+          parent.postMessage({ ebirCheck: f, counts: counts,
+                               issues: Array.prototype.map.call(log.children, function (d) { return d.textContent; }) }, '*');
+        }, 800);
+      }, { once: true });
+      frame.srcdoc = doc;
+  }
+})();
+</script>
+</body>
+</html>

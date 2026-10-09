@@ -13,6 +13,38 @@ behaviour, so nobody has to boot a Windows VM to read the official forms again.
 
 The contents are BIR's, unmodified. Nothing here is patched.
 
+## Preview the forms in a browser
+
+<https://hexuria.github.io/buwiz-validation/preview/> opens every official form
+HTA in an ordinary browser, and **Check all forms** loads all 84 of them and
+reports script errors and missing files. To run it locally, serve the
+repository root over HTTP (`file://` will not work):
+
+```sh
+python3 -m http.server 8000   # then open http://localhost:8000/preview/
+```
+
+The viewer (`preview/`) fetches the HTA unmodified and renders it in an iframe
+behind `preview/ie-shim.js`. The shim stands in for the IE/HTA behaviour the
+forms rely on: `ActiveXObject` (`Microsoft.XMLDOM` loads the reference XML,
+while `Scripting.FileSystemObject` and `WScript.Shell` are stubs), case-insensitive
+file paths, and IE7-mode `getElementById`, which ignores case and also matches
+`name`. Saving, the TIN check digit (`chkt.exe`), encryption and submission
+need Windows and are stubbed, so they do nothing in the preview.
+
+Known results for 7.9.6.2.1, all present in BIR's package as shipped:
+
+- 18 forms reference scripts BIR does not ship (`js/lib/2200C.js`,
+  `js/gserializer.js`, the 1601EQ formatter scripts). They are listed per form
+  in `index/forms.json` under `missing_dependencies`.
+- `BIR-Form1707Av2021.hta` asks for `img/for_printing/BIR Form 1707Av2021_1.png`;
+  the package has `BIR Form 1707A_1.png`.
+- `xml/taxRate.xml` has a comment before its `<?xml ?>` declaration, which XML
+  parsers reject, so `js/tax-rate-helper.js` reports a parse error on the forms
+  that use it.
+- `BIR-Form1702RTv2018.hta` and `BIR-Form1702RTv2018C.hta` hit a stack
+  overflow in their compute chain on load. They still render.
+
 ## Layout
 
 | Path | What it is |
@@ -22,6 +54,7 @@ The contents are BIR's, unmodified. Nothing here is patched.
 | `manifests/<version>.json` | Download URL, zip / installer / `BIRForms.exe` SHA-256, and the SHA-256 + size of every file in `package/` and `app/` |
 | `index/forms.json` | For each form HTA: title, `APPLICATIONNAME`, scripts and stylesheets it loads (in order), and any it references that the official package does not ship |
 | `tools/` | The extraction pipeline (below) |
+| `preview/` | Browser viewer for the HTAs (above). Not BIR's. |
 
 ## Releases
 

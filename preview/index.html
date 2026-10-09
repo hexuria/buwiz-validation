@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>eBIRForms Preview</title>
+<style>
+  :root { --bg:#f6f7f9; --fg:#1d2330; --muted:#5d6676; --card:#ffffff; --line:#d9dde5;
+          --err:#b42318; --warn:#9a6700; --ok:#1a7f37; --accent:#0b57d0; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#14171c; --fg:#e6e9ef; --muted:#9aa3b2; --card:#1c2027; --line:#2e343e;
+            --err:#ff8a80; --warn:#e3b341; --ok:#56d364; --accent:#8ab4f8; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 14px/1.5 system-ui, sans-serif; }
+  main { max-width: 1100px; margin: 0 auto; padding: 24px 16px 48px; }
+  h1 { font-size: 22px; margin: 0 0 4px; }
+  h2 { font-size: 16px; margin: 28px 0 8px; }
+  p { margin: 4px 0 12px; color: var(--muted); max-width: 75ch; }
+  a { color: var(--accent); }
+  .controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 16px 0 8px; }
+  input[type=search] { flex: 1 1 220px; padding: 7px 10px; border: 1px solid var(--line); border-radius: 6px;
+                       background: var(--card); color: var(--fg); font: inherit; }
+  button { padding: 7px 12px; border: 1px solid var(--line); border-radius: 6px; background: var(--card);
+           color: var(--accent); font: inherit; cursor: pointer; }
+  button:disabled { color: var(--muted); cursor: default; }
+  #summary { color: var(--muted); font-variant-numeric: tabular-nums; }
+  .table { overflow-x: auto; background: var(--card); border: 1px solid var(--line); border-radius: 8px; }
+  table { border-collapse: collapse; width: 100%; }
+  th, td { text-align: left; padding: 7px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { font-weight: 600; font-size: 12px; color: var(--muted); }
+  tr:last-child td { border-bottom: 0; }
+  td.file { font: 12px ui-monospace, monospace; white-space: nowrap; }
+  .tag { display: inline-block; font-size: 12px; padding: 0 6px; border-radius: 4px; border: 1px solid currentColor; }
+  .warn { color: var(--warn); }
+  .err { color: var(--err); }
+  .ok { color: var(--ok); }
+  .muted { color: var(--muted); }
+  details summary { cursor: pointer; }
+  details div { font: 12px ui-monospace, monospace; white-space: pre-wrap; word-break: break-all; }
+  ul.help { columns: 2 260px; padding-left: 18px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>eBIRForms Preview</h1>
+  <p id="intro">The official BIR form HTAs from this repository, opened in an ordinary browser. The HTA
+  files are BIR's, unmodified. The viewer adds a stand-in for the Internet Explorer APIs they call.
+  Saving, printing to file, the TIN check digit (<code>chkt.exe</code>), encryption and submission
+  need Windows, so they are stubbed. Layout, fields, dropdowns loaded from the reference XML and the
+  JavaScript validation all run.</p>
+
+  <div class="controls">
+    <input type="search" id="q" placeholder="Filter by form number or title" aria-label="Filter forms">
+    <button id="check" type="button">Check all forms</button>
+    <span id="summary"></span>
+  </div>
+  <div class="table">
+    <table>
+      <thead><tr><th>Form</th><th>Title</th><th>Not shipped by BIR</th><th>Browser check</th></tr></thead>
+      <tbody id="rows"><tr><td colspan="4" class="muted">Loading…</td></tr></tbody>
+    </table>
+  </div>
+
+  <h2>Shell and help pages</h2>
+  <ul class="help" id="others"></ul>
+</main>
+<iframe id="checker" title="Form check" style="position:absolute;left:-9999px;width:1280px;height:900px;border:0"></iframe>
+<script>
+(function () {
+  var rows = document.getElementById('rows');
+  var q = document.getElementById('q');
+  var summary = document.getElementById('summary');
+  var status = {};
+  var forms = [];
+  var view = function (f) { return 'view.html?f=' + encodeURIComponent(f); };
+  var el = function (tag, attrs, text) {
+    var e = document.createElement(tag);
+    for (var k in attrs || {}) e.setAttribute(k, attrs[k]);
+    if (text != null) e.textContent = text;
+    return e;
+  };
+
+  fetch('../index/forms.json').then(function (r) { return r.json(); }).then(function (idx) {
+    document.getElementById('intro').insertAdjacentText('afterbegin', 'eBIRForms ' + idx.official_app_version + '. ');
+    forms = Object.keys(idx.forms).sort().map(function (f) {
+      var info = idx.forms[f];
+      return { f: f, title: info.title || '', app: info.application_name || '', missing: info.missing_dependencies || [] };
+    });
+    draw();
+    return fetch('../manifests/' + idx.official_app_version + '.json').then(function (r) { return r.json(); });
+  }).then(function (manifest) {
+    var others = document.getElementById('others');
+    Object.keys(manifest.package).filter(function (p) {
+      return /\.hta$/i.test(p) && !/^forms\//.test(p);
+    }).sort().forEach(function (p) {
+      var li = el('li');
+      li.appendChild(el('a', { href: view(p) }, p));
+      others.appendChild(li);
+    });
+  }).catch(function (e) {
+    rows.innerHTML = '';
+    var td = el('td', { colspan: 4, class: 'err' }, 'Could not load the form index: ' + e +
+      '. Serve the repository over HTTP (see preview/README.md); file:// does not work.');
+    rows.appendChild(el('tr')).appendChild(td);
+  });
+
+  function draw() {
+    var term = q.value.trim().toLowerCase();
+    rows.innerHTML = '';
+    forms.forEach(function (x) {
+      if (term && (x.f + ' ' + x.title + ' ' + x.app).toLowerCase().indexOf(term) < 0) return;
+      var tr = el('tr');
+      var td = el('td', { class: 'file' });
+      td.appendChild(el('a', { href: view(x.f) }, x.f.replace(/^forms\//, '')));
+      tr.appendChild(td);
+      tr.appendChild(el('td', null, x.title));
+      tr.appendChild(el('td', { class: x.missing.length ? 'warn' : 'muted' },
+        x.missing.length ? x.missing.join(', ') : '–'));
+      var st = el('td');
+      var s = status[x.f];
+      if (!s) st.appendChild(el('span', { class: 'muted' }, 'not checked'));
+      else if (s === 'running') st.appendChild(el('span', { class: 'muted' }, 'checking…'));
+      else {
+        var bad = unexpected(x, s).length;
+        var d = el('details');
+        d.appendChild(el('summary', { class: bad ? 'err' : 'ok' },
+          bad ? bad + ' issue' + (bad > 1 ? 's' : '') : 'renders, no errors' + (x.missing.length ? ' (besides scripts BIR does not ship)' : '')));
+        d.appendChild(el('div', null, s.issues.join('\n') || 'Nothing reported.'));
+        st.appendChild(d);
+      }
+      tr.appendChild(st);
+      rows.appendChild(tr);
+    });
+  }
+  q.addEventListener('input', draw);
+
+  // Errors, plus missing files other than the scripts BIR itself does not ship.
+  function unexpected(x, s) {
+    return s.issues.filter(function (line) {
+      if (/^error: /.test(line)) return true;
+      if (!/^missing: /.test(line)) return false;
+      return !x.missing.some(function (dep) { return line.slice(-('/package/' + dep).length) === '/package/' + dep; });
+    });
+  }
+
+  // Load every form, one at a time, in a hidden viewer and collect what it reports.
+  var checker = document.getElementById('checker');
+  var queue = [];
+  var waiting = null;
+  window.addEventListener('message', function (e) {
+    if (!e.data || !e.data.ebirCheck || e.data.ebirCheck !== waiting) return;
+    status[e.data.ebirCheck] = { counts: e.data.counts, issues: e.data.issues };
+    next();
+  });
+  function next() {
+    var done = forms.filter(function (x) { return status[x.f] && status[x.f] !== 'running'; });
+    var bad = done.filter(function (x) { return unexpected(x, status[x.f]).length; });
+    summary.textContent = done.length + ' of ' + forms.length + ' checked' + (done.length ? ', ' + bad.length + ' with issues' : '');
+    var f = queue.shift();
+    if (!f) { waiting = null; document.getElementById('check').disabled = false; draw(); return; }
+    status[f] = 'running';
+    waiting = f;
+    setTimeout(function () {
+      if (waiting !== f) return;
+      status[f] = { counts: { error: 1, missing: 0 }, issues: ['timed out after 20 s'] };
+      next();
+    }, 20000);
+    checker.src = view(f) + '&embed';
+    draw();
+  }
+  document.getElementById('check').addEventListener('click', function () {
+    this.disabled = true;
+    status = {};
+    queue = forms.map(function (x) { return x.f; });
+    next();
+  });
+})();
+</script>
+</body>
+</html>
