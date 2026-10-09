@@ -65,7 +65,8 @@ Each release is one commit, tagged `v<version>`:
 |---|---|---|
 | `v7.9.6.0` | `de8ef0815509d65189e6794e1f8135a5ecf5f2800005d1fc5c87043efd96dbca` | baseline pinned by buwiz-forms `rules/` |
 | `v7.9.6.1` | `a43a4599f95158e6ba0e7a1c4b88c4e2cf215ac86e53c24259cc69d1b664829c` | 0605 MC350/MC351/MA; 1601FQ, 1603Q, 1702Q, 1801 fixes; dummy TIN prefixes force-fail in `js/string-util.js` |
-| `v7.9.6.2.1` | `b02be415704875d890e9d8b197ab46cf2d1554de5d0ed1b9a4887c312297346e` | 1702Qv2018C Schedule 1 item 10A/10B rates, Schedule 3 item 6 |
+| `v7.9.6.2` | `de959c33d8103091e1305b2f2499eaeb775560774bea53c85bd54650976071db` | 1702Qv2018C Schedule 1 item 10A/10B rates, Schedule 3 item 6. Tagged off `v7.9.6.1`, not on `main` |
+| `v7.9.6.2.1` | `b02be415704875d890e9d8b197ab46cf2d1554de5d0ed1b9a4887c312297346e` | No new release notes. `js/tax-rate-helper.js` forces 1702Q Schedule 1 `txtTax10A` to `0.00`; leftover `BIR-Form1702Qv2018C_.hta` removed |
 
 See exactly what BIR changed between two releases:
 
@@ -139,7 +140,7 @@ workflow opens a "BIR release watch is failing" issue here.
 `.github/workflows/verify.yml` checks every push: the tree must match its
 manifest, and regenerating `index/forms.json` must produce no diff.
 
-Reports for past releases: [7.9.6.1](reports/7.9.6.1.md), [7.9.6.2.1](reports/7.9.6.2.1.md).
+Reports for past releases: [7.9.6.1](reports/7.9.6.1.md), [7.9.6.2](reports/7.9.6.2.md), [7.9.6.2.1](reports/7.9.6.2.1.md).
 
 ## Where the validation lives
 
