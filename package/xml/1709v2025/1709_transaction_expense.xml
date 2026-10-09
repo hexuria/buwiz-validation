@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Transactions>
+<Transaction><Value>purch_goods</Value><Desc>Purchase of Goods</Desc></Transaction>
+<Transaction><Value>purch_serv</Value><Desc>Purchase of Services</Desc></Transaction>
+<Transaction><Value>intere_pays</Value><Desc>Interest Expenses/Payments</Desc></Transaction>
+<Transaction><Value>royalty_pay</Value><Desc>Royalty Expenses/Payments</Desc></Transaction>
+<Transaction><Value>purch_inta</Value><Desc>Purchase or Acquisition of Intangibles</Desc></Transaction>
+<Transaction><Value>rental_pay</Value><Desc>Rental Expenses/Payments</Desc></Transaction>
+<Transaction><Value>cost_alloc</Value><Desc>Cost Allocated Expenses/Reimbursements</Desc></Transaction>
+<Transaction><Value>exp_others</Value><Desc>Other Expenses/Payments (Specify)</Desc></Transaction>
+</Transactions>

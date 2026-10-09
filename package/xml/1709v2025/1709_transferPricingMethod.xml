@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<PricingMethod>
+ <Method>
+ <Value>cup</Value>
+ <Abbr>CUP</Abbr>
+ <Desc>Comparable Uncontrolled Price Method</Desc>
+ </Method>
+ <Method>
+ <Value>rpm</Value>
+ <Abbr>RPM</Abbr>
+ <Desc>Resale Price Method</Desc>
+ </Method>
+ <Method>
+ <Value>cpm</Value>
+ <Abbr>CPM</Abbr>
+ <Desc>Cost Plus Method</Desc>
+ </Method>
+ <Method>
+ <Value>tnm</Value>
+ <Abbr>TNMM</Abbr>
+ <Desc>Transactional Net Margin Method</Desc>
+ </Method>
+ <Method>
+ <Value>psm</Value>
+ <Abbr>TPSM</Abbr>
+ <Desc>Transactional Profit Split Method</Desc>
+ </Method>
+ <Method>
+ <Value>oth</Value>
+ <Abbr>O</Abbr>
+ <Desc>Other Methods (Specify)</Desc>
+ </Method>
+</PricingMethod>

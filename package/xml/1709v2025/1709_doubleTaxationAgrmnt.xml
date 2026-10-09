@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='utf-8'?>
+<DTA>
+    <Country><Value>AU</Value><Desc>Australia</Desc></Country>
+    <Country><Value>AT</Value><Desc>Austria</Desc></Country>
+    <Country><Value>BH</Value><Desc>Bahrain</Desc></Country>
+    <Country><Value>BD</Value><Desc>Bangladesh</Desc></Country>
+    <Country><Value>BE</Value><Desc>Belgium</Desc></Country>
+    <Country><Value>BR</Value><Desc>Brazil</Desc></Country>
+    <Country><Value>BN</Value><Desc>Brunei Darussalam</Desc></Country>
+    <Country><Value>CA</Value><Desc>Canada</Desc></Country>
+    <Country><Value>CN</Value><Desc>China</Desc></Country>
+    <Country><Value>CZ</Value><Desc>Czech Republic</Desc></Country>
+    <Country><Value>DK</Value><Desc>Denmark</Desc></Country>
+    <Country><Value>FI</Value><Desc>Finland</Desc></Country>
+    <Country><Value>FR</Value><Desc>France</Desc></Country>
+    <Country><Value>DE</Value><Desc>Germany</Desc></Country>
+    <Country><Value>HU</Value><Desc>Hungary</Desc></Country>
+    <Country><Value>IN</Value><Desc>India</Desc></Country>
+    <Country><Value>ID</Value><Desc>Indonesia</Desc></Country>
+    <Country><Value>IL</Value><Desc>Israel</Desc></Country>
+    <Country><Value>IT</Value><Desc>Italy</Desc></Country>
+    <Country><Value>JP</Value><Desc>Japan</Desc></Country>
+    <Country><Value>KW</Value><Desc>Kuwait</Desc></Country>
+    <Country><Value>MY</Value><Desc>Malaysia</Desc></Country>
+    <Country><Value>MX</Value><Desc>Mexico</Desc></Country>
+    <Country><Value>NL</Value><Desc>Netherlands</Desc></Country>
+    <Country><Value>NZ</Value><Desc>New Zealand</Desc></Country>
+    <Country><Value>NG</Value><Desc>Nigeria</Desc></Country>
+    <Country><Value>NO</Value><Desc>Norway</Desc></Country>
+    <Country><Value>PK</Value><Desc>Pakistan</Desc></Country>
+    <Country><Value>PL</Value><Desc>Poland</Desc></Country>
+    <Country><Value>QA</Value><Desc>Qatar</Desc></Country>
+    <Country><Value>RO</Value><Desc>Romania</Desc></Country>
+    <Country><Value>RU</Value><Desc>Russia</Desc></Country>
+    <Country><Value>SG</Value><Desc>Singapore</Desc></Country>
+    <Country><Value>KR</Value><Desc>South Korea</Desc></Country>
+    <Country><Value>ES</Value><Desc>Spain</Desc></Country>
+    <Country><Value>LK</Value><Desc>Sri Lanka</Desc></Country>
+    <Country><Value>SE</Value><Desc>Sweden</Desc></Country>
+    <Country><Value>CH</Value><Desc>Switzerland</Desc></Country>
+    <Country><Value>TH</Value><Desc>Thailand</Desc></Country>
+    <Country><Value>TR</Value><Desc>Turkey</Desc></Country>
+    <Country><Value>AE</Value><Desc>United Arab Emirates</Desc></Country>
+    <Country><Value>GB</Value><Desc>United Kingdom</Desc></Country>
+    <Country><Value>US</Value><Desc>United States of America</Desc></Country>
+    <Country><Value>VN</Value><Desc>Vietnam</Desc></Country>
+</DTA>

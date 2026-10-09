@@ -1,5 +1,5 @@
 <?xml version='1.0'?>
-			<div>taxTypeCodeCount=37taxTypeCodeCount=</div>
+			<div>taxTypeCodeCount=40taxTypeCodeCount=</div>
 			<div>taxTypeCode1:CG~CAPITAL GAINS TAX-Real Property~0605taxTypeCode1:</div>
 			<div>taxTypeCode2:CS~CAPITAL GAINS TAX-Stocks~0605taxTypeCode2:</div>
 			<div>taxTypeCode3:DN~DONORS TAX~0605taxTypeCode3:</div>
@@ -39,4 +39,5 @@
 			<div>taxTypeCode37:XT~EXCISE TAX-TOBACCO~0605taxTypeCode37:</div>
 			<div>taxTypeCode38:XV~EXCISE TAX-AD VALOREM~0605taxTypeCode38:</div>
 			<div>taxTypeCode39:XC~EXCISE TAX-PERFORMANCE OF SERVICES ON INVASIVE COSMETICS PROCEDURES~0605taxTypeCode39:</div>
+			<div>taxTypeCode40:MA~MICRO TAXPAYER ABATEMENT~0605taxTypeCode40:</div>
 			All Rights Reserved BIR 2012.

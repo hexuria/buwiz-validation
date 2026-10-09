@@ -3159,7 +3159,7 @@
     }
 
     function computeTotalSchedule() {
-        d.getElementById("frm1603Q:Sched1:txtTotalTax").value = formatCurrency(NumWithComma(d.getElementById("frm1603Q:Sched1:txtTaxWithheld1").value) * 1 + NumWithComma("frm1603Q:Sched1:txtTaxWithheld2") * 1);
+        d.getElementById("frm1603Q:Sched1:txtTotalTax").value = formatCurrency(NumWithComma(d.getElementById("frm1603Q:Sched1:txtTaxWithheld1").value) * 1 + NumWithComma(d.getElementById("frm1603Q:Sched1:txtTaxWithheld2").value) * 1);
         d.getElementById("frm1603Q:txtTax14").value = d.getElementById("frm1603Q:Sched1:txtTotalTax").value;
 
         computeTaxStillDue();

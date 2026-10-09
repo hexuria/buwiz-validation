@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Relationships>
+    <Relation>
+        <Value>ultimate_parent</Value>
+        <Desc>Ultimate Parent Entity</Desc>
+    </Relation>
+    <Relation>
+        <Value>immediate_parent</Value>
+        <Desc>Immediate Parent Entity</Desc>
+    </Relation>
+    <Relation>
+        <Value>subsidiary</Value>
+        <Desc>Subsidiary</Desc>
+    </Relation>
+    <Relation>
+        <Value>fellow_subsidiary</Value>
+        <Desc>Fellow Subsidiary</Desc>
+    </Relation>
+    <Relation>
+        <Value>significant_influence</Value>
+        <Desc>Has significant influence over the taxpayer</Desc>
+    </Relation>
+    <Relation>
+        <Value>joint_control</Value>
+        <Desc>Has joint control over the taxpayer</Desc>
+    </Relation>
+    <Relation>
+        <Value>associate</Value>
+        <Desc>Associate</Desc>
+    </Relation>
+    <Relation>
+        <Value>joint_venture</Value>
+        <Desc>A Joint Venture in which the taxpayer is a venturer</Desc>
+    </Relation>
+    <Relation>
+        <Value>others</Value>
+        <Desc>Others (Specify)</Desc>
+    </Relation>
+</Relationships>

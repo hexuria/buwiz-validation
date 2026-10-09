@@ -58,7 +58,7 @@
 	</Country>
 	<Country>
 		<ISOCode>BS</ISOCode>
-		<Name>Bahamas</Name>
+		<Name>The Bahamas</Name>
 	</Country>
 	<Country>
 		<ISOCode>BH</ISOCode>
@@ -169,6 +169,10 @@
 		<Name>China</Name>
 	</Country>
 	<Country>
+		<ISOCode>CKI</ISOCode>
+		<Name>Cocos (Keeling) Islands</Name>
+	</Country>
+	<Country>
 		<ISOCode>CO</ISOCode>
 		<Name>Colombia</Name>
 	</Country>
@@ -179,6 +183,14 @@
 	<Country>
 		<ISOCode>CK</ISOCode>
 		<Name>Cook Islands</Name>
+	</Country>
+	<Country>
+		<ISOCode>DP</ISOCode>
+		<Name>Democratic Republic of the Congo</Name>
+	</Country>
+	<Country>
+		<ISOCode>RC</ISOCode>
+		<Name>Republic of the Congo</Name>
 	</Country>
 	<Country>
 		<ISOCode>CR</ISOCode>

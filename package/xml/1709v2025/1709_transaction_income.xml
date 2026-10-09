@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Transactions>
+    <Transaction>
+        <Value>sale_of_goods</Value>
+        <Desc>Sale of Goods</Desc>
+    </Transaction>
+    <Transaction>
+        <Value>prov_of_serv</Value>
+        <Desc>Provision of Services</Desc>
+    </Transaction>
+    <Transaction>
+        <Value>intere_re_ear</Value>
+        <Desc>Interest Received or Earned</Desc>
+    </Transaction>
+    <Transaction>
+        <Value>royalties_re_ear</Value>
+        <Desc>Royalties Received or Earned</Desc>
+    </Transaction>
+    <Transaction>
+        <Value>sale_tran_of_inta</Value>
+        <Desc>Sale/Transfer of Intangibles</Desc>
+    </Transaction>
+    <Transaction>
+        <Value>rent_re_ear</Value>
+        <Desc>Rentals Received or Earned</Desc>
+    </Transaction>
+    <Transaction>
+        <Value>inc_others</Value>
+        <Desc>Other Income/Receipt (Specify)</Desc>
+    </Transaction>
+</Transactions>

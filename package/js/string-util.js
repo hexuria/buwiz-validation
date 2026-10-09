@@ -83,8 +83,8 @@ function getTinChkCode(tin1, tin2, tin3) {
 	}
 	var status = ValidateTinWChkDgt(tinNumber);
 	//DELETE FOR TESTING ONLY
-	if (tinNumber === '999999999') {
-		return 0;
+	if (tinNumber === '999999999' || tinNumber === '222222222' || tinNumber === '000000000') {
+		return 1;
 	}
 	return status;
 }

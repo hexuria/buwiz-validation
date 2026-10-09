@@ -1,0 +1,39 @@
+
+<?xml version='1.0' encoding='utf-8'?>
+<Indicator>
+<Level>
+<Value>gross_profit</Value>
+<Abbr>GP/S</Abbr>
+<Desc>Gross Profit Margin (Gross Profit/Sales)</Desc>
+</Level>
+<Level>
+<Value>ratio_gross</Value>
+<Abbr>GP/COS</Abbr>
+<Desc>Ratio of Gross Profit to COS (Gross Profit/COS)</Desc>
+</Level>
+<Level>
+<Value>ope_margin</Value>
+<Abbr>OP/S</Abbr>
+<Desc>Operating Margin (Operating Profit/Sales)</Desc>
+</Level>
+<Level>
+<Value>full_cost</Value>
+<Abbr>OP/FC</Abbr>
+<Desc>Full-Cost Markup (Operating Profit/Full Cost)</Desc>
+</Level>
+<Level>
+<Value>berry_ratio</Value>
+<Abbr>GP/OE</Abbr>
+<Desc>Berry Ratio (Gross Profit/Operating Expenses)</Desc>
+</Level>
+<Level>
+<Value>return_assets</Value>
+<Abbr>OP/OA</Abbr>
+<Desc>Return on Operating Assets (Operating Profit/Operating Assets)</Desc>
+</Level>
+<Level>
+<Value>others</Value>
+<Abbr>O</Abbr>
+<Desc>Others (Specify)</Desc>
+</Level>
+</Indicator>

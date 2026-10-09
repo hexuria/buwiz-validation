@@ -1,5 +1,5 @@
 {
-  "official_app_version": "7.9.6.0",
+  "official_app_version": "7.9.6.1",
   "forms": {
     "forms/BIR-Form0605.hta": {
       "sha256": "6200b57ef2a3d9d296dc79cbdb9d2f7a605fb92d1dfcdcc4883f08de7c7fa324",
@@ -290,9 +290,7 @@
         "css/print.css"
       ],
       "missing_dependencies": [
-        "js/lz-string-1.3.4.js",
         "js/json3.min.js",
-        "js/bir-formatter.js",
         "js/formatter/SoapFormat/1601EQ-SoapFormat.js",
         "js/formatter/forms/1601EQ.js",
         "js/formatter/string-util2014.js",
@@ -325,7 +323,7 @@
       "inline_script_blocks": 2
     },
     "forms/BIR-Form1601FQ.hta": {
-      "sha256": "4243225a9d19a3962388adb102164c439984af852cf555081832a076737690d3",
+      "sha256": "70c226abd4ca300ffdb00d593ce9b4c6d24ad06f9c6055a1951d30fcde73e627",
       "title": "BIR Form No. 1601-FQ",
       "application_name": "1601FQ",
       "hta_version": "1.0",
@@ -391,9 +389,7 @@
         "css/styles.css",
         "css/print.css"
       ],
-      "missing_dependencies": [
-        "js/tax-rate-helper.js"
-      ],
+      "missing_dependencies": [],
       "inline_script_blocks": 2
     },
     "forms/BIR-Form1603.hta": {
@@ -419,7 +415,7 @@
       "inline_script_blocks": 3
     },
     "forms/BIR-Form1603Qv2018.hta": {
-      "sha256": "823e4f7f06efc12326062da2565241d9c685db5fd82d8c04343e6dba301fa697",
+      "sha256": "eb19ea813424700a0e7ac90e99cf897c8d0fa768ed77546f767c7511c7ed547e",
       "title": "BIR Form No. 1603Qv2018",
       "application_name": "1603Qv2018",
       "hta_version": "1.0",
@@ -438,9 +434,7 @@
         "css/styles.css",
         "css/print.css"
       ],
-      "missing_dependencies": [
-        "js/tax-rate-helper.js"
-      ],
+      "missing_dependencies": [],
       "inline_script_blocks": 3
     },
     "forms/BIR-Form1604C.hta": {
@@ -605,9 +599,7 @@
         "css/styles.css",
         "css/print.css"
       ],
-      "missing_dependencies": [
-        "js/tax-rate-helper.js"
-      ],
+      "missing_dependencies": [],
       "inline_script_blocks": 2
     },
     "forms/BIR-Form1700.hta": {
@@ -866,9 +858,7 @@
         "css/style2014.css",
         "css/print.css"
       ],
-      "missing_dependencies": [
-        "js/tax-rate-helper.js"
-      ],
+      "missing_dependencies": [],
       "inline_script_blocks": 14
     },
     "forms/BIR-Form1702EXv2018C.hta": {
@@ -1072,6 +1062,30 @@
       "inline_script_blocks": 2
     },
     "forms/BIR-Form1702Qv2018C.hta": {
+      "sha256": "d5ce90e6057186dfed485b1087fd4795a6bc9188b481e70211f8b2fb1b88cf78",
+      "title": "BIR Form No. 1702Qv2018",
+      "application_name": "1702Qv2018",
+      "hta_version": "7.9.6.0",
+      "scripts": [
+        "jq/jquery-1.7.1.min.js",
+        "jq/jquery-ui-1.8.18.custom.min.js",
+        "js/environment.js",
+        "js/string-util.js",
+        "js/string-util2014.js",
+        "js/aes.js",
+        "js/rijndael.js",
+        "js/lz-string-1.0.2.js",
+        "js/eBIRTools.vbs",
+        "js/tax-rate-helper.js"
+      ],
+      "stylesheets": [
+        "css/styles.css",
+        "css/print.css"
+      ],
+      "missing_dependencies": [],
+      "inline_script_blocks": 2
+    },
+    "forms/BIR-Form1702Qv2018C_.hta": {
       "sha256": "7184de87a76401da98da3df38dab9e29f848acf6150b425e36574f0a2443ab01",
       "title": "BIR Form No. 1702Qv2018",
       "application_name": "1702Qv2018",
@@ -1161,8 +1175,7 @@
       "missing_dependencies": [
         "js/gserializer.js",
         "js/lib/test.js",
-        "js/jxboxprinting.js",
-        "js/tax-rate-helper.js"
+        "js/jxboxprinting.js"
       ],
       "inline_script_blocks": 10
     },
@@ -1316,9 +1329,7 @@
         "css/style2014.css",
         "css/print.css"
       ],
-      "missing_dependencies": [
-        "js/tax-rate-helper.js"
-      ],
+      "missing_dependencies": [],
       "inline_script_blocks": 3
     },
     "forms/BIR-Form1707v2018.hta": {
@@ -1376,8 +1387,7 @@
         "css/print.css"
       ],
       "missing_dependencies": [
-        "js/lib/2200C.js",
-        "js/tax-rate-helper.js"
+        "js/lib/2200C.js"
       ],
       "inline_script_blocks": 11
     },
@@ -1426,9 +1436,7 @@
         "css/styles.css",
         "css/print.css"
       ],
-      "missing_dependencies": [
-        "js/tax-rate-helper.js"
-      ],
+      "missing_dependencies": [],
       "inline_script_blocks": 2
     },
     "forms/BIR-Form1801.hta": {
@@ -1476,9 +1484,7 @@
         "css/styles.css",
         "css/print.css"
       ],
-      "missing_dependencies": [
-        "js/tax-rate-helper.js"
-      ],
+      "missing_dependencies": [],
       "inline_script_blocks": 2
     },
     "forms/BIR-Form2000.hta": {
@@ -1669,9 +1675,7 @@
         "css/styles.css",
         "css/print.css"
       ],
-      "missing_dependencies": [
-        "js/tax-rate-helper.js"
-      ],
+      "missing_dependencies": [],
       "inline_script_blocks": 2
     },
     "forms/BIR-Form2200Cv2018.hta": {
@@ -1700,8 +1704,7 @@
         "css/print.css"
       ],
       "missing_dependencies": [
-        "js/lib/2200C.js",
-        "js/tax-rate-helper.js"
+        "js/lib/2200C.js"
       ],
       "inline_script_blocks": 9
     },
@@ -1778,9 +1781,7 @@
         "css/styles.css",
         "css/print.css"
       ],
-      "missing_dependencies": [
-        "js/tax-rate-helper.js"
-      ],
+      "missing_dependencies": [],
       "inline_script_blocks": 3
     },
     "forms/BIR-Form2200Pv2020.hta": {
@@ -1864,9 +1865,7 @@
         "css/style2014.css",
         "css/print.css"
       ],
-      "missing_dependencies": [
-        "js/tax-rate-helper.js"
-      ],
+      "missing_dependencies": [],
       "inline_script_blocks": 8
     },
     "forms/BIR-Form2200Tv2020.hta": {
@@ -1893,6 +1892,31 @@
       "missing_dependencies": [],
       "inline_script_blocks": 2
     },
+    "forms/BIR-Form2550DS-old.hta": {
+      "sha256": "c667c0dfa64d736faf5d1f8c6c830a9e6ba20d9c52f2e12bbb92a4d387acebdc",
+      "title": "BIR Form No. 2550-DS",
+      "application_name": "2550DS",
+      "hta_version": "1.0",
+      "scripts": [
+        "jq/jquery-1.7.1.min.js",
+        "jq/jquery-ui-1.8.18.custom.min.js",
+        "js/environment.js",
+        "js/string-util.js",
+        "js/aes.js",
+        "js/rijndael.js",
+        "js/lz-string-1.0.2.js",
+        "js/eBIRTools.vbs",
+        "js/lz-string-1.3.4.js",
+        "js/bir-formatter.js",
+        "js/tax-rate-helper.js"
+      ],
+      "stylesheets": [
+        "css/styles.css",
+        "css/print.css"
+      ],
+      "missing_dependencies": [],
+      "inline_script_blocks": 1
+    },
     "forms/BIR-Form2550DS.hta": {
       "sha256": "caef2579821294c39b289e1f3c539d5e4b430aecf1c2605ea03d737b24a43a63",
       "title": "BIR Form No. 2550-DS",
@@ -1915,11 +1939,7 @@
         "css/styles.css",
         "css/print.css"
       ],
-      "missing_dependencies": [
-        "js/lz-string-1.3.4.js",
-        "js/bir-formatter.js",
-        "js/tax-rate-helper.js"
-      ],
+      "missing_dependencies": [],
       "inline_script_blocks": 1
     },
     "forms/BIR-Form2550M.hta": {
@@ -1988,10 +2008,7 @@
         "css/styles.css",
         "css/print.css"
       ],
-      "missing_dependencies": [
-        "js/lz-string-1.3.4.js",
-        "js/bir-formatter.js"
-      ],
+      "missing_dependencies": [],
       "inline_script_blocks": 1
     },
     "forms/BIR-Form2551.hta": {

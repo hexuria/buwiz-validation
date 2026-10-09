@@ -2,6 +2,23 @@
 Release Notes
 
 ---------------------------------------------------------------------
+v7.9.6.1
+---------------------------------------------------------------------
+RR No. 4-2026: Prescribing guidelines and procedures for the availment of a one-time abatement of taxes and/or penalties for Micro Taxpayers
+	Change Request No. 2026, Added New ATC Codes in Payment Form 0605
+	MC350 – One Time Abatement of Taxes and/or Penalties for Micro Taxpayers (Individual)
+	MC351 - One Time Abatement of Taxes and/or Penalties for Micro Taxpayers (Corporation)
+
+	Additional Tax Type in Payment Form 0605:
+	MA - Micro Taxpayer Abatement 
+
+Fixes in Production Issues #SR2026-000537742:
+	-1702Qv2018C- zero display of page 2, sched 2 item 6: deduction
+	-1801v2018- item 17: displays NaN%
+	-1601-FQ- missing country and treaty code: MX-Mexico, QA- Qatar, LK- Sri Lanka and TR- Turkey
+	-1603Qv2018- Missing Percentage Divisor (D) value in Part IV- Schedule 1, resulting in the non-computation of subsequent auto-computed fields
+	
+---------------------------------------------------------------------
 v7.9.6.0
 ---------------------------------------------------------------------
 R.A. 11976-EOPT Law 
