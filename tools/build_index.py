@@ -35,7 +35,17 @@ def read_text(path):
     raw = open(path, "rb").read()
     if raw[:2] in (b"\xff\xfe", b"\xfe\xff"):
         return raw.decode("utf-16")
-    return raw.decode("latin-1")
+    try:
+        return raw.decode("utf-8-sig")
+    except UnicodeDecodeError:
+        return raw.decode("latin-1")
+
+
+def strip_comments(html):
+    # Drop <!-- --> outside script bodies so commented-out <script src> tags
+    # are not counted; a script body may itself contain "<!--".
+    html = re.sub(r"(<script\b[^>]*>).*?(</script>)", r"\1\2", html, flags=re.I | re.S)
+    return re.sub(r"<!--.*?-->", "", html, flags=re.S)
 
 
 SRC_RE = re.compile(r"""<script\b[^>]*\bsrc\s*=\s*["']([^"']+)["']""", re.I)
@@ -56,12 +66,13 @@ def forms_index(package_root, package_files):
     for rel in package_files:
         if not (rel.startswith("forms/") and rel.lower().endswith(".hta")):
             continue
-        text = read_text(os.path.join(package_root, rel))
+        raw = read_text(os.path.join(package_root, rel))
+        text = strip_comments(raw)
         scripts = [resolve(s) for s in SRC_RE.findall(text)]
         styles = [resolve(s) for s in CSS_RE.findall(text)]
-        title = TITLE_RE.search(text)
-        app = APPNAME_RE.search(text)
-        ver = VERSION_RE.search(text)
+        title = TITLE_RE.search(raw)
+        app = APPNAME_RE.search(raw)
+        ver = VERSION_RE.search(raw)
         forms[rel] = {
             "sha256": package_files[rel]["sha256"],
             "title": title.group(1).strip() if title else None,
