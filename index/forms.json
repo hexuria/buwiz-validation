@@ -1,5 +1,5 @@
 {
-  "official_app_version": "7.9.6.1",
+  "official_app_version": "7.9.6.2",
   "forms": {
     "forms/BIR-Form0605.hta": {
       "sha256": "6200b57ef2a3d9d296dc79cbdb9d2f7a605fb92d1dfcdcc4883f08de7c7fa324",
@@ -122,14 +122,12 @@
       "hta_version": "4.7",
       "scripts": [
         "jq/jquery-1.7.1.min.js",
-        "jq/jquery-1.11.0.js",
         "jq/jquery-ui-1.8.18.custom.min.js",
         "js/environment.js",
         "js/string-util.js",
         "js/string-util2014.js",
         "js/aes.js",
         "js/rijndael.js",
-        "js/jxboxV2.js",
         "js/lib/2200C.js",
         "js/lz-string-1.0.2.js",
         "js/eBIRTools.vbs"
@@ -151,14 +149,12 @@
       "hta_version": "4.7",
       "scripts": [
         "jq/jquery-1.7.1.min.js",
-        "jq/jquery-1.11.0.js",
         "jq/jquery-ui-1.8.18.custom.min.js",
         "js/environment.js",
         "js/string-util.js",
         "js/string-util2014.js",
         "js/aes.js",
         "js/rijndael.js",
-        "js/jxboxV2.js",
         "js/lib/2200C.js",
         "js/lz-string-1.0.2.js",
         "js/eBIRTools.vbs"
@@ -609,7 +605,6 @@
       "hta_version": "4.7",
       "scripts": [
         "jq/jquery-1.7.1.min.js",
-        "js/lib/jquery-1.11.0.js",
         "jq/jquery-ui-1.8.18.custom.min.js",
         "js/environment.js",
         "js/string-util.js",
@@ -659,7 +654,6 @@
       "hta_version": "4.7",
       "scripts": [
         "jq/jquery-1.7.1.min.js",
-        "js/lib/jquery-1.11.0.js",
         "jq/jquery-ui-1.8.18.custom.min.js",
         "js/environment.js",
         "js/string-util.js",
@@ -689,7 +683,6 @@
       "hta_version": "4.7",
       "scripts": [
         "jq/jquery-1.7.1.min.js",
-        "js/lib/jquery-1.11.0.js",
         "jq/jquery-ui-1.8.18.custom.min.js",
         "js/environment.js",
         "js/string-util.js",
@@ -723,7 +716,6 @@
         "js/string-util2014.js",
         "js/aes.js",
         "js/rijndael.js",
-        "js/jxboxV2.js",
         "js/lib/2200C.js",
         "js/lz-string-1.0.2.js",
         "js/eBIRTools.vbs"
@@ -813,7 +805,6 @@
       "hta_version": "4.7",
       "scripts": [
         "jq/jquery-1.7.1.min.js",
-        "jq/jquery-1.11.0.js",
         "jq/jquery-ui-1.8.18.custom.min.js",
         "js/environment.js",
         "js/string-util.js",
@@ -840,14 +831,12 @@
       "hta_version": "4.7",
       "scripts": [
         "jq/jquery-1.7.1.min.js",
-        "jq/jquery-1.11.0.js",
         "jq/jquery-ui-1.8.18.custom.min.js",
         "js/environment.js",
         "js/string-util.js",
         "js/string-util2014.js",
         "js/aes.js",
         "js/rijndael.js",
-        "js/jxboxV2.js",
         "js/lib/1702EX.js",
         "js/lz-string-1.0.2.js",
         "js/eBIRTools.vbs",
@@ -868,14 +857,12 @@
       "hta_version": "4.7",
       "scripts": [
         "jq/jquery-1.7.1.min.js",
-        "jq/jquery-1.11.0.js",
         "jq/jquery-ui-1.8.18.custom.min.js",
         "js/environment.js",
         "js/string-util.js",
         "js/string-util2014.js",
         "js/aes.js",
         "js/rijndael.js",
-        "js/jxboxV2.js",
         "js/lib/1702EX.js",
         "js/lz-string-1.0.2.js",
         "js/eBIRTools.vbs"
@@ -895,7 +882,6 @@
       "hta_version": "4.7",
       "scripts": [
         "jq/jquery-1.7.1.min.js",
-        "jq/jquery-1.11.0.js",
         "jq/jquery-ui-1.8.18.custom.min.js",
         "js/environment.js",
         "js/string-util.js",
@@ -921,7 +907,6 @@
       "application_name": "1702MXv2018",
       "hta_version": "4.7",
       "scripts": [
-        "jq/jquery-1.7.1.min.js",
         "jq/jquery-1.11.0.js",
         "jq/jquery-ui-1.8.18.custom.min.js",
         "js/environment.js",
@@ -931,9 +916,6 @@
         "js/rijndael.js",
         "js/gserializer.js",
         "js/lib/1702MX.js",
-        "js/lib/test.js",
-        "js/lib/jquery-1.11.0.js",
-        "js/jxboxprinting.js",
         "js/lz-string-1.0.2.js",
         "js/eBIRTools.vbs"
       ],
@@ -943,9 +925,7 @@
         "css/print.css"
       ],
       "missing_dependencies": [
-        "js/gserializer.js",
-        "js/lib/test.js",
-        "js/jxboxprinting.js"
+        "js/gserializer.js"
       ],
       "inline_script_blocks": 8
     },
@@ -955,7 +935,6 @@
       "application_name": "1702MXv2018",
       "hta_version": "4.7",
       "scripts": [
-        "jq/jquery-1.7.1.min.js",
         "jq/jquery-1.11.0.js",
         "jq/jquery-ui-1.8.18.custom.min.js",
         "js/environment.js",
@@ -965,9 +944,6 @@
         "js/rijndael.js",
         "js/gserializer.js",
         "js/lib/1702MX.js",
-        "js/lib/test.js",
-        "js/lib/jquery-1.11.0.js",
-        "js/jxboxprinting.js",
         "js/lz-string-1.0.2.js",
         "js/eBIRTools.vbs"
       ],
@@ -977,9 +953,7 @@
         "css/print.css"
       ],
       "missing_dependencies": [
-        "js/gserializer.js",
-        "js/lib/test.js",
-        "js/jxboxprinting.js"
+        "js/gserializer.js"
       ],
       "inline_script_blocks": 8
     },
@@ -989,7 +963,6 @@
       "application_name": "1702MXv2018",
       "hta_version": "4.7",
       "scripts": [
-        "jq/jquery-1.7.1.min.js",
         "jq/jquery-1.11.0.js",
         "jq/jquery-ui-1.8.18.custom.min.js",
         "js/environment.js",
@@ -999,9 +972,6 @@
         "js/rijndael.js",
         "js/gserializer.js",
         "js/lib/1702MX.js",
-        "js/lib/test.js",
-        "js/lib/jquery-1.11.0.js",
-        "js/jxboxprinting.js",
         "js/lz-string-1.0.2.js",
         "js/eBIRTools.vbs"
       ],
@@ -1011,9 +981,7 @@
         "css/print.css"
       ],
       "missing_dependencies": [
-        "js/gserializer.js",
-        "js/lib/test.js",
-        "js/jxboxprinting.js"
+        "js/gserializer.js"
       ],
       "inline_script_blocks": 8
     },
@@ -1062,7 +1030,7 @@
       "inline_script_blocks": 2
     },
     "forms/BIR-Form1702Qv2018C.hta": {
-      "sha256": "d5ce90e6057186dfed485b1087fd4795a6bc9188b481e70211f8b2fb1b88cf78",
+      "sha256": "03cb0f5b4110d7967de67c1ce79ef3c572f688a17d27c70323b02d234fe894f1",
       "title": "BIR Form No. 1702Qv2018",
       "application_name": "1702Qv2018",
       "hta_version": "7.9.6.0",
@@ -1114,7 +1082,6 @@
       "application_name": "1702RT",
       "hta_version": "4.7",
       "scripts": [
-        "jq/jquery-1.7.1.min.js",
         "jq/jquery-1.11.0.js",
         "jq/jquery-ui-1.8.18.custom.min.js",
         "js/environment.js",
@@ -1125,9 +1092,6 @@
         "js/gserializer.js",
         "js/jxboxV2.js",
         "js/lib/1702RT.js",
-        "js/lib/test.js",
-        "js/lib/jquery-1.11.0.js",
-        "js/jxboxprinting.js",
         "js/lz-string-1.0.2.js",
         "js/eBIRTools.vbs"
       ],
@@ -1137,9 +1101,7 @@
         "css/print.css"
       ],
       "missing_dependencies": [
-        "js/gserializer.js",
-        "js/lib/test.js",
-        "js/jxboxprinting.js"
+        "js/gserializer.js"
       ],
       "inline_script_blocks": 15
     },
@@ -1149,7 +1111,6 @@
       "application_name": "1702RTv2018",
       "hta_version": "4.7",
       "scripts": [
-        "jq/jquery-1.7.1.min.js",
         "jq/jquery-1.11.0.js",
         "jq/jquery-ui-1.8.18.custom.min.js",
         "js/environment.js",
@@ -1158,11 +1119,7 @@
         "js/aes.js",
         "js/rijndael.js",
         "js/gserializer.js",
-        "js/jxboxV2.js",
         "js/lib/1702RT.js",
-        "js/lib/test.js",
-        "js/lib/jquery-1.11.0.js",
-        "js/jxboxprinting.js",
         "js/lz-string-1.0.2.js",
         "js/eBIRTools.vbs",
         "js/tax-rate-helper.js"
@@ -1173,9 +1130,7 @@
         "css/print.css"
       ],
       "missing_dependencies": [
-        "js/gserializer.js",
-        "js/lib/test.js",
-        "js/jxboxprinting.js"
+        "js/gserializer.js"
       ],
       "inline_script_blocks": 10
     },
@@ -1185,7 +1140,6 @@
       "application_name": "1702RTv2018C",
       "hta_version": "4.7",
       "scripts": [
-        "jq/jquery-1.7.1.min.js",
         "jq/jquery-1.11.0.js",
         "jq/jquery-ui-1.8.18.custom.min.js",
         "js/environment.js",
@@ -1194,11 +1148,7 @@
         "js/aes.js",
         "js/rijndael.js",
         "js/gserializer.js",
-        "js/jxboxV2.js",
         "js/lib/1702RT.js",
-        "js/lib/test.js",
-        "js/lib/jquery-1.11.0.js",
-        "js/jxboxprinting.js",
         "js/lz-string-1.0.2.js",
         "js/eBIRTools.vbs"
       ],
@@ -1208,9 +1158,7 @@
         "css/print.css"
       ],
       "missing_dependencies": [
-        "js/gserializer.js",
-        "js/lib/test.js",
-        "js/jxboxprinting.js"
+        "js/gserializer.js"
       ],
       "inline_script_blocks": 10
     },
@@ -1339,14 +1287,12 @@
       "hta_version": "4.7",
       "scripts": [
         "jq/jquery-1.7.1.min.js",
-        "jq/jquery-1.11.0.js",
         "jq/jquery-ui-1.8.18.custom.min.js",
         "js/environment.js",
         "js/string-util.js",
         "js/string-util2014.js",
         "js/aes.js",
         "js/rijndael.js",
-        "js/jxboxV2.js",
         "js/lib/2200C.js",
         "js/lz-string-1.0.2.js",
         "js/eBIRTools.vbs"
@@ -1368,14 +1314,12 @@
       "hta_version": "4.7",
       "scripts": [
         "jq/jquery-1.7.1.min.js",
-        "jq/jquery-1.11.0.js",
         "jq/jquery-ui-1.8.18.custom.min.js",
         "js/environment.js",
         "js/string-util.js",
         "js/string-util2014.js",
         "js/aes.js",
         "js/rijndael.js",
-        "js/jxboxV2.js",
         "js/lib/2200C.js",
         "js/lz-string-1.0.2.js",
         "js/eBIRTools.vbs",
@@ -1685,14 +1629,12 @@
       "hta_version": "4.7",
       "scripts": [
         "jq/jquery-1.7.1.min.js",
-        "jq/jquery-1.11.0.js",
         "jq/jquery-ui-1.8.18.custom.min.js",
         "js/environment.js",
         "js/string-util.js",
         "js/string-util2014.js",
         "js/aes.js",
         "js/rijndael.js",
-        "js/jxboxV2.js",
         "js/lib/2200C.js",
         "js/lz-string-1.0.2.js",
         "js/eBIRTools.vbs",
@@ -1738,14 +1680,12 @@
       "hta_version": "4.7",
       "scripts": [
         "jq/jquery-1.7.1.min.js",
-        "jq/jquery-1.11.0.js",
         "jq/jquery-ui-1.8.18.custom.min.js",
         "js/environment.js",
         "js/string-util.js",
         "js/string-util2014.js",
         "js/aes.js",
         "js/rijndael.js",
-        "js/jxboxV2.js",
         "js/lib/2200C.js",
         "js/lz-string-1.0.2.js",
         "js/eBIRTools.vbs"
@@ -1791,14 +1731,12 @@
       "hta_version": "4.7",
       "scripts": [
         "jq/jquery-1.7.1.min.js",
-        "jq/jquery-1.11.0.js",
         "jq/jquery-ui-1.8.18.custom.min.js",
         "js/environment.js",
         "js/string-util.js",
         "js/string-util2014.js",
         "js/aes.js",
         "js/rijndael.js",
-        "js/jxboxV2.js",
         "js/lib/2200C.js",
         "js/lz-string-1.0.2.js",
         "js/eBIRTools.vbs"
@@ -2107,14 +2045,12 @@
       "hta_version": "4.7",
       "scripts": [
         "jq/jquery-1.7.1.min.js",
-        "jq/jquery-1.11.0.js",
         "jq/jquery-ui-1.8.18.custom.min.js",
         "js/environment.js",
         "js/string-util.js",
         "js/string-util2014.js",
         "js/aes.js",
         "js/rijndael.js",
-        "js/jxboxV2.js",
         "js/lib/2200C.js",
         "js/lz-string-1.0.2.js",
         "js/eBIRTools.vbs"

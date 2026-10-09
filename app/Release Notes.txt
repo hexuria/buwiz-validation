@@ -2,6 +2,13 @@
 Release Notes
 
 ---------------------------------------------------------------------
+v7.9.6.2
+---------------------------------------------------------------------
+Fixes on Production Issues of 1702Qv2018C:
+	-1702Qv2018C- Fixed bug, Schedule 1 Item 10A and Item 10B tax rates
+	-1702Qv2018C- Fixed bug, Schedule 3 Item 6 computation
+
+---------------------------------------------------------------------
 v7.9.6.1
 ---------------------------------------------------------------------
 RR No. 4-2026: Prescribing guidelines and procedures for the availment of a one-time abatement of taxes and/or penalties for Micro Taxpayers
