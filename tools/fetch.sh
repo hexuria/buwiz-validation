@@ -6,6 +6,7 @@
 #   tools/fetch.sh                 # latest release advertised on bir.gov.ph/ebirforms
 #   tools/fetch.sh 7.9.6.1         # a specific release still hosted on bir-cdn
 #   tools/fetch.sh 7.9.6.2.1 path/to/Offline_eBIRForms_Package_v7.9.6.2.1.zip
+#   tools/fetch.sh --latest        # print "VERSION URL INSTALLER_SHA256" of the latest, nothing else
 #
 # Requires: curl, unzip, innoextract, python3 with pefile. No Wine/Windows.
 set -euo pipefail
@@ -16,19 +17,10 @@ CDN="https://bir-cdn.bir.gov.ph/BIR/pdf"
 # this CMS dataset (page "ebirforms", list-cards dataset code 3380).
 CMS="https://bir-cms-ws.bir.gov.ph/api/pub/templates/3380/datasets?per_page=3000"
 
-for tool in curl unzip innoextract python3; do
-  command -v "$tool" >/dev/null || { echo "missing: $tool" >&2; exit 1; }
-done
-python3 -c 'import pefile' 2>/dev/null || { echo "missing: python3 pefile (pip install pefile)" >&2; exit 1; }
-
 WORK="$(mktemp -d)"
 trap 'rm -rf "$WORK"' EXIT
 
-VERSION="${1:-}"
-ZIP="${2:-}"
-PUBLISHED_SHA=""
-
-if [ -z "$VERSION" ]; then
+latest() {
   curl -fsSL -H 'client-website-id: 2' "$CMS" -o "$WORK/cms.json"
   read -r URL PUBLISHED_SHA < <(python3 - "$WORK/cms.json" <<'EOF'
 import re, sys
@@ -40,6 +32,25 @@ print(m.group(2), m.group(1))
 EOF
 )
   VERSION="$(sed -E 's/.*_v([0-9.]+)(_setup)?\.zip/\1/' <<<"$URL")"
+}
+
+if [ "${1:-}" = "--latest" ]; then
+  latest
+  echo "$VERSION $URL $PUBLISHED_SHA"
+  exit 0
+fi
+
+for tool in curl unzip innoextract python3; do
+  command -v "$tool" >/dev/null || { echo "missing: $tool" >&2; exit 1; }
+done
+python3 -c 'import pefile' 2>/dev/null || { echo "missing: python3 pefile (pip install pefile)" >&2; exit 1; }
+
+VERSION="${1:-}"
+ZIP="${2:-}"
+PUBLISHED_SHA=""
+
+if [ -z "$VERSION" ]; then
+  latest
 fi
 
 if [ -z "$ZIP" ]; then

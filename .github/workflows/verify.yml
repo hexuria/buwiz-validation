@@ -1,0 +1,27 @@
+# On every push: the tree must match its manifest byte for byte, and
+# regenerating the index must change nothing (the pipeline is deterministic).
+name: Verify
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Files match the manifest
+        run: python3 tools/verify.py
+
+      - name: Index regenerates identically
+        run: |
+          set -euo pipefail
+          version="$(jq -r .official_app_version index/forms.json)"
+          jq 'del(.official_app_version, .package, .app)' "manifests/$version.json" > "$RUNNER_TEMP/info.json"
+          python3 tools/build_index.py "$version" "$RUNNER_TEMP/info.json"
+          git diff --exit-code -- manifests index

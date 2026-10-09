@@ -1,0 +1,194 @@
+# Daily: ask bir.gov.ph/ebirforms for the current Offline eBIRForms package.
+# On a new (or re-uploaded) release, extract it with tools/fetch.sh, verify
+# every file against the manifest, commit + tag it, and file an issue in
+# buwiz-forms that lists exactly what changed and which rule packages it
+# makes stale (tools/release_report.py).
+name: BIR release watch
+
+on:
+  schedule:
+    - cron: "23 0 * * *" # 08:23 Asia/Manila
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Fetch this version from bir-cdn instead of the latest on bir.gov.ph/ebirforms"
+        required: false
+        default: ""
+      file_issue:
+        description: "File the buwiz-forms issue"
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+  issues: write
+  actions: write
+
+concurrency:
+  group: bir-release-watch
+  cancel-in-progress: false
+
+env:
+  ISSUE_REPO: hexuria/buwiz-forms
+  ISSUE_LABEL: ebirforms-release
+
+jobs:
+  watch:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Check what BIR publishes
+        id: check
+        env:
+          WANT: ${{ inputs.version }}
+        run: |
+          set -euo pipefail
+          if [ -n "$WANT" ]; then
+            [[ "$WANT" =~ ^[0-9]+(\.[0-9]+)+$ ]] || { echo "::error::bad version: $WANT"; exit 1; }
+            version="$WANT"; sha=""
+          else
+            read -r version url sha < <(tools/fetch.sh --latest)
+            echo "BIR lists $version at $url (installer sha256 $sha)"
+          fi
+          prev="$(git describe --tags --abbrev=0 HEAD)"
+          tag="v$version"
+          if git rev-parse -q --verify "refs/tags/$tag" >/dev/null; then
+            recorded="$(jq -r .installer_sha256 "manifests/$version.json")"
+            if [ -z "$sha" ] || [ "$sha" = "$recorded" ]; then
+              status=current
+            else
+              status=republished
+              tag="v$version-r$(date -u +%Y%m%d)"
+              echo "::warning::BIR re-uploaded $version: installer $recorded -> $sha"
+            fi
+          elif [ -z "$WANT" ] && [ "$(printf '%s\n%s\n' "${prev#v}" "$version" | sort -V | tail -n1)" != "$version" ]; then
+            status=older
+            echo "::notice::BIR lists $version, older than $prev; nothing to do"
+          else
+            status=new
+          fi
+          echo "status=$status version=$version tag=$tag prev=$prev"
+          {
+            echo "status=$status"; echo "version=$version"; echo "tag=$tag"; echo "prev=$prev"
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Install extraction tools
+        if: steps.check.outputs.status == 'new' || steps.check.outputs.status == 'republished'
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq innoextract
+          pip install --quiet pefile==2023.2.7
+          innoextract --version | head -n1
+
+      - name: Extract and verify
+        if: steps.check.outputs.status == 'new' || steps.check.outputs.status == 'republished'
+        env:
+          WANT: ${{ inputs.version }}
+          VERSION: ${{ steps.check.outputs.version }}
+        run: |
+          set -euo pipefail
+          tools/fetch.sh ${WANT:+"$WANT"}
+          got="$(jq -r .official_app_version index/forms.json)"
+          [ "$got" = "$VERSION" ] || { echo "::error::extracted $got, expected $VERSION"; exit 1; }
+          python3 tools/verify.py "$VERSION"
+          git status --short | head -n 50
+
+      - name: Commit and tag the release
+        if: steps.check.outputs.status == 'new' || steps.check.outputs.status == 'republished'
+        env:
+          VERSION: ${{ steps.check.outputs.version }}
+          TAG: ${{ steps.check.outputs.tag }}
+          STATUS: ${{ steps.check.outputs.status }}
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A package app manifests index
+          msg="BIR eBIRForms $VERSION"
+          [ "$STATUS" = republished ] && msg="$msg (re-uploaded by BIR, $(date -u +%F))"
+          git commit -q -m "$msg"
+          git tag "$TAG"
+
+      - name: Check out buwiz-forms rule manifests
+        if: steps.check.outputs.status == 'new' || steps.check.outputs.status == 'republished'
+        uses: actions/checkout@v4
+        with:
+          repository: hexuria/buwiz-forms
+          path: .buwiz-forms
+          sparse-checkout: rules/forms
+          persist-credentials: false
+
+      - name: Write the change report
+        if: steps.check.outputs.status == 'new' || steps.check.outputs.status == 'republished'
+        env:
+          VERSION: ${{ steps.check.outputs.version }}
+          TAG: ${{ steps.check.outputs.tag }}
+          PREV: ${{ steps.check.outputs.prev }}
+        run: |
+          set -euo pipefail
+          mkdir -p reports
+          python3 tools/release_report.py "$PREV" "$TAG" --rules .buwiz-forms/rules/forms \
+            --repo "$GITHUB_REPOSITORY" > "reports/$VERSION.md"
+          python3 tools/release_report.py "$PREV" "$TAG" --rules .buwiz-forms/rules/forms \
+            --repo "$GITHUB_REPOSITORY" --limit 65000 > "$RUNNER_TEMP/issue.md"
+          cat "reports/$VERSION.md" >> "$GITHUB_STEP_SUMMARY"
+          git add "reports/$VERSION.md"
+          git commit -q -m "Report: what changed in BIR eBIRForms $VERSION"
+          git push origin HEAD:main "refs/tags/$TAG"
+
+      - name: File the buwiz-forms issue
+        if: (steps.check.outputs.status == 'new' || steps.check.outputs.status == 'republished') && (github.event_name == 'schedule' || inputs.file_issue)
+        env:
+          # Fine-grained token with Issues: read/write on hexuria/buwiz-forms.
+          # GITHUB_TOKEN cannot write to another repository.
+          CROSS_TOKEN: ${{ secrets.BUWIZ_FORMS_ISSUE_TOKEN }}
+          OWN_TOKEN: ${{ github.token }}
+          VERSION: ${{ steps.check.outputs.version }}
+          PREV: ${{ steps.check.outputs.prev }}
+          STATUS: ${{ steps.check.outputs.status }}
+        run: |
+          set -euo pipefail
+          repo="$ISSUE_REPO"; export GH_TOKEN="$CROSS_TOKEN"
+          if [ -z "$CROSS_TOKEN" ]; then
+            echo "::warning::secret BUWIZ_FORMS_ISSUE_TOKEN is not set; filing the issue in $GITHUB_REPOSITORY instead"
+            repo="$GITHUB_REPOSITORY"; export GH_TOKEN="$OWN_TOKEN"
+          fi
+          title="eBIRForms $VERSION: BIR released a new Offline package (from ${PREV#v})"
+          [ "$STATUS" = republished ] && title="eBIRForms $VERSION: BIR re-uploaded the package with different contents"
+          existing="$(gh issue list -R "$repo" --state all --search "\"$title\" in:title" --json number,title \
+            --jq ".[] | select(.title == \"$title\") | .number" | head -n1)"
+          if [ -n "$existing" ]; then
+            echo "Issue #$existing already exists in $repo"; exit 0
+          fi
+          gh label create "$ISSUE_LABEL" -R "$repo" --color 0e8a16 \
+            --description "New official Offline eBIRForms release" --force >/dev/null || true
+          gh issue create -R "$repo" --title "$title" --body-file "$RUNNER_TEMP/issue.md" --label "$ISSUE_LABEL" \
+            || gh issue create -R "$repo" --title "$title" --body-file "$RUNNER_TEMP/issue.md"
+
+      # Scheduled workflows stop after 60 days without repository activity;
+      # re-enabling on every run keeps this one alive between BIR releases.
+      - name: Keep the schedule enabled
+        if: github.event_name == 'schedule'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api -X PUT "repos/$GITHUB_REPOSITORY/actions/workflows/bir-release-watch.yml/enable" || true
+
+      - name: Report a broken watch
+        if: failure() && github.event_name == 'schedule'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          title="BIR release watch is failing"
+          n="$(gh issue list -R "$GITHUB_REPOSITORY" --state open --search "\"$title\" in:title" --json number --jq '.[0].number')"
+          if [ -n "$n" ]; then
+            gh issue comment "$n" -R "$GITHUB_REPOSITORY" --body "Failed again: $RUN_URL"
+          else
+            gh issue create -R "$GITHUB_REPOSITORY" --title "$title" --body "The daily check failed: $RUN_URL
+
+          Most likely bir.gov.ph changed how it lists the package (\`tools/fetch.sh\` reads the BIR CMS API) or the installer format changed."
+          fi

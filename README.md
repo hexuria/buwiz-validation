@@ -53,7 +53,8 @@ Known results for 7.9.6.2.1, all present in BIR's package as shipped:
 | `app/` | Files the installer puts in `C:\eBIRForms\`: reference XML (`atcCodes`, `rdo`, `treatyCodes`, …), `chkt.exe` (TIN check digit), `Encrypt.exe`, `cFTPSend.exe` / `ebfSFTP.exe` (submission transport), release notes. `BIRForms.exe` itself (≈56 MB, decoded into `package/`) and bundled third-party WinSCP are left out; their hashes are in the manifest. |
 | `manifests/<version>.json` | Download URL, zip / installer / `BIRForms.exe` SHA-256, and the SHA-256 + size of every file in `package/` and `app/` |
 | `index/forms.json` | For each form HTA: title, `APPLICATIONNAME`, scripts and stylesheets it loads (in order), and any it references that the official package does not ship |
-| `tools/` | The extraction pipeline (below) |
+| `tools/` | The extraction pipeline, `verify.py` and `release_report.py` (below) |
+| `reports/<version>.md` | What BIR changed in that release, as filed to buwiz-forms |
 | `preview/` | Browser viewer for the HTAs (above). Not BIR's. |
 
 ## Releases
@@ -109,6 +110,36 @@ What `fetch.sh` does:
 The decoder reports 7 path-list entries with no resource. They are empty
 `IAF_*/.gitkeep` placeholders and one blank trailing entry, so nothing is
 lost.
+
+## Release watch (CI)
+
+`.github/workflows/bir-release-watch.yml` runs every day at 08:23 Manila time:
+
+1. `tools/fetch.sh --latest` reads the current package link and published hash
+   from bir.gov.ph/ebirforms. If the version is already tagged with the same
+   installer hash, it stops there.
+2. On a new version, it runs `tools/fetch.sh`, then `tools/verify.py`, which
+   requires every file to match the new manifest byte for byte. It commits and
+   tags `v<version>`. If BIR re-uploads an existing version with different
+   contents, it tags `v<version>-r<date>` instead.
+3. `tools/release_report.py <previous tag> <new tag>` writes
+   `reports/<version>.md`: BIR's release notes, every changed form with the
+   field IDs and functions touched, shared JS/VBS/XML diffs, and the buwiz-forms
+   rule packages whose pinned sources changed. It reads each
+   `rules/forms/*/manifest.json` in buwiz-forms to find them.
+4. It files that report as an issue in hexuria/buwiz-forms, labelled
+   `ebirforms-release`. This needs the repository secret
+   `BUWIZ_FORMS_ISSUE_TOKEN`, a fine-grained token with *Issues: read and write*
+   on hexuria/buwiz-forms. Without it the issue is filed here instead.
+
+You can run it by hand from the Actions tab (*Run workflow*). Optionally give
+it a version still on bir-cdn. If BIR's site changes and the check breaks, the
+workflow opens a "BIR release watch is failing" issue here.
+
+`.github/workflows/verify.yml` checks every push: the tree must match its
+manifest, and regenerating `index/forms.json` must produce no diff.
+
+Reports for past releases: [7.9.6.1](reports/7.9.6.1.md), [7.9.6.2.1](reports/7.9.6.2.1.md).
 
 ## Where the validation lives
 
